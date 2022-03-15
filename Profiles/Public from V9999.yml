@@ -9,9 +9,11 @@ proxies:
   - {name: 洛杉矶SSR+TLS+Caddy, server: lg1.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {name: https://git.io/v9999 洛杉矶SS, server: 23.19.10.134, port: 12345, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
   - {name: https://git.io/v9999 洛杉矶2SS, server: 85.209.158.76, port: 12345, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: https://github.com/Alvin9999/new-pac/wiki g_IN_印度, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: aicoo6du.com}, udp: true}
-  - {name: https://github.com/Alvin9999/new-pac/wiki g, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 194.195.240.132}, udp: true}
+  - {name: https://github.com/Alvin9999/new-pac/wiki g_欧洲, server: 154.31.41.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: chuch3go.com}, udp: true}
+  - {name: https://github.com/Alvin9999/new-pac/wiki g_欧洲 2, server: 34.80.185.234, port: 40762, type: vmess, uuid: 63dfb0a0-c0b2-4c46-e821-30e18741e783, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.80.185.234}, udp: true}
+  - {name: https://github.com/Alvin9999/new-pac/wiki g_欧洲 3, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
   - {name: https://github.com/Alvin9999/new-pac/wiki g_加拿大, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: https://github.com/Alvin9999/new-pac/wiki g, server: www.digitalocean.com, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -22,9 +24,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -34,9 +38,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -47,9 +53,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,9 +80,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -89,9 +99,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: 📲 电报信息
     type: select
     proxies:
@@ -101,9 +113,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -114,9 +128,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -136,9 +152,11 @@ proxy-groups:
       - 洛杉矶SSR+TLS+Caddy
       - https://git.io/v9999 洛杉矶SS
       - https://git.io/v9999 洛杉矶2SS
-      - https://github.com/Alvin9999/new-pac/wiki g_IN_印度
-      - https://github.com/Alvin9999/new-pac/wiki g
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 2
+      - https://github.com/Alvin9999/new-pac/wiki g_欧洲 3
       - https://github.com/Alvin9999/new-pac/wiki g_加拿大
+      - https://github.com/Alvin9999/new-pac/wiki g
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
