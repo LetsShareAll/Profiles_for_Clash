@@ -20,7 +20,7 @@ def save_links(file, link):
     :param link: 字符串：需要保存的链接。
     :return: 0。
     """
-    print('保存链接至文件中……')
+    print('Saving links to files...')
     with open(file, 'a', encoding='utf-8') as file:
         file.write(link + '\n')
         file.close()
@@ -32,11 +32,11 @@ def remove_repetitive_links(links_stored_file):
     :param links_stored_file: 字符串：文件路径。
     :return: 0。
     """
-    print('去除重复链接中……')
+    print('Removing repetitive links...')
     links = []
     for link in open(links_stored_file):
         if link in links:
-            print('重复的链接：' + link.strip() + '。')
+            print('Reprtitive link: ' + link.strip() + '。')
             continue
         links.append(link)
     with open(links_stored_file, 'w') as file:
@@ -56,7 +56,7 @@ def get_shared_links(source):
     soup = BeautifulSoup(resp, 'html.parser')
     for p in soup.find_all('p', string=re.compile('ss://|ssr://|vmess://|vless://')):
         link = p.get_text().strip()
-        print('获取的链接：' + link + '。')
+        print('Acquired link: ' + link + ' .')
         save_links('./shared_links.txt', link)
 
 
@@ -77,7 +77,7 @@ def get_profile_link(links_stored_file, profile_name):
         'filename': profile_name
     }
     profile_link = base_url + urlencode(params)
-    print('生成 SubConverter 链接：' + profile_link + '。')
+    print('Gennerating SubConverter link: ' + profile_link + ' .')
     return profile_link
 
 
@@ -92,7 +92,7 @@ def run_get_profile():
     remove_repetitive_links('./shared_links.txt')
     subconverter_link = get_profile_link('./shared_links.txt', 'Public from V9999')
     urlretrieve(subconverter_link, '../Profiles/Public from V9999.yml')
-    print('配置文件获取完成！')
+    print('Profiles update complete!')
     sys.exit()
 
 
