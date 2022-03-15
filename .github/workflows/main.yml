@@ -1,0 +1,63 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Profiles
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "update-profiles"
+  update-profiles:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Run Py Scripts
+        run: |
+          pip install beautifilSoup4
+          cd auto-getter
+          py main.py
+      - name: Add Commit
+        run: |
+          git config --global user.email Shuery.Shuai@outlook.com
+          git config --global user.name Shuery.Shuai@outlook.com
+          git add .
+          git commit -m "action: `date`"
+          git pull --rebase
+          
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN  }}
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+  sync:
+    needs: update-profiles
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync to Gitee
+      uses: wearerequired/git-mirror-action@master
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+      with:
+        # Source Repo
+        source-repo: "git@github.com:Shuery-Shuai/Profiles_for_Clash.git"
+        # Target Repo
+        destination-repo: "git@gitee.com:Shuery-Shuai/Profiles_for_Clash.git"
