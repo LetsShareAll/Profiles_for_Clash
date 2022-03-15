@@ -28,14 +28,15 @@ jobs:
         uses: py-actions/py-dependency-install@v3
         with:
           path: "auto-getter/requirements.txt"
-          update-pip: "false"
-          update-setuptools: "false"
-          update-wheel: "false"
+          update-pip: "true"
+          update-setuptools: "true"
+          update-wheel: "true"
 
       - name: Run Py Scripts
         run: |
           cd auto-getter
-          py main.py
+          pip3 install beautifulsoup4
+          python3 main.py
 
       - name: Add Commit
         run: |
