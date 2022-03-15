@@ -23,6 +23,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Remove Outdated Links
+        run: rm auto-getter/shared_links.txt
+
       # this Action should follow steps to set up Python build environment
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v3
