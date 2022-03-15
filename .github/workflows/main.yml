@@ -43,10 +43,10 @@ jobs:
 
       - name: Add Commit
         run: |
-          git config --global user.email Shuery.Shuai@outlook.com
-          git config --global user.name Shuery.Shuai@outlook.com
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
           git add .
-          git commit -m"action: `date`"
+          git commit -m "Update: `date` ."
           git pull --rebase
 
       - name: Push Changes
