@@ -85,7 +85,7 @@ others:
 
 ## 配置使用教程
 
-[点击前往](/wiki#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6 "Home · Shuery-Shuai/Profiles_for_Clash Wiki")
+[点击前往](./wiki#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6 "Home · Shuery-Shuai/Profiles_for_Clash Wiki")
 
 ## 配置文件及其来源
 
