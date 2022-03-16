@@ -41,7 +41,7 @@ jobs:
       - name: Add Commit
         run: |
           Set-TimeZone -Id "China Standard Time"
-          $date = date -format "yyyy/MM/dd HH:mm"
+          $date = date +%Y/%m/%d_%R
           $message = "Update: ``" + $date + "``."
           git config --global user.email "<>"
           git config --global user.name "GitHub Actions Bot"
