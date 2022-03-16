@@ -156,7 +156,7 @@ def get_shared_links(source, links_store_file, links_begin_with):
 def get_profile_link(parameters, links_stored_file):
     """获取生成配置文件的链接。
 
-    :param parameters: 字典：Sub Converter 的参数。
+    :param parameters: 字典：用于 Sub Converter 的参数。
     :param links_stored_file: 字符串：存储链接的文件的路径。
     :return: 配置文件的链接。
     """
