@@ -1,6 +1,6 @@
 # [Profiles_for_Clash](https://github.com/Shuery-Shuai/Profiles_for_Clash "Shuery-Shuai/Profiles_for_Clash: Profiles can be used in Clash for Windows, Clash for Android and so on.")
 
-使用 Python 自动获取一些可用于 *Clash for Windows*、*Clash for Android* 等应用的配置文件。
+使用 Python 自动获取一些可用于 _Clash for Windows_、_Clash for Android_ 等应用的配置文件。
 
 > **警告**：通过使用特殊方式访问外网时请**严格遵守当地法律法规**，**禁止借此进行传播“黄、赌、毒”等违法犯罪活动**。节点均来自网络收集，由网友免费提供，请**勿使用节点进行 BT 下载**。
 
@@ -25,17 +25,17 @@ Clash 配置文件的有关设置。
 
 #### Sub Converter 配置
 
-Sub Converter 设置。详见 <https://github.com/tindy2013/subconverter/blob/master/README-cn.md>。
+Sub Converter 设置。详见 [Sub Converter 文档](https://github.com/tindy2013/subconverter/blob/master/README-cn.md "subconverter/README-cn.md at master · tindy2013/subconverter")。
 
 `sub-converter`：
 
-|     参数     | 子参数 |  示例值   | 解释                                                                                                                                                                                                                          | 备注                                                                |
-| :----------: | :----: | :-------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------ |
-|    target    |   ——   | `'clash'` | 想要生成的配置类型。详见 <https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E6%94%AF%E6%8C%81%E7%B1%BB%E5%9E%8B>。                                                                                          | ——                                                                  |
-|    config    |   ——   |   `''`    | 外部配置的地址 (包含分组和规则部分)，当此参数不存在时使用程序的主程序目录中的配置文件，参考的链接见下方表格。详见 <https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E5%A4%96%E9%83%A8%E9%85%8D%E7%BD%AE>。 | ——                                                                  |
-|    emoji     |   ——   | `'true'`  | 用于设置节点名称是否包含 Emoji。                                                                                                                                                                                              | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！ |
-|  add_emoji   |   ——   | `'false'` | 用于在节点名称前加入 Emoji。                                                                                                                                                                                                  | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！ |
-| remove_emoji |   ——   | `'true'`  | 用于设置是否删除节点名称中原有的 Emoji。                                                                                                                                                                                      | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！ |
+|     参数     | 子参数 |  默认值   | 解释                                                                                                          | 备注                                                                                                                                                                                                    |
+| :----------: | :----: | :-------: | :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|    target    |   ——   | `'clash'` | 想要生成的配置类型。                                                                                          | 详见 [Sub Converter 支持类型](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E6%94%AF%E6%8C%81%E7%B1%BB%E5%9E%8B "subconverter/README-cn.md at master · tindy2013/subconverter")。 |
+|    config    |   ——   |   `''`    | 外部配置的地址 (包含分组和规则部分)，当此参数不存在时使用程序的主程序目录中的配置文件，参考的链接见下方表格。 | 详见 [Sub Converter 外部配置](https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E5%A4%96%E9%83%A8%E9%85%8D%E7%BD%AE "subconverter/README-cn.md at master · tindy2013/subconverter")。 |
+|    emoji     |   ——   | `'true'`  | 用于设置节点名称是否包含 Emoji。                                                                              | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！                                                                                                                                     |
+|  add_emoji   |   ——   | `'false'` | 用于在节点名称前加入 Emoji。                                                                                  | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！                                                                                                                                     |
+| remove_emoji |   ——   | `'true'`  | 用于设置是否删除节点名称中原有的 Emoji。                                                                      | 对于 Emoji 的设置请勿随意更改，日后可能会使用其他方法更改节点名称！                                                                                                                                     |
 
 `config`：
 
@@ -54,7 +54,7 @@ Sub Converter 设置。详见 <https://github.com/tindy2013/subconverter/blob/ma
 |   net-ease   | Special：网易云音乐解锁。仅规则，No-URL-Test。 |    <https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/netease.ini>     |
 |    basic     |         Special：仅 GEOIP CN + Final。         |     <https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/basic.ini>      |
 
-> **提示**：更多配置可前往 <https://github.com/SleepyHeeead/subconverter-config> 查看。
+> **提示**：更多配置可前往 [Sub Converter Config](https://github.com/SleepyHeeead/subconverter-config "SleepyHeeead/subconverter-config") 查看。
 
 #### Others 配置
 
@@ -62,14 +62,14 @@ Sub Converter 设置。详见 <https://github.com/tindy2013/subconverter/blob/ma
 
 `others`：
 
-|                参数                 |       子参数        |     示例值      | 解释                       | 备注                     |
-| :---------------------------------: | :-----------------: | :-------------: | :------------------------- | :----------------------- |
-|             directories             |          ↓          |       ——        | 关于文件夹的设置。         | ——                       |
-|                 ——                  |   links-store-dir   |   `'./links'`   | 保存链接文件的文件夹位置。 | ——                       |
-|                 ——                  | profiles-store-dir  | `'../Profiles'` | 保存配置文件的文件夹位置。 | ——                       |
-|                 ——                  | temp-file-store-dir |   `'./temp'`    | 临时保存文件的文件夹位置。 | ——                       |
-|  supported-shared-link-begin-with   |         ——          |   `'ss://.*\|ssr://.*\|vmess://.*\|vless://.*\|trojan://.*'` | 受支持的分享链接的开头。 | 正则表达式。 |
-| supported-subscribe-link-begin-with |         ——          |  `'http://.*\|https://.*'` | 受支持的订阅链接的开头。 | 正则表达式。 |
+|                参数                 |       子参数        |                           示例值                           | 解释                       | 备注         |
+| :---------------------------------: | :-----------------: | :--------------------------------------------------------: | :------------------------- | :----------- |
+|             directories             |          ↓          |                             ——                             | 关于文件夹的设置。         | ——           |
+|                 ——                  |   links-store-dir   |                        `'./links'`                         | 保存链接文件的文件夹位置。 | ——           |
+|                 ——                  | profiles-store-dir  |                      `'../Profiles'`                       | 保存配置文件的文件夹位置。 | ——           |
+|                 ——                  | temp-file-store-dir |                         `'./temp'`                         | 临时保存文件的文件夹位置。 | ——           |
+|  supported-shared-link-begin-with   |         ——          | `'ss://.*\|ssr://.*\|vmess://.*\|vless://.*\|trojan://.*'` | 受支持的分享链接的开头。   | 正则表达式。 |
+| supported-subscribe-link-begin-with |         ——          |                 `'http://.*\|https://.*'`                  | 受支持的订阅链接的开头。   | 正则表达式。 |
 
 ### 配置示例
 
