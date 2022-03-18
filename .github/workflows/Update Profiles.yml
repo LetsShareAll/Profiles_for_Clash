@@ -53,17 +53,3 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.ACCESS_TOKEN  }}
-
-  sync:
-    needs: update-profiles
-    runs-on: ubuntu-latest
-    steps:
-      - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
-        with:
-          # Source Repo
-          source-repo: "git@github.com:Shuery-Shuai/Profiles_for_Clash.git"
-          # Target Repo
-          destination-repo: "git@gitee.com:Shuery-Shuai/Profiles_for_Clash.git"
