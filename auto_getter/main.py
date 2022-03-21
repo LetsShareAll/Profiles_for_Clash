@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 config_file = 'config.yml'
 
 
-def load_yaml_data(yaml_file, ):
+def load_yaml_data(yaml_file):
     """读取 YAML 类型文件数据。
 
     :param yaml_file: 字符串：YAML 文件路径。
@@ -32,17 +32,17 @@ def rm_dir_files(directory):
     :param directory: 字符串：要删除内部文件的文件夹。
     :return: 0。
     """
-    print('Removing directory ' + directory + '...')
+    print('Removing directory "' + directory + '"...')
     if os.path.exists(directory):
         for root, dirs, files in os.walk(directory, topdown=False):
             for name in files:
-                print('Removing file ' + name + '...')
+                print('Removing file "' + name + '"...')
                 os.remove(os.path.join(root, name))
             for name in dirs:
                 print('Removing directory ' + name + '...')
                 os.rmdir(os.path.join(root, name))
     else:
-        print('The directory ' + directory + ' dos not exits!')
+        print('The directory "' + directory + '" dos not exits!')
 
 
 def mkdir(directory):
@@ -52,11 +52,12 @@ def mkdir(directory):
     :return: 0。
     """
     folder = os.path.exists(directory)
+    print('Creating directory "' + directory + '"...')
     if not folder:
         os.makedirs(directory)
-        print('Creating directory' + directory + '...')
+        print('The directory "' + directory + '" successfully created!')
     else:
-        print('The directory ' + directory + ' exits!')
+        print('The directory "' + directory + '" exits!')
 
 
 def save_links(file, link):
@@ -66,7 +67,7 @@ def save_links(file, link):
     :param link: 字符串：需要保存的链接。
     :return: 0。
     """
-    print('Saving links to files...')
+    print('Saving link to file...')
     with open(file, 'a', encoding='utf-8') as file:
         file.write(link + '\n')
         file.close()
@@ -83,7 +84,7 @@ def remove_repetitive_links(links_stored_file):
         links = []
         for link in open(links_stored_file):
             if link in links:
-                print('Repetitive link: ' + link.strip() + '。')
+                print('Repetitive link: "' + link.strip() + '".')
                 continue
             links.append(link)
         with open(links_stored_file, 'w') as links_file:
@@ -107,7 +108,7 @@ def get_shared_links_from_pages(page, tag, attr_class, links_store_file, links_b
     soup = BeautifulSoup(page, 'html.parser')
     for tag in soup.find_all(tag, class_=attr_class, string=re.compile(links_begin_with)):
         link = tag.get_text().strip()
-        print('Acquired link: ' + link + ' .')
+        print('Acquired link: "' + link + '".')
         save_links(links_store_file, link)
 
 
@@ -120,7 +121,7 @@ def get_shared_links_from_files(remote_file, temp_file, links_store_file, links_
     :param links_begin_with: 字符串：链接开头。
     :return: 0。
     """
-    print('Getting links from ' + remote_file + '...')
+    print('Getting links from "' + remote_file + '"...')
     if remote_file != '':
         urlretrieve(remote_file, temp_file)
         with open(temp_file, 'r') as search_file:
@@ -128,7 +129,7 @@ def get_shared_links_from_files(remote_file, temp_file, links_store_file, links_
                 link_list = re.compile(links_begin_with).findall(line)
                 if len(link_list) > 0:
                     link = link_list[0]
-                    print('Acquired link: ' + link + ' .')
+                    print('Acquired link: "' + link + '".')
                     save_links(links_store_file, link)
     else:
         print('Remote file is null!')
@@ -142,7 +143,7 @@ def get_shared_links(source, links_store_file, links_begin_with):
     :param: links_begin_with: 字符串：链接开头。
     :return: 0。
     """
-    print('Getting links from ' + source + '...')
+    print('Getting links from "' + source + '"...')
     if source != '':
         headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
         req = request.Request(source, headers=headers)
@@ -167,7 +168,7 @@ def get_profile_link(parameters, links_stored_file):
         parameters['url'] = url
         base_url = 'http://127.0.0.1:25500/sub?'
         profile_link = base_url + urlencode(parameters)
-        print('Generating Sub_Converter link: ' + profile_link + ' .')
+        print('Generating Sub_Converter link: "' + profile_link + '".')
         return profile_link
     else:
         print('Profile get failed! No such file: "' + links_stored_file + '".')
