@@ -200,9 +200,9 @@ def get_profile(config_path):
     for profile in config['profiles']:
         # 获取 Profile 信息。
         profile_name = profile['name']
-        links_file_path = links_store_dir + '/' + profile_name
+        links_file_path = links_store_dir + '/' + profile_name + '.txt'
         profile_path = profiles_store_dir + '/' + profile_name + '.yml'
-        temp_file_path = temp_file_store_dir + '/' + profile_name
+        temp_file_path = temp_file_store_dir + '/' + profile_name + '.txt'
 
         # 生成配置文件。
         print('Getting profile for ' + profile_name + '...')

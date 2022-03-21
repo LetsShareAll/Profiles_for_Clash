@@ -27,14 +27,14 @@ jobs:
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v3
         with:
-          path: "auto-getter/requirements.txt"
+          path: "auto_getter/requirements.txt"
           update-pip: "true"
           update-setuptools: "true"
           update-wheel: "true"
 
       - name: Run Py Scripts
         run: |
-          cd auto-getter
+          cd auto_getter
           pip3 install beautifulsoup4
           python3 main.py
 
