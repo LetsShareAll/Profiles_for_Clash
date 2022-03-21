@@ -73,74 +73,92 @@ def save_links(file, link):
         file.close()
 
 
-def remove_repetitive_links(links_stored_file):
+def remove_repetitive_links(shared_links_stored_file):
     """移除链接存储文件中重复的链接。
 
-    :param links_stored_file: 字符串：文件路径。
+    :param shared_links_stored_file: 字符串：文件路径。
     :return: 0。
     """
     print('Removing repetitive links...')
-    if os.path.exists(links_stored_file):
+    if os.path.exists(shared_links_stored_file):
         links = []
-        for link in open(links_stored_file):
+        for link in open(shared_links_stored_file, encoding='utf-8'):
             if link in links:
                 print('Repetitive link: "' + link.strip() + '".')
                 continue
             links.append(link)
-        with open(links_stored_file, 'w') as links_file:
+        with open(shared_links_stored_file, 'w', encoding='utf-8') as links_file:
             links_file.writelines(links)
             links_file.close()
     else:
-        print('Removing repetitive links failed! No such file: "' + links_stored_file + '".')
+        print('Removing repetitive links failed! No such file: "' + shared_links_stored_file + '".')
 
 
-def get_shared_links_from_pages(page, tag, attr_class, links_store_file, links_begin_with):
+def get_shared_links_from_element(page, tag, tag_class, shared_links_store_file, shared_link_begin_with):
     """从网页元素中获取链接。
 
     :param page: 字符串：网页链接。
     :param tag: 字符串：网页元素标签。
-    :param attr_class: 字符串：网页元素所属类。
-    :param links_store_file: 字符串：存储链接的文件。
-    :param links_begin_with: 字符串：链接开头。
+    :param tag_class: 字符串：网页元素所属类。
+    :param shared_links_store_file: 字符串：存储链接的文件。
+    :param shared_link_begin_with: 字符串：链接开头。
     :return: 0。
     """
-    print('Getting links from tag="' + tag + '" and class="' + attr_class + '"...')
+    print('Getting links from tag="' + tag + '" and class="' + tag_class + '"...')
     soup = BeautifulSoup(page, 'html.parser')
-    for tag in soup.find_all(tag, class_=attr_class, string=re.compile(links_begin_with)):
+    for tag in soup.find_all(tag, class_=tag_class, string=re.compile(shared_link_begin_with)):
         link = tag.get_text().strip()
         print('Acquired link: "' + link + '".')
-        save_links(links_store_file, link)
+        save_links(shared_links_store_file, link)
 
 
-def get_shared_links_from_files(remote_file, temp_file, links_store_file, links_begin_with):
+def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, shared_link_begin_with):
+    """从电报频道获取链接。
+
+    :param tg_channel_name: 字符串：电报频道名。
+    :param shared_links_store_file: 字符串：分享链接的存储文件。
+    :param shared_link_begin_with: 字符串：分享链接的开头。
+    :return: 0。
+    """
+    tg_channel_pre_page = 'https://t.me/s/' + tg_channel_name
+    headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
+    req = request.Request(tg_channel_pre_page, headers=headers)
+    resp = request.urlopen(req)
+    soup = BeautifulSoup(resp, 'html.parser')
+    # 将 br 标签替换为 \n
+    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')).replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
+    get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file, shared_link_begin_with)
+
+
+def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file, shared_link_begin_with):
     """从文件行获取链接。
 
     :param remote_file: 字符串：远程文件链接。
     :param temp_file: 字符串：临时文件存放路径。
-    :param links_store_file: 字符串：链接存储文件。
-    :param links_begin_with: 字符串：链接开头。
+    :param shared_links_store_file: 字符串：链接存储文件。
+    :param shared_link_begin_with: 字符串：链接开头。
     :return: 0。
     """
     print('Getting links from "' + remote_file + '"...')
     if remote_file != '':
         urlretrieve(remote_file, temp_file)
-        with open(temp_file, 'r') as search_file:
+        with open(temp_file, 'r', encoding='utf-8') as search_file:
             for line in search_file:
-                link_list = re.compile(links_begin_with).findall(line)
+                link_list = re.compile(shared_link_begin_with).findall(line)
                 if len(link_list) > 0:
                     link = link_list[0]
                     print('Acquired link: "' + link + '".')
-                    save_links(links_store_file, link)
+                    save_links(shared_links_store_file, link)
     else:
         print('Remote file is null!')
 
 
-def get_shared_links(source, links_store_file, links_begin_with):
-    """获取分享链接。
+def get_shared_links_from_pages(source, shared_links_store_file, shared_link_begin_with):
+    """从网页链接获取链接。
 
     :param: source: 字符串：链接的来源（一般为网页链接）。
-    :param: links_store_file: 字符串：存储链接的文件位置。
-    :param: links_begin_with: 字符串：链接开头。
+    :param: shared_links_store_file: 字符串：存储链接的文件位置。
+    :param: shared_link_begin_with: 字符串：链接开头。
     :return: 0。
     """
     print('Getting links from "' + source + '"...')
@@ -148,22 +166,21 @@ def get_shared_links(source, links_store_file, links_begin_with):
         headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
         req = request.Request(source, headers=headers)
         resp = request.urlopen(req)
-        get_shared_links_from_pages(resp, 'p', '', links_store_file, links_begin_with)
-        get_shared_links_from_pages(resp, 'div', 'tgme_widget_message_text', links_store_file, links_begin_with)
+        get_shared_links_from_element(resp, 'p', '', shared_links_store_file, shared_link_begin_with)
     else:
         print('Source is null!')
 
 
-def get_profile_link(parameters, links_stored_file):
+def get_profile_link(parameters, shared_links_stored_file):
     """获取生成配置文件的链接。
 
     :param parameters: 字典：用于 Sub Converter 的参数。
-    :param links_stored_file: 字符串：存储链接的文件的路径。
+    :param shared_links_stored_file: 字符串：存储链接的文件的路径。
     :return: 配置文件的链接。
     """
-    if os.path.exists(links_stored_file):
+    if os.path.exists(shared_links_stored_file):
         url = ''
-        for link in open(links_stored_file):
+        for link in open(shared_links_stored_file, encoding='utf-8'):
             url = url + '|' + link.strip()
         parameters['url'] = url
         base_url = 'http://127.0.0.1:25500/sub?'
@@ -171,7 +188,7 @@ def get_profile_link(parameters, links_stored_file):
         print('Generating Sub_Converter link: "' + profile_link + '".')
         return profile_link
     else:
-        print('Profile get failed! No such file: "' + links_stored_file + '".')
+        print('Profile get failed! No such file: "' + shared_links_stored_file + '".')
         return ''
 
 
@@ -185,9 +202,9 @@ def get_profile(config_path):
     config = load_yaml_data(config_path)
     others_config = config['others']
     directories_config = others_config['directories']
-    links_store_dir = directories_config['links-store-dir']
-    profiles_store_dir = directories_config['profiles-store-dir']
-    temp_file_store_dir = directories_config['temp-file-store-dir']
+    shared_links_stored_dir = directories_config['shared-links-stored-dir']
+    profiles_stored_dir = directories_config['profiles-stored-dir']
+    temp_file_stored_dir = directories_config['temp-file-stored-dir']
     supported_shared_link_begin_with = others_config['supported-shared-link-begin-with']
     supported_subscribe_link_begin_with = others_config['supported-subscribe-link-begin-with']
     sub_converter_config = config['sub-converter']
@@ -201,9 +218,9 @@ def get_profile(config_path):
     for profile in config['profiles']:
         # 获取 Profile 信息。
         profile_name = profile['name']
-        links_file_path = links_store_dir + '/' + profile_name + '.txt'
-        profile_path = profiles_store_dir + '/' + profile_name + '.yml'
-        temp_file_path = temp_file_store_dir + '/' + profile_name + '.txt'
+        shared_links_stored_file_path = shared_links_stored_dir + '/' + profile_name + '.txt'
+        profile_path = profiles_stored_dir + '/' + profile_name + '.yml'
+        temp_file_path = temp_file_stored_dir + '/' + profile_name + '.txt'
 
         # 生成配置文件。
         print('Getting profile for ' + profile_name + '...')
@@ -219,15 +236,14 @@ def get_profile(config_path):
 
                     # 根据来源类型选择相应方法。
                     if source_type == 'pages':
-                        get_shared_links(source, links_file_path, supported_shared_link_begin_with)
+                        get_shared_links_from_pages(source, shared_links_stored_file_path, supported_shared_link_begin_with)
                     elif source_type == 'tg-channels':
                         if source != '':
-                            source = 'https://t.me/s/' + source
-                            get_shared_links(source, links_file_path, supported_shared_link_begin_with)
+                            get_shared_links_from_tg_channels(source, shared_links_stored_file_path, supported_shared_link_begin_with)
                         else:
                             print('Telegram channel is null!')
                     elif source_type == 'files':
-                        get_shared_links_from_files(source, temp_file_path, links_file_path,
+                        get_shared_links_from_files(source, temp_file_path, shared_links_stored_file_path,
                                                     supported_shared_link_begin_with)
                     else:
                         print('Don`t support the source type named "' + source_type + '" now!')
@@ -235,10 +251,10 @@ def get_profile(config_path):
             else:
                 print(source_type + ' in "' + profile_name + '" is NULL!')
 
-        remove_repetitive_links(links_file_path)
+        remove_repetitive_links(shared_links_stored_file_path)
 
         # 下载配置。
-        sub_converter_link = get_profile_link(sub_converter_config, links_file_path)
+        sub_converter_link = get_profile_link(sub_converter_config, shared_links_stored_file_path)
         if sub_converter_link != '':
             urlretrieve(sub_converter_link, profile_path)
             print('Profile "' + profile_name + '" update complete!')

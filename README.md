@@ -19,7 +19,7 @@ Clash 配置文件的有关设置。
 |  name   |     ——      |                    `'Profiles Name'`                    | 生成的配置文件的名称。                | ——               |
 | sources |      ↓      |                           ——                            | 配置文件的来源。                      | ——               |
 |   ——    |    pages    |                 `'/path/to/page.html'`                  | 来自网页。                            | ——               |
-|   ——    | tg-channels |                 `'TelegramChannelName'`                 | 来自电报频道。                        | 正在努力适配中…… |
+|   ——    | tg-channels |                 `'TelegramChannelName'`                 | 来自电报频道。                        | ——               |
 |   ——    |    files    |                    `'/path/to/file'`                    | 来自订阅。                            | 正在努力适配中…… |
 |   ——    | subscribes  | `- type: 'subscribe-type'` `link: '/path/to/subscribe'` | `type`：订阅类型。 `link`：订阅链接。 | 正在努力适配中…… |
 
@@ -62,14 +62,14 @@ Sub Converter 设置。详见 [Sub Converter 文档](https://github.com/tindy201
 
 `others`：
 
-|                参数                 |       子参数        |                           默认值                           | 解释                       | 备注         |
-| :---------------------------------: | :-----------------: | :--------------------------------------------------------: | :------------------------- | :----------- |
-|             directories             |          ↓          |                             ——                             | 关于文件夹的设置。         | ——           |
-|                 ——                  |   links-store-dir   |                        `'./links'`                         | 保存链接文件的文件夹位置。 | ——           |
-|                 ——                  | profiles-store-dir  |                      `'../Profiles'`                       | 保存配置文件的文件夹位置。 | ——           |
-|                 ——                  | temp-file-store-dir |                         `'./temp'`                         | 临时保存文件的文件夹位置。 | ——           |
-|  supported-shared-link-begin-with   |         ——          | `'ss://.*\|ssr://.*\|vmess://.*\|vless://.*\|trojan://.*'` | 受支持的分享链接的开头。   | 正则表达式。 |
-| supported-subscribe-link-begin-with |         ——          |                 `'http://.*\|https://.*'`                  | 受支持的订阅链接的开头。   | 正则表达式。 |
+|                参数                 |         子参数          |                           默认值                           | 解释                       | 备注         |
+| :---------------------------------: | :---------------------: | :--------------------------------------------------------: | :------------------------- | :----------- |
+|             directories             |            ↓            |                             ——                             | 关于文件夹的设置。         | ——           |
+|                 ——                  | shared-links-stored-dir |                        `'./links'`                         | 保存链接文件的文件夹位置。 | ——           |
+|                 ——                  |   profiles-stored-dir   |                      `'../Profiles'`                       | 保存配置文件的文件夹位置。 | ——           |
+|                 ——                  |  temp-file-stored-dir   |                         `'./temp'`                         | 临时保存文件的文件夹位置。 | ——           |
+|  supported-shared-link-begin-with   |           ——            | `'ss://.*\|ssr://.*\|vmess://.*\|vless://.*\|trojan://.*'` | 受支持的分享链接的开头。   | 正则表达式。 |
+| supported-subscribe-link-begin-with |           ——            |                 `'http://.*\|https://.*'`                  | 受支持的订阅链接的开头。   | 正则表达式。 |
 
 ### 配置示例
 
@@ -99,9 +99,9 @@ sub-converter:
 
 others:
   directories:
-    links-store-dir: "./links"
-    profiles-store-dir: "../Profiles"
-    temp-file-store-dir: "./temp"
+    shared-links-stored-dir: "./links"
+    profiles-stored-dir: "../Profiles"
+    temp-file-stored-dir: "./temp"
 
   supported-shared-link-begin-with: "ss://.*|ssr://.*|vmess://.*|vless://.*|trojan://.*"
   supported-subscribe-link-begin-with: "http://.*|https://*"
