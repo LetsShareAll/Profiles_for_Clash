@@ -16,7 +16,7 @@ jobs:
   # This workflow contains a single job called "update-profiles"
   update-profiles:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,9 +40,8 @@ jobs:
 
       - name: Add Commit
         run: |
-          Set-TimeZone -Id "China Standard Time"
-          $date = date +%Y/%m/%d_%R
-          $message = "Update: ``" + $date + "``."
+          china_date=$(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)
+          message="Update: \`${china_date}\`."
           git config --global user.email "<>"
           git config --global user.name "GitHub Actions Bot"
           git add .
