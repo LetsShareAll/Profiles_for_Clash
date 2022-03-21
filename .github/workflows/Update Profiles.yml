@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # this Action should follow steps to set up Python build environment
       - name: Install Python dependencies
@@ -45,7 +45,7 @@ jobs:
           git config --global user.email "<>"
           git config --global user.name "GitHub Actions Bot"
           git add .
-          git commit -m $message
+          git commit -m "${message}"
           git pull --rebase
 
       - name: Push Changes

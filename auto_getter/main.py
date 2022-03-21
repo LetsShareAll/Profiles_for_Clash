@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 import re
 import subprocess
@@ -284,9 +286,11 @@ def run_sub_converter():
     system_platform = sys.platform
     print('Your system platform is "' + system_platform + '".')
     if system_platform == 'linux':
-        process = subprocess.run(args='./subconverter/subconverter')
+        process = subprocess.run(args='./subconverter/linux32/subconverter')
     elif system_platform == 'win32':
-        process = subprocess.run(['powershell', './subconverter/subconverter.exe'])
+        process = subprocess.run(['powershell', './subconverter/win32/subconverter.exe'])
+    elif system_platform == 'darwin64':
+        process = subprocess.run(args='./subconverter/darwin64/GNUSparseFile.0/subconverter')
     else:
         print('The platform "' + system_platform + '"does not support now!')
 
