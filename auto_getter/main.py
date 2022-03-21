@@ -126,8 +126,11 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
     resp = request.urlopen(req)
     soup = BeautifulSoup(resp, 'html.parser')
     # 将 br 标签替换为 \n
-    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')).replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
-    get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file, shared_link_begin_with)
+    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')).replace('<br>', '\n').replace('<br/>',
+                                                                                                                '\n').replace(
+        '<br />', '\n')
+    get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file,
+                                  shared_link_begin_with)
 
 
 def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file, shared_link_begin_with):
@@ -236,10 +239,12 @@ def get_profile(config_path):
 
                     # 根据来源类型选择相应方法。
                     if source_type == 'pages':
-                        get_shared_links_from_pages(source, shared_links_stored_file_path, supported_shared_link_begin_with)
+                        get_shared_links_from_pages(source, shared_links_stored_file_path,
+                                                    supported_shared_link_begin_with)
                     elif source_type == 'tg-channels':
                         if source != '':
-                            get_shared_links_from_tg_channels(source, shared_links_stored_file_path, supported_shared_link_begin_with)
+                            get_shared_links_from_tg_channels(source, shared_links_stored_file_path,
+                                                              supported_shared_link_begin_with)
                         else:
                             print('Telegram channel is null!')
                     elif source_type == 'files':
@@ -276,7 +281,14 @@ def run_sub_converter():
 
     :return: 0。
     """
-    process = subprocess.run(['powershell', './subconverter/subconverter.exe'])
+    system_platform = sys.platform
+    print('Your system platform is "' + system_platform + '".')
+    if system_platform == 'linux':
+        process = subprocess.run(args='./subconverter/subconverter')
+    elif system_platform == 'win32':
+        process = subprocess.run(['powershell', './subconverter/subconverter.exe'])
+    else:
+        print('The platform "' + system_platform + '"does not support now!')
 
 
 def main():
