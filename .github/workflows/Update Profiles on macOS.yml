@@ -1,0 +1,41 @@
+name: Update Profiles on macOS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-profiles:
+    runs-on: macOS-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v3
+        with:
+          path: "auto_getter/requirements.txt"
+          update-pip: "true"
+          update-setuptools: "true"
+          update-wheel: "true"
+
+      - name: Run Py Scripts
+        run: |
+          cd auto_getter
+          chmod 755 ./subconverter/darwin64/subconverter
+          pip3 install beautifulsoup4
+          python3 main.py
+
+      - name: Add Commit
+        run: |
+          china_date=$(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)
+          message="Update: \`${china_date}\`."
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
+          git add .
+          git commit -m "${message}"
+          git pull --rebase
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN  }}
