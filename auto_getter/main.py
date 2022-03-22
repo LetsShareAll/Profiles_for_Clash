@@ -289,10 +289,10 @@ def run_sub_converter():
         process = subprocess.run(args='./subconverter/linux32/subconverter')
     elif system_platform == 'win32':
         process = subprocess.run(['powershell', './subconverter/win32/subconverter.exe'])
-    elif system_platform == 'darwin64':
+    elif system_platform == 'darwin':
         process = subprocess.run(args='./subconverter/darwin64/GNUSparseFile.0/subconverter')
     else:
-        print('The platform "' + system_platform + '"does not support now!')
+        print('The platform "' + system_platform + '" does not support now!')
 
 
 def main():
