@@ -1,4 +1,4 @@
-name: Update Profiles
+name: Update Profiles on Ubuntu
 
 # Controls when the workflow will run
 on:
@@ -23,6 +23,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+          architecture: x64
+
       # this Action should follow steps to set up Python build environment
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v3
@@ -35,6 +41,7 @@ jobs:
       - name: Run Py Scripts
         run: |
           cd auto_getter
+          chmod 755 ./subconverter/linux32/subconverter
           pip3 install beautifulsoup4
           python3 main.py
 
