@@ -27,7 +27,7 @@ jobs:
       - name: Run Py Scripts
         run: |
           cd auto_getter
-          chmod 755 ./subconverter/darwin64/subconverter
+          chmod 755 ./subconverter/darwin64/GNUSparseFile.0/subconverter
           pip3 install beautifulsoup4
           python3 main.py
 
