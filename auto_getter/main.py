@@ -54,6 +54,25 @@ def rm_yaml_tags(content, tags):
     return content
 
 
+def rm_proxies_with_ciphers(proxies, ciphers):
+    """移除含有特定加密方式的代理。
+
+    :param proxies: 列表：需处理的代理。
+    :param ciphers: 列表：需移除的加密方式。
+    :return: 列表：移除加密方式后的代理。
+    """
+    print('Removing proxies with "{ciphers}"...'.format(ciphers=ciphers))
+    for proxy in proxies:
+        index = proxies.index(proxy)
+        for cipher in ciphers:
+            if proxy['cipher'] == cipher:
+                print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
+                    index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                print('Now removing it...')
+                del proxies[index]
+    return proxies
+
+
 def rm_dir_files(directory):
     """删除文件夹内部所有文件。
 
@@ -304,6 +323,7 @@ def get_profile(config_path):
         # 对下载的配置文件进行操作。
         profile_data = load_yaml_data(profile, not_supported_yaml_tags)
         proxies = profile_data['proxies']
+        proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
         profile_data['proxies'] = proxies
         save_yaml_file(profile_data, profile)
 
