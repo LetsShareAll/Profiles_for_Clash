@@ -249,7 +249,8 @@ def get_shared_links_from_element(page, tag, tag_class, shared_links_store_file,
         link = tag.get_text().strip()
         print('Acquired link: "' + link + '".')
         save_links(shared_links_store_file, link)
-    print('The links from tag="' + tag + '" and class="' + tag_class + '" has been successfully got!')
+    print('The links from tag="{tag}" and class="{tag_class}" has been successfully got!'.format(tag=tag,
+                                                                                                 tag_class=tag_class))
 
 
 def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, shared_link_begin_with):
