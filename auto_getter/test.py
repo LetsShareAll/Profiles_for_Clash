@@ -220,7 +220,7 @@ def main():
     others_config = config['others']
     directories_config = others_config['directories']
     not_supported_yaml_tags = others_config['not-supported-yaml-tags']
-    profiles_stored_dir = directories_config['profiles-stored-dir']
+    profiles_stored_dir = './test'
     profile_path = profiles_stored_dir + '/test.yml'
     profile_config = config['profile']
     profile_clash_config = profile_config['clash']

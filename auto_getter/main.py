@@ -169,7 +169,7 @@ def rename_proxies(profile_data):
     for proxy in proxies:
         proxy_index = proxies.index(proxy)
         # 使用 http://ip-api.com 的 API 进行服务器信息查询。
-        print('Getting No.{index}: "{server}" information...'.format(index=index, server=proxy['server']))
+        print('Getting No.{index}: "{server}" information...'.format(index=proxy_index, server=proxy['server']))
         ip_api_link = 'http://ip-api.com/json/' + proxy['server']
         req = Request(url=ip_api_link)
         resp = urlopen(req)
@@ -197,6 +197,7 @@ def rename_proxies(profile_data):
             position = country + ' ' + city
         # position = translate(position, 'en', 'zh-cn')
         name = '{flag} {position} {index}'.format(flag=flag, position=position, index=proxy_index)
+        print(f'The server name is {name}.'.format(name=name))
         for proxy_group in proxy_groups:
             proxy_group_index = proxy_groups.index(proxy_group)
             for proxy_group_proxy in proxy_group['proxies']:
