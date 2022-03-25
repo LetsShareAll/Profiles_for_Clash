@@ -437,7 +437,7 @@ def get_profile(config_path):
         rm_dir_files(directories_config[directory])
 
     # 根据设置的 Profile 生成配置。
-    for profile in config['profiles-source']:
+    for profile in config['profiles-sources']:
         # 获取 Profile 信息。
         profile_name = profile['name']
         shared_links_stored_file_path = shared_links_stored_dir + '/' + profile_name + '.txt'
