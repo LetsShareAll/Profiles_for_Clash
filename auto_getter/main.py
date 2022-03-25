@@ -73,6 +73,29 @@ def rm_proxies_with_ciphers(proxies, ciphers):
     return proxies
 
 
+def rm_outdated_proxies(proxies):
+    """移除过时代理。
+
+    :param proxies: 列表：需处理的代理。
+    :return: 列表：移除过时代理后的代理。
+    """
+    proxies_servers = []
+    for proxy in proxies:
+        checking_index = proxies.index(proxy)
+        print('Checking No.{index}: "{server}:{port}"...'.format(index=checking_index + 1, server=proxy['server'],
+                                                                 port=proxy['port']))
+        for proxy_server in proxies_servers:
+            if determine_dict_in_another({'server': proxy['server'], 'port': proxy['port']}, proxy_server):
+                existed_index = proxy_server['checking_index']
+                print('Found a outdated proxy: No.{index}: "{server}:{port}".'.format(
+                    index=existed_index + 1, server=proxy['server'], port=proxy['port']))
+                print('Now replacing it with the latest one...')
+                proxies[existed_index] = proxies[checking_index]
+                del proxies[checking_index]
+        proxies_servers.append({'checking_index': checking_index, 'server': proxy['server'], 'port': proxy['port']})
+    return proxies
+
+
 def rm_dir_files(directory):
     """删除文件夹内部所有文件。
 
@@ -324,6 +347,7 @@ def get_profile(config_path):
         profile_data = load_yaml_data(profile, not_supported_yaml_tags)
         proxies = profile_data['proxies']
         proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
+        proxies = rm_outdated_proxies(proxies)
         profile_data['proxies'] = proxies
         save_yaml_file(profile_data, profile)
 
