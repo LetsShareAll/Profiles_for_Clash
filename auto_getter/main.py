@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import json
 import os
 import re
 import subprocess
@@ -9,6 +9,7 @@ from time import sleep
 from urllib.parse import urlencode
 from urllib.request import urlretrieve, Request, urlopen
 
+import emoji
 import yaml
 from bs4 import BeautifulSoup
 
@@ -52,6 +53,18 @@ def rm_yaml_tags(content, tags):
         print('Removing tag "' + tag + '"...')
         content = content.replace('!<' + tag + '>', '')
     return content
+
+
+def determine_dict_in_another(dict_included, dict_including):
+    """判断一部字典是否包含另一部字典。
+
+    :param dict_included: 字典：被包含的字典。
+    :param dict_including: 字典：包含另一部字典的字典。
+    :return: 布尔：是否包含字典。
+    """
+    dict_a_set = set(dict_included.items())
+    dict_b_set = set(dict_including.items())
+    return dict_a_set.issubset(dict_b_set)
 
 
 def rm_proxies_with_ciphers(proxies, ciphers):
@@ -126,6 +139,18 @@ def rename_proxies(proxies):
         proxies[index]['name'] = name
         sleep(3)
     return proxies
+
+
+def sort_dict_list(dict_list, dict_keys):
+    """对字典列表进行排序。
+
+    :param dict_list: 列表：要排序的字典列表。
+    :param dict_keys: 列表：排序依据的字典关键字。
+    :return: 列表：排序后的字典列表。
+    """
+    for dict_key in dict_keys:
+        dict_list = sorted(dict_list, key=lambda value: (value.__getitem__(dict_key)))
+    return dict_list
 
 
 def rm_dir_files(directory):
@@ -381,6 +406,7 @@ def get_profile(config_path):
         proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
         proxies = rm_outdated_proxies(proxies)
         proxies = rename_proxies(proxies)
+        proxies = sort_dict_list(proxies, ['name'])
         profile_data['proxies'] = proxies
         save_yaml_file(profile_data, profile)
 
