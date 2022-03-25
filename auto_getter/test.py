@@ -166,18 +166,18 @@ def main():
     directories_config = others_config['directories']
     not_supported_yaml_tags = others_config['not-supported-yaml-tags']
     profiles_stored_dir = directories_config['profiles-stored-dir']
-    profile = profiles_stored_dir + '/Public from FQD.yml'
+    profile_path = profiles_stored_dir + '/Public from FQD.yml'
     profile_config = config['profile']
     profile_clash_config = profile_config['clash']
     clash_not_supported_ciphers = profile_clash_config['not-supported-ciphers']
-    profile_data = load_yaml_data(profile, not_supported_yaml_tags)
+    profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
     proxies = profile_data['proxies']
     proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
     proxies = rm_outdated_proxies(proxies)
     proxies = rename_proxies(proxies)
     proxies = sort_dict_list(proxies, ['name'])
     profile_data['proxies'] = proxies
-    save_yaml_file(profile_data, profile)
+    save_yaml_file(profile_data, profile_path)
 
 
 if __name__ == '__main__':
