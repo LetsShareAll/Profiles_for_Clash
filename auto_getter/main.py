@@ -12,6 +12,7 @@ from urllib.request import urlretrieve, Request, urlopen
 import emoji
 import yaml
 from bs4 import BeautifulSoup
+from googletrans import Translator
 
 config_file = 'config.yml'
 
@@ -40,6 +41,19 @@ def save_yaml_file(dict_content, yaml_file_path):
     yaml_file = open(yaml_file_path, 'w')
     yaml_file.write(yaml.dump(dict_content))
     yaml_file.close()
+
+
+def translate(content, src_lang, dest_lang):
+    """翻译文本。
+
+    :param content: 字符串：要翻译的文本。
+    :param src_lang: 字符串：源语言类型。
+    :param dest_lang: 字符串：目标语言类型。
+    :return: 字符串：翻译后的文本。
+    """
+    translator = Translator(service_urls=['translate.google.com', 'translate.google.cn'])
+    trans = translator.translate(text=content, src=src_lang, dest=dest_lang)
+    return trans.text
 
 
 def rm_yaml_tags(content, tags):
@@ -125,6 +139,7 @@ def rename_proxies(proxies):
     for proxy in proxies:
         index = proxies.index(proxy)
         # 使用 http://ip-api.com 的 API 进行 IP 信息查询。
+        print('Getting "{server}" information...'.format(server=proxy['server']))
         ip_api_link = 'http://ip-api.com/json/' + proxy['server']
         resp = urlopen(ip_api_link)
         resp_data = resp.read()
@@ -141,6 +156,7 @@ def rename_proxies(proxies):
         flag = emoji.emojize(':' + country + ':')
         position = country + ' ' + city
         # position = translate(position, 'en', 'zh-cn')
+        print(f'The server is in {position}.'.format(position=position))
         name = '{flag} {position} {index}'.format(flag=flag, position=position, index=index)
         proxies[index]['name'] = name
         sleep(3)
