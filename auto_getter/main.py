@@ -96,6 +96,38 @@ def rm_outdated_proxies(proxies):
     return proxies
 
 
+def rename_proxies(proxies):
+    """对代理进行重命名。
+
+    :param proxies: 列表：需处理的代理。
+    :return: 列表：重命名后的代理。
+    """
+    print('Renaming proxies...')
+    for proxy in proxies:
+        index = proxies.index(proxy)
+        # 使用 http://ip-api.com 的 API 进行 IP 信息查询。
+        ip_api_link = 'http://ip-api.com/json/' + proxy['server']
+        resp = urlopen(ip_api_link)
+        resp_data = resp.read()
+        encoding = resp.info().get_content_charset('utf-8')
+        ip_info = json.loads(resp_data.decode(encoding))
+        # 此时可判断域名是否存在。
+        if 'country' not in ip_info:
+            print('No such server: "{server}.'.format(server=proxy['server']))
+            print('Now removing it...')
+            del proxies[index]
+            continue
+        country = ip_info.get('country')
+        city = ip_info.get('city')
+        flag = emoji.emojize(':' + country + ':')
+        position = country + ' ' + city
+        # position = translate(position, 'en', 'zh-cn')
+        name = '{flag} {position} {index}'.format(flag=flag, position=position, index=index)
+        proxies[index]['name'] = name
+        sleep(3)
+    return proxies
+
+
 def rm_dir_files(directory):
     """删除文件夹内部所有文件。
 
@@ -348,6 +380,7 @@ def get_profile(config_path):
         proxies = profile_data['proxies']
         proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
         proxies = rm_outdated_proxies(proxies)
+        proxies = rename_proxies(proxies)
         profile_data['proxies'] = proxies
         save_yaml_file(profile_data, profile)
 
