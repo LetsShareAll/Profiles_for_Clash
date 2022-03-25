@@ -118,12 +118,16 @@ def rm_proxies_with_ciphers(proxies, ciphers):
     print('Removing proxies with "{ciphers}"...'.format(ciphers=ciphers))
     for proxy in proxies:
         index = proxies.index(proxy)
-        for cipher in ciphers:
-            if proxy['cipher'] == cipher:
-                print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
-                    index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
-                print('Now removing it...')
-                del proxies[index]
+        if 'cipher' in proxy:
+            for cipher in ciphers:
+                if proxy['cipher'] == cipher:
+                    print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
+                        index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                    print('Now removing it...')
+                    del proxies[index]
+        else:
+            print('The proxy "No.{index}: {server}:{port}" has no cipher: "{cipher}".'.format(
+                        index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
     return proxies
 
 

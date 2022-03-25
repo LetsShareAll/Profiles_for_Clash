@@ -77,12 +77,16 @@ def rm_proxies_with_ciphers(proxies, ciphers):
     print('Removing proxies with "{ciphers}"...'.format(ciphers=ciphers))
     for proxy in proxies:
         index = proxies.index(proxy)
-        for cipher in ciphers:
-            if proxy['cipher'] == cipher:
-                print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
-                    index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
-                print('Now removing it...')
-                del proxies[index]
+        if 'cipher' in proxy:
+            for cipher in ciphers:
+                if proxy['cipher'] == cipher:
+                    print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
+                        index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                    print('Now removing it...')
+                    del proxies[index]
+        else:
+            print('The proxy "No.{index}: {server}:{port}" has no cipher: "{cipher}".'.format(
+                        index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
     return proxies
 
 
@@ -396,19 +400,19 @@ def get_profile(config_path):
         sub_converter_link = get_profile_link(sub_converter_config, shared_links_stored_file_path)
         if sub_converter_link != '':
             urlretrieve(sub_converter_link, profile_path)
+            print('Profile "' + profile_name + '" download complete!')
+            # 对下载的配置文件进行操作。
+            profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
+            proxies = profile_data['proxies']
+            proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
+            proxies = rm_outdated_proxies(proxies)
+            proxies = rename_proxies(proxies)
+            proxies = sort_dict_list(proxies, ['name'])
+            profile_data['proxies'] = proxies
+            save_yaml_file(profile_data, profile_path)
+            print('Profile "' + profile_name + '" update complete!')
         else:
             print('Profile "' + profile_name + '" update failed!')
-
-        # 对下载的配置文件进行操作。
-        profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
-        proxies = profile_data['proxies']
-        proxies = rm_proxies_with_ciphers(proxies, clash_not_supported_ciphers)
-        proxies = rm_outdated_proxies(proxies)
-        proxies = rename_proxies(proxies)
-        proxies = sort_dict_list(proxies, ['name'])
-        profile_data['proxies'] = proxies
-        save_yaml_file(profile_data, profile_path)
-        print('Profile "' + profile_name + '" update complete!')
 
 
 def run_get_profile():
