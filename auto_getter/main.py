@@ -4,11 +4,10 @@ import os
 import re
 import subprocess
 import sys
-import time
 from threading import Thread
-from urllib import request
+from time import sleep
 from urllib.parse import urlencode
-from urllib.request import urlretrieve
+from urllib.request import urlretrieve, Request, urlopen
 
 import yaml
 from bs4 import BeautifulSoup
@@ -16,16 +15,43 @@ from bs4 import BeautifulSoup
 config_file = 'config.yml'
 
 
-def load_yaml_data(yaml_file):
+def load_yaml_data(yaml_file, not_supported_tags):
     """读取 YAML 类型文件数据。
 
     :param yaml_file: 字符串：YAML 文件路径。
+    :param not_supported_tags: 列表：不受支持的 YAML 标签。
     :return: 字典：YAML 文件数据。
     """
     with open(yaml_file, 'r', encoding='utf-8') as data_file:
         content = data_file.read()
+    content = rm_yaml_tags(content, not_supported_tags)
     yaml_data = yaml.load(content, Loader=yaml.FullLoader)
     return yaml_data
+
+
+def save_yaml_file(dict_content, yaml_file_path):
+    """保存字典至 YAML 文件
+
+    :param dict_content: 字典：要保存的字典内容。
+    :param yaml_file_path: 字符串：要保存的文件。
+    :return: 0。
+    """
+    yaml_file = open(yaml_file_path, 'w')
+    yaml_file.write(yaml.dump(dict_content))
+    yaml_file.close()
+
+
+def rm_yaml_tags(content, tags):
+    """移除 YAML 标签。
+
+    :param content: 字符串：YAML 文件内容。
+    :param tags: 列表：YAML 标签。
+    :return: 字符串：处理后的 YAML 文件内容。
+    """
+    for tag in tags:
+        print('Removing tag "' + tag + '"...')
+        content = content.replace('!<' + tag + '>', '')
+    return content
 
 
 def rm_dir_files(directory):
@@ -124,13 +150,12 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
     """
     tg_channel_pre_page = 'https://t.me/s/' + tg_channel_name
     headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
-    req = request.Request(tg_channel_pre_page, headers=headers)
-    resp = request.urlopen(req)
+    req = Request(tg_channel_pre_page, headers=headers)
+    resp = urlopen(req)
     soup = BeautifulSoup(resp, 'html.parser')
     # 将 br 标签替换为 \n
-    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')).replace('<br>', '\n').replace('<br/>',
-                                                                                                                '\n').replace(
-        '<br />', '\n')
+    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')
+                           ).replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
     get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file,
                                   shared_link_begin_with)
 
@@ -169,8 +194,8 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
     print('Getting links from "' + source + '"...')
     if source != '':
         headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
-        req = request.Request(source, headers=headers)
-        resp = request.urlopen(req)
+        req = Request(source, headers=headers)
+        resp = urlopen(req)
         get_shared_links_from_element(resp, 'p', '', shared_links_store_file, shared_link_begin_with)
     else:
         print('Source is null!')
@@ -204,7 +229,9 @@ def get_profile(config_path):
     :return: 0。
     """
     # 读取配置数据。
-    config = load_yaml_data(config_path)
+    config_path = './' + config_file
+    config = load_yaml_data(config_path, [])
+    # 读取其他设置。
     others_config = config['others']
     directories_config = others_config['directories']
     shared_links_stored_dir = directories_config['shared-links-stored-dir']
@@ -212,7 +239,13 @@ def get_profile(config_path):
     temp_file_stored_dir = directories_config['temp-file-stored-dir']
     supported_shared_link_begin_with = others_config['supported-shared-link-begin-with']
     supported_subscribe_link_begin_with = others_config['supported-subscribe-link-begin-with']
+    not_supported_yaml_tags = others_config['not-supported-yaml-tags']
+    # 获取 Sub Converter 设置。
     sub_converter_config = config['sub-converter']
+    # 获取配置文件设置。
+    profile_config = config['profile']
+    profile_clash_config = profile_config['clash']
+    clash_not_supported_ciphers = profile_clash_config['not-supported-ciphers']
 
     # 创建文件夹并删除过时链接文件。
     for directory in directories_config:
@@ -220,7 +253,7 @@ def get_profile(config_path):
         rm_dir_files(directories_config[directory])
 
     # 根据设置的 Profile 生成配置。
-    for profile in config['profiles']:
+    for profile in config['profiles-source']:
         # 获取 Profile 信息。
         profile_name = profile['name']
         shared_links_stored_file_path = shared_links_stored_dir + '/' + profile_name + '.txt'
@@ -254,7 +287,7 @@ def get_profile(config_path):
                                                     supported_shared_link_begin_with)
                     else:
                         print('Don`t support the source type named "' + source_type + '" now!')
-                    time.sleep(3)
+                    sleep(3)
             else:
                 print(source_type + ' in "' + profile_name + '" is NULL!')
 
@@ -267,6 +300,12 @@ def get_profile(config_path):
             print('Profile "' + profile_name + '" update complete!')
         else:
             print('Profile "' + profile_name + '" update failed!')
+
+        # 对下载的配置文件进行操作。
+        profile_data = load_yaml_data(profile, not_supported_yaml_tags)
+        proxies = profile_data['proxies']
+        profile_data['proxies'] = proxies
+        save_yaml_file(profile_data, profile)
 
 
 def run_get_profile():
