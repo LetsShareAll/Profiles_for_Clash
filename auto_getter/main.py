@@ -138,10 +138,11 @@ def rename_proxies(proxies):
     print('Renaming proxies...')
     for proxy in proxies:
         index = proxies.index(proxy)
-        # 使用 http://ip-api.com 的 API 进行 IP 信息查询。
-        print('Getting "{server}" information...'.format(server=proxy['server']))
+        # 使用 http://ip-api.com 的 API 进行服务器信息查询。
+        print('Getting No.{index}: "{server}" information...'.format(index=index, server=proxy['server']))
         ip_api_link = 'http://ip-api.com/json/' + proxy['server']
-        resp = urlopen(ip_api_link)
+        req = Request(url=ip_api_link)
+        resp = urlopen(req)
         resp_data = resp.read()
         encoding = resp.info().get_content_charset('utf-8')
         ip_info = json.loads(resp_data.decode(encoding))
@@ -151,15 +152,25 @@ def rename_proxies(proxies):
             print('Now removing it...')
             del proxies[index]
             continue
+        # 根据获取的信息更改代理名。
         country = ip_info.get('country')
         city = ip_info.get('city')
         flag = emoji.emojize(':' + country + ':')
-        position = country + ' ' + city
+        if city == 'Hong Kong' or city == 'Taiwan' or city == 'Macao':
+            country = 'China'
+            flag = emoji.emojize(':' + country + ': :' + city + ':')
+        if country == city:
+            position = country
+        else:
+            position = country + ' ' + city
         # position = translate(position, 'en', 'zh-cn')
-        print(f'The server is in {position}.'.format(position=position))
         name = '{flag} {position} {index}'.format(flag=flag, position=position, index=index)
+        print(f'The server name is {name}.'.format(name=name))
         proxies[index]['name'] = name
         sleep(3)
+        if index % 3 == 0:
+            print('Sleeping for 5 seconds...')
+            sleep(5)
     print('Proxies has been successfully renamed!')
     return proxies
 
