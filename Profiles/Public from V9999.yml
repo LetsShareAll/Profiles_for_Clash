@@ -9,13 +9,15 @@ proxies:
   - {name: 🇺🇲 洛杉矶SSR+TLS+Caddy, server: lg3.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
   - {name: 🇺🇲 https://git.io/v9999 洛杉矶SS, server: 23.19.10.134, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
   - {name: 🇺🇲 https://git.io/v9999 洛杉矶2SS, server: 85.209.158.75, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶, server: 45.63.62.49, port: 52795, type: vmess, uuid: 2813c98c-a8ff-11ec-a169-560003ea3b3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /xEWiUseL/, ws-headers: {Host: 45.63.62.49}, udp: true}
-  - {name: https://github.com/Alvin9999/new-pac/wiki g_中转, server: sh1.uuv2.co.uk, port: 31606, type: vmess, uuid: 13459746-1553-417f-8e17-bb11ed00aeee, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: krz2.futi.online}, udp: true}
-  - {name: 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国, server: kr3.uuv2.co.uk, port: 2053, type: vmess, uuid: bef4871a-a3ed-4cca-831f-88382c4382fa, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr3.futi.online}, udp: true}
-  - {name: 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21, server: jgwdj1.gaox.ml, port: 443, type: trojan, password: e8553fc5-f3a0-409c-ac06-1cd93b026cf4, sni: jgwdj1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶, server: 149.248.18.17, port: 3626, type: vmess, uuid: 999e1b2c-aa47-11ec-8a2c-560003ead5bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /NhxEVTjO/, ws-headers: {Host: 149.248.18.17}, udp: true}
+  - {name: 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国, server: kr2.futi.online, port: 2053, type: vmess, uuid: ecbaf58d-df4b-4a24-b155-556f5c917517, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}, udp: true}
+  - {name: 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港, server: hk8.peakerselling.com, port: 443, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloman, ws-headers: {Host: hk8.peakerselling.com}, udp: true}
+  - {name: 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国, server: blog.homeos.ml, port: 3306, type: vmess, uuid: b35d627c-822d-4c04-d366-c2051811b622, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: blog.homeos.ml}, udp: true}
+  - {name: https://github.com/Alvin9999/new-pac/wiki g_CDN, server: djbccok.tk, port: 443, type: vmess, uuid: 09026629-dc08-4f64-82da-c91399baa883, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: djbccok.tk}, udp: true}
   - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -27,12 +29,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -43,12 +47,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -60,12 +66,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -89,16 +97,19 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -110,12 +121,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: 📲 电报信息
     type: select
     proxies:
@@ -126,12 +139,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -143,12 +158,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -169,12 +186,14 @@ proxy-groups:
       - 🇺🇲 https://git.io/v9999 洛杉矶SS
       - 🇺🇲 https://git.io/v9999 洛杉矶2SS
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_洛杉矶
-      - https://github.com/Alvin9999/new-pac/wiki g_中转
-      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_韩国
-      - 🇯🇵 https://github.com/Alvin9999/new-pac/wiki g_日本_21
+      - 🇰🇷 https://github.com/Alvin9999/new-pac/wiki g_KR_韩国
+      - 🇭🇰 https://github.com/Alvin9999/new-pac/wiki g_HK_香港
+      - 🇩🇪 https://github.com/Alvin9999/new-pac/wiki g_DE_德国
+      - https://github.com/Alvin9999/new-pac/wiki g_CDN
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_25
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国_11
       - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国
+      - 🇺🇲 https://github.com/Alvin9999/new-pac/wiki g_美国 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
