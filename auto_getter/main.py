@@ -62,9 +62,9 @@ def determine_dict_in_another(dict_included, dict_including):
     :param dict_including: 字典：包含另一部字典的字典。
     :return: 布尔：是否包含字典。
     """
-    dict_a_set = set(dict_included.items())
-    dict_b_set = set(dict_including.items())
-    return dict_a_set.issubset(dict_b_set)
+    dict_included_set = set(dict_included.items())
+    dict_including_set = set(dict_including.items())
+    return dict_included_set.issubset(dict_including_set)
 
 
 def rm_proxies_with_ciphers(proxies, ciphers):
@@ -86,7 +86,7 @@ def rm_proxies_with_ciphers(proxies, ciphers):
                     del proxies[index]
         else:
             print('The proxy "No.{index}: {server}:{port}" has no cipher: "{cipher}".'.format(
-                        index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                index=index, server=proxy['server'], port=proxy['port'], cipher=cipher))
     return proxies
 
 
@@ -96,6 +96,7 @@ def rm_outdated_proxies(proxies):
     :param proxies: 列表：需处理的代理。
     :return: 列表：移除过时代理后的代理。
     """
+    print('Removing outdated proxies...')
     proxies_servers = []
     for proxy in proxies:
         checking_index = proxies.index(proxy)
@@ -110,6 +111,7 @@ def rm_outdated_proxies(proxies):
                 proxies[existed_index] = proxies[checking_index]
                 del proxies[checking_index]
         proxies_servers.append({'checking_index': checking_index, 'server': proxy['server'], 'port': proxy['port']})
+    print('Outdated proxies has been successfully removed!')
     return proxies
 
 
@@ -142,6 +144,7 @@ def rename_proxies(proxies):
         name = '{flag} {position} {index}'.format(flag=flag, position=position, index=index)
         proxies[index]['name'] = name
         sleep(3)
+    print('Proxies has been successfully renamed!')
     return proxies
 
 
@@ -152,8 +155,10 @@ def sort_dict_list(dict_list, dict_keys):
     :param dict_keys: 列表：排序依据的字典关键字。
     :return: 列表：排序后的字典列表。
     """
+    print('Sorting dictionary...')
     for dict_key in dict_keys:
         dict_list = sorted(dict_list, key=lambda value: (value.__getitem__(dict_key)))
+    print('Dictionary has been successfully sorted!')
     return dict_list
 
 
@@ -172,6 +177,7 @@ def rm_dir_files(directory):
             for name in dirs:
                 print('Removing directory ' + name + '...')
                 os.rmdir(os.path.join(root, name))
+        print('The directory: "' + directory + '" has been successfully removed!')
     else:
         print('The directory "' + directory + '" dos not exits!')
 
@@ -202,6 +208,7 @@ def save_links(file, link):
     with open(file, 'a', encoding='utf-8') as file:
         file.write(link + '\n')
         file.close()
+    print('The link has been successfully saved!')
 
 
 def remove_repetitive_links(shared_links_stored_file):
@@ -221,6 +228,7 @@ def remove_repetitive_links(shared_links_stored_file):
         with open(shared_links_stored_file, 'w', encoding='utf-8') as links_file:
             links_file.writelines(links)
             links_file.close()
+        print('The repetitive links has been successfully removed!')
     else:
         print('Removing repetitive links failed! No such file: "' + shared_links_stored_file + '".')
 
@@ -241,6 +249,7 @@ def get_shared_links_from_element(page, tag, tag_class, shared_links_store_file,
         link = tag.get_text().strip()
         print('Acquired link: "' + link + '".')
         save_links(shared_links_store_file, link)
+    print('The links from tag="' + tag + '" and class="' + tag_class + '" has been successfully got!')
 
 
 def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, shared_link_begin_with):
@@ -251,6 +260,7 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
     :param shared_link_begin_with: 字符串：分享链接的开头。
     :return: 0。
     """
+    print('Getting links from telegram channel: "' + tg_channel_name + '"...')
     tg_channel_pre_page = 'https://t.me/s/' + tg_channel_name
     headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
     req = Request(tg_channel_pre_page, headers=headers)
@@ -261,6 +271,7 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
                            ).replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
     get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file,
                                   shared_link_begin_with)
+    print('The links from telegram channel: "' + tg_channel_name + '" has been successfully got!')
 
 
 def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file, shared_link_begin_with):
@@ -282,6 +293,7 @@ def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file,
                     link = link_list[0]
                     print('Acquired link: "' + link + '".')
                     save_links(shared_links_store_file, link)
+        print('The links from "' + remote_file + '" has been successfully got!')
     else:
         print('Remote file is null!')
 
@@ -300,6 +312,7 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
         req = Request(source, headers=headers)
         resp = urlopen(req)
         get_shared_links_from_element(resp, 'p', '', shared_links_store_file, shared_link_begin_with)
+        print('The links from "' + source + '" has been successfully got!')
     else:
         print('Source is null!')
 
