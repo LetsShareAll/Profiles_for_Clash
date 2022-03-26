@@ -19,6 +19,17 @@
 
 #### 本地执行
 
+##### 下载发布的版本后执行
+
+1. 前往 `Release` 页面。
+2. 下载 `Profile for Clash Auto Getter.zip`。
+3. 解压 `Profile for Clash Auto Getter.zip`。
+4. 根据系统双击 `run` 脚本运行。
+   - **Linux** or **macOS**：运行 `run.sh`。
+   - **Windows**：运行 `run.ps1`。
+
+##### 克隆本项目后执行
+
 1. 克隆本项目。
 
    ```sh
