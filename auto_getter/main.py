@@ -91,24 +91,30 @@ def rm_proxies_with_ciphers(profile_data, ciphers):
     print('Removing proxies with "{ciphers}"...'.format(ciphers=ciphers))
     proxies = profile_data['proxies']
     proxy_groups = profile_data['proxy-groups']
-    for proxy in proxies:
-        proxy_index = proxies.index(proxy)
+    proxy_index = 0
+    while proxy_index < len(proxies):
+        proxy = proxies[proxy_index]
         if 'cipher' in proxy:
             for cipher in ciphers:
                 if proxy['cipher'] == cipher:
-                    print('Found a proxy "No.{index}: {server}:{port}" has cipher: "{cipher}".'.format(
-                        index=proxy_index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                    print('Found a proxy "No.{index}: {server}:{port}" named "{name}" has cipher: "{cipher}".'.format(
+                        index=proxy_index + 1, server=proxy['server'], port=proxy['port'], name=proxy['name'],
+                        cipher=cipher))
                     print('Now removing it...')
                     proxy_groups = rm_proxy_groups_proxies(proxy_groups, proxy['name'])
-                    profile_data['proxy-groups'] = proxy_groups
                     del proxies[proxy_index]
-                    profile_data['proxies'] = proxies
+                    # 删除列表中元素后，下一元素序号会减一，因此为了不会跳过这一元素，遍历序号也应减一。
+                    proxy_index -= 1
                 else:
-                    print('The proxy "No.{index}: {server}:{port}" has no cipher: "{cipher}".'.format(
-                        index=proxy_index, server=proxy['server'], port=proxy['port'], cipher=cipher))
+                    print('The proxy "No.{index}: {server}:{port}" named "{name}" has no cipher: "{cipher}".'.format(
+                        index=proxy_index + 1, server=proxy['server'], port=proxy['port'], name=proxy['name'],
+                        cipher=cipher))
         else:
-            print('The proxy "No.{index}: {server}:{port}" has no param cipher.'.format(
-                    index=proxy_index, server=proxy['server'], port=proxy['port']))
+            print('The proxy "No.{index}: {server}:{port}" named "{name}" has no param cipher.'.format(
+                index=proxy_index + 1, server=proxy['server'], name=proxy['name'], port=proxy['port']))
+        proxy_index += 1
+    profile_data['proxy-groups'] = proxy_groups
+    profile_data['proxies'] = proxies
     return profile_data
 
 
@@ -138,8 +144,9 @@ def rm_outdated_proxies(profile_data):
     proxies = profile_data['proxies']
     proxy_groups = profile_data['proxy-groups']
     proxies_servers = []
-    for proxy in proxies:
-        checking_index = proxies.index(proxy)
+    checking_index = 0
+    while checking_index < len(proxies):
+        proxy = proxies[checking_index]
         print('Checking No.{index}: "{server}:{port}"...'.format(index=checking_index + 1, server=proxy['server'],
                                                                  port=proxy['port']))
         for proxy_server in proxies_servers:
@@ -152,7 +159,10 @@ def rm_outdated_proxies(profile_data):
                 profile_data['proxy-groups'] = proxy_groups
                 del proxies[existed_index]
                 profile_data['proxies'] = proxies
+                # 删除列表中元素后，下一元素序号会减一，因此为了不会跳过这一元素，遍历序号也应减一。
+                checking_index -= 1
         proxies_servers.append({'checking_index': checking_index, 'server': proxy['server'], 'port': proxy['port']})
+        checking_index += 1
     print('Outdated proxies has been successfully removed!')
     return profile_data
 
@@ -166,8 +176,9 @@ def rename_proxies(profile_data):
     print('Renaming proxies...')
     proxies = profile_data['proxies']
     proxy_groups = profile_data['proxy-groups']
-    for proxy in proxies:
-        proxy_index = proxies.index(proxy)
+    proxy_index = 0
+    while proxy_index < len(proxies):
+        proxy = proxies[proxy_index]
         # 使用 http://ip-api.com 的 API 进行服务器信息查询。
         print('Getting No.{index}: "{server}" information...'.format(index=proxy_index, server=proxy['server']))
         ip_api_link = 'http://ip-api.com/json/' + proxy['server']
@@ -182,6 +193,8 @@ def rename_proxies(profile_data):
             print('Now removing it...')
             proxy_groups = rm_proxy_groups_proxies(proxy_groups, proxies[proxy_index]['name'])
             del proxies[proxy_index]
+            # 删除列表中元素后，下一元素序号会减一，因此为了不会跳过这一元素，遍历序号也应减一。
+            proxy_index -= 1
             continue
         # 根据获取的信息更改代理名。
         country = ip_info.get('country')
@@ -196,9 +209,10 @@ def rename_proxies(profile_data):
         else:
             position = country + ' ' + city
         # position = translate(position, 'en', 'zh-cn')
-        # name = '{flag} {position} {index}'.format(flag=flag, position=position, index=proxy_index)
-        name = '{position} {index}'.format(position=position, index=proxy_index)
+        # name = '{flag} {position} {index:0>3}'.format(flag=flag, position=position, index=proxy_index)
+        name = '{position} {index:0>3}'.format(position=position, index=proxy_index)
         print(f'The server name is {name}.'.format(name=name))
+        # 代理组中的代理名同步重命名。
         for proxy_group in proxy_groups:
             proxy_group_index = proxy_groups.index(proxy_group)
             for proxy_group_proxy in proxy_group['proxies']:
@@ -212,6 +226,7 @@ def rename_proxies(profile_data):
         if proxy_index % 3 == 0:
             print('Sleeping for 5 seconds...')
             sleep(5)
+        proxy_index += 1
     print('Proxies has been successfully renamed!')
     return profile_data
 
