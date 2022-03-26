@@ -196,7 +196,8 @@ def rename_proxies(profile_data):
         else:
             position = country + ' ' + city
         # position = translate(position, 'en', 'zh-cn')
-        name = '{flag} {position} {index}'.format(flag=flag, position=position, index=proxy_index)
+        # name = '{flag} {position} {index}'.format(flag=flag, position=position, index=proxy_index)
+        name = '{position} {index}'.format(position=position, index=proxy_index)
         print(f'The server name is {name}.'.format(name=name))
         for proxy_group in proxy_groups:
             proxy_group_index = proxy_groups.index(proxy_group)
