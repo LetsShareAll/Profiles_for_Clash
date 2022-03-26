@@ -4,37 +4,35 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: ':South Korea: South Korea Seoul 5'
+  name: Canada Montreal 006
   network: ws
-  port: 2053
-  server: kr2.futi.online
+  port: 443
+  server: msk.ncugo.cf
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: ecbaf58d-df4b-4a24-b155-556f5c917517
+  uuid: bd6b71e2-74ad-484a-ef0b-9dbccf23311c
   ws-headers:
-    Host: kr2.futi.online
+    Host: msk.ncugo.cf
   ws-path: /
-- name: ':United States: United States Fremont 10'
-  password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d
+- alterId: 1
+  cipher: auto
+  name: Canada Toronto 005
+  network: ws
   port: 443
-  server: us2.tcpbbr.net
+  server: v2fly.sab.quest
   skip-cert-verify: true
-  sni: us2.tcpbbr.net
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
-- name: ':United States: United States Fremont 9'
-  password: 283695dc-fcc8-11ea-8684-f23c913c8d2b
-  port: 443
-  server: us2.tcpbbr.net
-  skip-cert-verify: true
-  sni: us2.tcpbbr.net
-  type: trojan
-  udp: true
-- name: ':United States: United States Hillsboro 11'
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-headers:
+    Host: v2fly.samrt.website
+  ws-path: /chaug
+- name: United States Hillsboro 007
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   port: 443
   server: tj-us02.yiyodns.xyz
@@ -43,7 +41,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: dummy
-  name: ':United States: United States Los Angeles 0'
+  name: United States Los Angeles 000
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -54,7 +52,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: dummy
-  name: ':United States: United States Los Angeles 1'
+  name: United States Los Angeles 001
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -65,14 +63,14 @@ proxies:
   type: ssr
   udp: true
 - cipher: aes-256-gcm
-  name: ':United States: United States Los Angeles 2'
+  name: United States Los Angeles 002
   password: dongtaiwang.com
   port: 23456
   server: 23.19.10.134
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: ':United States: United States Los Angeles 3'
+  name: United States Los Angeles 003
   password: dongtaiwang.com
   port: 23456
   server: 85.209.158.75
@@ -80,110 +78,56 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: ':United States: United States Los Angeles 4'
+  name: United States Los Angeles 004
   network: ws
-  port: 3626
-  server: 149.248.18.17
+  port: 45033
+  server: 149.28.65.108
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 999e1b2c-aa47-11ec-8a2c-560003ead5bb
+  uuid: dd46e7be-aca4-11ec-bca4-560003ebee90
   ws-headers:
-    Host: 149.248.18.17
-  ws-path: /NhxEVTjO/
-- alterId: 0
-  cipher: auto
-  name: ':United States: United States New York 8'
-  network: ws
-  port: 443
-  server: djbccok.tk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 09026629-dc08-4f64-82da-c91399baa883
-  ws-headers:
-    Host: djbccok.tk
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  network: ws
-  port: 443
-  server: hk8.peakerselling.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb
-  ws-headers:
-    Host: hk8.peakerselling.com
-  ws-path: /helloman
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
-  network: ws
-  port: 3306
-  server: blog.homeos.ml
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b35d627c-822d-4c04-d366-c2051811b622
-  ws-headers:
-    Host: blog.homeos.ml
-  ws-path: /
+    Host: 149.28.65.108
+  ws-path: /PZbS7ohI/
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -201,77 +145,60 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F30F \u56FD\u5185\u5A92\u4F53"
   proxies:
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -286,19 +213,15 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - ':South Korea: South Korea Seoul 5'
-  - ':United States: United States Fremont 10'
-  - ':United States: United States Fremont 9'
-  - ':United States: United States Hillsboro 11'
-  - ':United States: United States Los Angeles 0'
-  - ':United States: United States Los Angeles 1'
-  - ':United States: United States Los Angeles 2'
-  - ':United States: United States Los Angeles 3'
-  - ':United States: United States Los Angeles 4'
-  - ':United States: United States New York 8'
+  - Canada Montreal 006
+  - Canada Toronto 005
+  - United States Hillsboro 007
+  - United States Los Angeles 000
+  - United States Los Angeles 001
+  - United States Los Angeles 002
+  - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
-  - "\U0001F1E8\U0001F1F3 :Hong Kong: China Hong Kong 6"
-  - "\U0001F1E9\U0001F1EA Germany Frankfurt am Main 7"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
