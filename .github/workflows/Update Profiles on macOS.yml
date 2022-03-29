@@ -26,9 +26,9 @@ jobs:
 
       - name: Run Py Scripts
         run: |
-          chmod -R 777 *
           cd auto_getter
           chmod a+x ./subconverter/darwin64/subconverter
+          chmod -R 777 ./subconverter/darwin64/subconverter/*
           pip3 install beautifulsoup4
           python3 main.py
 
