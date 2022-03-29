@@ -8,14 +8,24 @@
 
 ### 基本使用
 
-#### Github\_Actions
+#### Github_Actions
 
-1. `Fork` 本项目。
-2. 进入你 `Fork` 的仓库。
-3. 进入 `Actions` 页面。
-4. 选择任意一个 `workflow。`
-5. 右侧点击 `Run workflow`。
-6. 等待脚本执行完成。
+1. 进入 [`Settings` -> `Personal access tokens`](https://github.com/settings/tokens "Personal access tokens") 设置。
+2. 点击 `Generate new token`。
+3. 输入密码并点击 `Confirm passwrod`。
+4. 至少勾选 `repo`、`workflow`、`gist` 项。
+5. 点击 `Generate token` 并复制 `Token`。
+6. `Fork` 本仓库。
+7. 进入你 `Fork` 的仓库。
+8. 进入仓库 `Settings` 页面。
+9. 找到并进入 `Security` -> `Secrets` -> `Actions` 分页。
+10. 点击 `New repository secret`。
+11. `Name` 为 `ACCESS TOKEN`，`Value` 为刚刚复制的 `Token`。
+12. 点击 `Add secret`。
+13. 进入 `Actions` 页面。
+14. 选择任意一个 `workflow`。
+15. 右侧点击 `Run workflow`。
+16. 等待脚本执行完成。
 
 #### 本地执行
 
@@ -58,8 +68,8 @@
 
 ### 高级使用
 
-即在运行脚本前根据[脚本设置](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E8%84%9A%E6%9C%AC%E8%AE%BE%E7%BD%AE '脚本设置 · Shuery-Shuai/Profiles_for_Clash Wiki')设置项目后运行本项目。
+即在运行脚本前根据[脚本设置](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E8%84%9A%E6%9C%AC%E8%AE%BE%E7%BD%AE "脚本设置 · Shuery-Shuai/Profiles_for_Clash Wiki")设置项目后运行本项目。
 
 ## 配置使用教程
 
-[配置文件 WIKI](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6 '配置文件 · Shuery-Shuai/Profiles_for_Clash Wiki')
+[配置文件 WIKI](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6 "配置文件 · Shuery-Shuai/Profiles_for_Clash Wiki")。
