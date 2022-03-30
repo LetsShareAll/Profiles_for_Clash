@@ -4,20 +4,6 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 1
-  cipher: auto
-  name: China Hong Kong 005
-  network: ws
-  port: 11443
-  server: v1.369855.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d5c70a71-1b3c-41f2-a8e0-17323bc23821
-  ws-headers:
-    Host: sgav2.ddns.tjiasu.xyz
-  ws-path: /api/sg
 - cipher: dummy
   name: United States Los Angeles 000
   obfs: tls1.2_ticket_auth
@@ -43,14 +29,14 @@ proxies:
 - cipher: aes-256-gcm
   name: United States Los Angeles 002
   password: dongtaiwang.com
-  port: 23456
+  port: 33333
   server: 88.218.92.162
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: United States Los Angeles 003
   password: dongtaiwang.com
-  port: 34567
+  port: 33333
   server: 85.209.158.76
   type: ss
   udp: true
@@ -58,20 +44,19 @@ proxies:
   cipher: auto
   name: United States Los Angeles 004
   network: ws
-  port: 58409
-  server: 149.28.84.35
+  port: 17486
+  server: 66.42.103.223
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3b471490-af45-11ec-9053-560003ecf6b8
+  uuid: 55a3f876-afb8-11ec-bf70-560003ed1ff7
   ws-headers:
-    Host: 149.28.84.35
-  ws-path: /VMvydqet/
+    Host: 66.42.103.223
+  ws-path: /XOMv50ec/
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -83,7 +68,6 @@ proxy-groups:
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -93,7 +77,6 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -117,7 +100,6 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -134,7 +116,6 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -145,7 +126,6 @@ proxy-groups:
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -156,7 +136,6 @@ proxy-groups:
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
@@ -177,7 +156,6 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - China Hong Kong 005
   - United States Los Angeles 000
   - United States Los Angeles 001
   - United States Los Angeles 002
