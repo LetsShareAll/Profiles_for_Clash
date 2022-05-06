@@ -12,41 +12,49 @@ proxies:
   port: 443
   protocol: auth_chain_a
   protocol-param: ''
-  server: ssrfree2.free4444.xyz
+  server: 67.21.64.67
   type: ssr
   udp: true
-- cipher: aes-256-cfb
+- cipher: dummy
   name: United States Los Angeles 001
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
-  port: 30033
+  port: 443
   protocol: auth_chain_a
   protocol-param: ''
-  server: 88.218.92.49
+  server: lg8.free4444.xyz
   type: ssr
   udp: true
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: United States Los Angeles 002
   password: dongtaiwang.com
-  port: 40066
-  server: 88.218.92.177
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: ''
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 39594
+  server: 149.28.88.240
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
   name: United States Los Angeles 003
   network: ws
-  port: 45721
-  server: 149.28.81.105
+  port: 46983
+  server: 45.76.71.233
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 492cbc4a-c07f-11ec-881d-560003f4a437
+  uuid: 69099258-1476-46dd-a51b-84e915e941be
   ws-headers:
-    Host: 149.28.81.105
-  ws-path: /T3cj7mJZ/
+    Host: 45.76.71.233
+  ws-path: /1tGK82lU/
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
