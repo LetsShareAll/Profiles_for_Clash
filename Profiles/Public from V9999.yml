@@ -9,10 +9,10 @@ proxies:
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
-  port: 443
+  port: 20022
   protocol: auth_chain_a
   protocol-param: ''
-  server: 67.21.64.67
+  server: ssrfree3.free4444.xyz
   type: ssr
   udp: true
 - cipher: dummy
@@ -26,8 +26,15 @@ proxies:
   server: lg8.free4444.xyz
   type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: United States Los Angeles 002
+  password: dongtaiwang.com
+  port: 20088
+  server: 85.209.157.54
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: United States Los Angeles 003
   password: dongtaiwang.com
   plugin: v2ray-plugin
   plugin-opts:
@@ -37,24 +44,23 @@ proxies:
     path: ''
     skip-cert-verify: true
     tls: false
-  port: 39594
-  server: 149.28.88.240
+  port: 37754
+  server: 85.209.158.199
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: United States Los Angeles 003
+  name: United States Los Angeles 004
   network: ws
-  port: 46983
-  server: 45.76.71.233
+  port: 50719
+  server: 23.19.26.217
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 69099258-1476-46dd-a51b-84e915e941be
-  ws-headers:
-    Host: 45.76.71.233
-  ws-path: /1tGK82lU/
+  uuid: 57242145-e59e-47b7-aaba-2ef2892161af
+  ws-opts:
+    path: /tmfe9GgD/
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
@@ -62,6 +68,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
@@ -72,6 +79,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
@@ -80,6 +88,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -102,6 +111,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -117,6 +127,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -126,6 +137,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -135,6 +147,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -154,6 +167,7 @@ proxy-groups:
   - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Los Angeles 003
+  - United States Los Angeles 004
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9137,6 +9151,8 @@ rules:
 - "DOMAIN-SUFFIX,hypeapp.cn,\U0001F6D1 \u5168\u7403\u62E6\u622A"
 - "DOMAIN-SUFFIX,hypersnap.net,\U0001F6D1 \u5168\u7403\u62E6\u622A"
 - "DOMAIN-SUFFIX,iconworkshop.cn,\U0001F6D1 \u5168\u7403\u62E6\u622A"
+- "DOMAIN-SUFFIX,idmchina.net,\U0001F6D1 \u5168\u7403\u62E6\u622A"
+- "DOMAIN-SUFFIX,imazingchina.com,\U0001F6D1 \u5168\u7403\u62E6\u622A"
 - "DOMAIN-SUFFIX,imindmap.cc,\U0001F6D1 \u5168\u7403\u62E6\u622A"
 - "DOMAIN-SUFFIX,jihehuaban.com.cn,\U0001F6D1 \u5168\u7403\u62E6\u622A"
 - "DOMAIN-SUFFIX,keyshot.cc,\U0001F6D1 \u5168\u7403\u62E6\u622A"
@@ -9206,6 +9222,8 @@ rules:
 - "DOMAIN-SUFFIX,ttvnw.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,twitch.tv,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,twitchcdn.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,radio.itunes.apple.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,tv.applemusic.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,deezer.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,dzcdn.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,joox.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
@@ -9250,6 +9268,7 @@ rules:
 - "DOMAIN-KEYWORD,avoddashs,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,linear.tv.apple.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,play-edge.itunes.apple.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
+- "DOMAIN,uts-api.itunes.apple.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,bahamut.com.tw,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,gamer.com.tw,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,gamer-cds.cdn.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
@@ -9337,6 +9356,7 @@ rules:
 - "IP-CIDR,203.74.95.153/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
 - "IP-CIDR,203.211.4.169/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
 - "IP-CIDR,203.211.4.193/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
+- "IP-CIDR,210.71.227.200/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
 - "IP-CIDR,210.71.227.202/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
 - "IP-CIDR,210.201.32.8/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
 - "IP-CIDR,210.201.32.11/32,\U0001F30D \u56FD\u5916\u5A92\u4F53,no-resolve"
@@ -9437,15 +9457,14 @@ rules:
 - "DOMAIN-SUFFIX,acg.tv,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,acgvideo.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,b23.tv,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,biliapi.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,biliapi.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,bilibili.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,biligame.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,biligame.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN-SUFFIX,bilibili.tv,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN-SUFFIX,biliapi.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN-SUFFIX,biliapi.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,bilivideo.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,hdslb.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,im9.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
-- "DOMAIN-SUFFIX,smtcdns.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN,upos-hz-mirrorakam.akamaized.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN,apiintl.biliapi.net,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN,intel-cache.m.iqiyi.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN,intel-cache.video.iqiyi.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN,intl-rcd.iqiyi.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
@@ -9463,6 +9482,7 @@ rules:
 - "DOMAIN-SUFFIX,api.mob.app.letv.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,v.smtcdns.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "DOMAIN-SUFFIX,vv.video.qq.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
+- "DOMAIN-SUFFIX,youku.com,\U0001F30F \u56FD\u5185\u5A92\u4F53"
 - "IP-CIDR,106.11.0.0/16,\U0001F30F \u56FD\u5185\u5A92\u4F53,no-resolve"
 - "DOMAIN-SUFFIX,t.me,\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
 - "DOMAIN-SUFFIX,tdesktop.com,\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
@@ -9476,11 +9496,14 @@ rules:
 - "IP-CIDR,91.108.16.0/22,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR,91.108.20.0/22,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR,91.108.56.0/22,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
-- "IP-CIDR,95.161.64.0/20,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
+- "IP-CIDR,91.105.192.0/23,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR,149.154.160.0/20,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
+- "IP-CIDR,185.76.151.0/24,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR6,2001:b28:f23d::/48,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR6,2001:b28:f23f::/48,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "IP-CIDR6,2001:67c:4e8::/48,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
+- "IP-CIDR6,2001:b28:f23c::/48,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
+- "IP-CIDR6,2a0a:f280::/32,\U0001F4F2 \u7535\u62A5\u4FE1\u606F,no-resolve"
 - "DOMAIN-SUFFIX,amazon.co.jp,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,d3c33hcgiwev3.cloudfront.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,payments-jp.amazon.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9489,16 +9512,36 @@ rules:
 - "DOMAIN,a248.e.akamai.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,a771.dscq.akamai.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,testflight.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,clubhouseapi.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,joinclubhouse.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,clubhouse.pubnubapi.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,aex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,bibox.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,binance.cc,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,binance.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,binance.us,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,bitcointalk.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,bitfinex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,bithumb.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,bitmex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,bitstamp.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,bittrex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,bybit.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,coinbase.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,coincheck.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,coingecko.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,coinmarketcap.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,coinone.co.kr,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,ftx.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,gate.io,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,gemini.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,huobi.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,korbit.co.kr,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,kraken.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,kucoin.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,liquid.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,okex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,poloniex.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,uniswap.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,zb.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,discord.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9531,6 +9574,7 @@ rules:
 - "DOMAIN-SUFFIX,blogger.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,getoutline.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,gvt0.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,gvt1.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,gvt3.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,ytimg.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9582,11 +9626,14 @@ rules:
 - "IP-CIDR,91.108.16.0/22,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR,91.108.20.0/22,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR,91.108.56.0/22,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
-- "IP-CIDR,95.161.64.0/20,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
+- "IP-CIDR,91.105.192.0/23,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR,149.154.160.0/20,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
+- "IP-CIDR,185.76.151.0/24,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR6,2001:b28:f23d::/48,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR6,2001:b28:f23f::/48,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "IP-CIDR6,2001:67c:4e8::/48,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
+- "IP-CIDR6,2001:b28:f23c::/48,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
+- "IP-CIDR6,2a0a:f280::/32,\U0001F530 \u8282\u70B9\u9009\u62E9,no-resolve"
 - "DOMAIN-SUFFIX,pscp.tv,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,periscope.tv,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,t.co,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9655,7 +9702,6 @@ rules:
 - "DOMAIN-SUFFIX,ck101.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,clarionproject.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,cloudcone.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN-SUFFIX,clubhouseapi.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,clyp.it,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,cna.com.tw,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,comparitech.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9749,7 +9795,6 @@ rules:
 - "DOMAIN-SUFFIX,jiji.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,jinx.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,jkforum.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN-SUFFIX,joinclubhouse.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,joinmastodon.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,justmysocks.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,justpaste.it,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9775,6 +9820,7 @@ rules:
 - "DOMAIN-SUFFIX,marc.info,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,matters.news,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,maying.co,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,medibang.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,medium.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,mega.nz,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,mergersandinquisitions.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9864,6 +9910,7 @@ rules:
 - "DOMAIN-SUFFIX,streamable.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,streema.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,substack.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,substack.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,t66y.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,tapatalk.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,teco-hk.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9879,6 +9926,7 @@ rules:
 - "DOMAIN-SUFFIX,tiny.cc,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,tinyurl.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,torproject.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,tradingview.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,tumblr.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,turbobit.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,tutanota.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -9995,20 +10043,33 @@ rules:
 - "DOMAIN-SUFFIX,twitter.jp,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,appsto.re,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,books.itunes.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,api-glb-sea.smoot.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,beta.music.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,tv.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,apps.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,itunes.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,smoot.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,beta.music.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,lookup-api.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,apps.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,books.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,itunes.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,tv.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,amp-api.podcasts.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,bookkeeper.itunes.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,gateway.icloud.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,apple.news,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,news-assets.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,news-client.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,news-client-search.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,news-edge.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,news-events.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN,apple.comscoreresearch.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,go.dev,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,golang.org,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,aicoin.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,aimoon.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,bing.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,cccat.io,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,dubox.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,duboxcdn.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,ifixit.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
+- "DOMAIN-SUFFIX,linkedin.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,mangakakalot.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,shopeemobile.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,sushi.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -10016,12 +10077,10 @@ rules:
 - "DOMAIN,developer.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,www.icloud.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,ocsp.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN,xp.apple.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,cacerts.digicert.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,crl3.digicert.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,crl4.digicert.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN,ocsp.digicert.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
-- "DOMAIN-SUFFIX,cloudcone.com.cn,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,inkbunny.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,metapix.net,\U0001F530 \u8282\u70B9\u9009\u62E9"
 - "DOMAIN-SUFFIX,s3.amazonaws.com,\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -10177,19 +10236,11 @@ rules:
 - "DOMAIN-SUFFIX,qqmail.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,servicewechat.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,tencent.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
+- "DOMAIN-SUFFIX,tencent-cloud.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,tencent-cloud.net,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,tenpay.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,wechat.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,file-igamecj.akamaized.net,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "IP-CIDR,101.32.104.4/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.104.41/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.104.56/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.118.25/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.133.16/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.133.53/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,101.32.133.209/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,129.226.3.47/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
-- "IP-CIDR,129.226.107.244/32,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
 - "IP-CIDR,182.254.116.0/24,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
 - "IP-CIDR,203.205.254.0/23,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
 - "DOMAIN-SUFFIX,ccgslb.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -10269,6 +10320,7 @@ rules:
 - "DOMAIN-SUFFIX,chinaso.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,chuimg.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,chunyu.mobi,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
+- "DOMAIN-SUFFIX,cibntv.net,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,cmbchina.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,cmbimg.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,coolapk.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -10313,8 +10365,6 @@ rules:
 - "DOMAIN-SUFFIX,keepcdn.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,kkmh.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,lanzous.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN-SUFFIX,licdn.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN-SUFFIX,linkedin.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,luojilab.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,maoyan.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,maoyun.tv,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -10337,6 +10387,7 @@ rules:
 - "DOMAIN-SUFFIX,ruguoapp.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,sankuai.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,scomper.me,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
+- "DOMAIN-SUFFIX,shouqianba.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,sm.ms,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,smzdm.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,snapdrop.net,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
