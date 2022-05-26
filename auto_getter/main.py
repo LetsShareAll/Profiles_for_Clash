@@ -535,9 +535,9 @@ def run_sub_converter():
     system_platform = sys.platform
     print('Your system platform is "' + system_platform + '".')
     if system_platform == 'linux':
-        process = subprocess.run(args='./subconverter/linux32/subconverter')
+        process = subprocess.run(args='./subconverter/linux64/subconverter')
     elif system_platform == 'win32':
-        process = subprocess.run(['powershell', './subconverter/win32/subconverter.exe'])
+        process = subprocess.run(['powershell', './subconverter/win64/subconverter.exe'])
     elif system_platform == 'darwin':
         process = subprocess.run(args='./subconverter/darwin64/subconverter')
     else:
