@@ -1,0 +1,69 @@
+proxies:
+  - name: 'proxy 001'
+    server: baidu.com
+    port: 233
+    cipher: auto
+  - name: 'proxy 002'
+    server: bing.com
+    port: 233
+  - name: 'proxy 003'
+    server: google.com
+    port: 466
+  - name: 'proxy 004'
+    server: bing.com
+    port: 666
+    cipher: 'rc4'
+  - name: 'proxy 005'
+    server: bing.com
+    port: 666
+    cipher: 'rc4'
+  - name: 'proxy 006'
+    server: bing.com
+    port: 233
+    cipher: 'auto'
+  - name: 'proxy 007'
+    server: bing.com
+    port: 233
+    cipher: 'auto'
+  - name: 'proxy 008'
+    server: bing.com
+    port: 233
+    cipher: 'rc4'
+  - name: 'proxy 009'
+    server: bing.com
+    port: 233
+    cipher: 'rc4'
+  - name: 'proxy 010'
+    server: bing.com
+    port: 233
+    cipher: 'rc4'
+
+proxy-groups:
+  - name: 'group 1'
+    proxies:
+      - 'proxy 001'
+      - 'proxy 002'
+      - 'proxy 003'
+      - 'proxy 004'
+      - 'proxy 005'
+      - 'proxy 006'
+      - 'proxy 007'
+      - 'proxy 008'
+      - 'proxy 009'
+      - 'proxy 010'
+
+  - name: 'group 2'
+    proxies:
+      - 'proxy 002'
+      - 'proxy 004'
+      - 'proxy 006'
+      - 'proxy 008'
+      - 'proxy 010'
+
+  - name: 'group 3'
+    proxies:
+      - 'proxy 001'
+      - 'proxy 003'
+      - 'proxy 005'
+      - 'proxy 007'
+      - 'proxy 009'

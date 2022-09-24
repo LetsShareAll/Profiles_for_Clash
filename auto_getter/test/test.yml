@@ -1,0 +1,36 @@
+proxies:
+- cipher: auto
+  name: proxy 001
+  port: 233
+  server: baidu.com
+- name: proxy 002
+  port: 233
+  server: bing.com
+- name: proxy 003
+  port: 466
+  server: google.com
+- cipher: auto
+  name: proxy 006
+  port: 233
+  server: bing.com
+- cipher: auto
+  name: proxy 007
+  port: 233
+  server: bing.com
+proxy-groups:
+- name: group 1
+  proxies:
+  - proxy 001
+  - proxy 002
+  - proxy 003
+  - proxy 006
+  - proxy 007
+- name: group 2
+  proxies:
+  - proxy 002
+  - proxy 006
+- name: group 3
+  proxies:
+  - proxy 001
+  - proxy 003
+  - proxy 007
