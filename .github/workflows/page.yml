@@ -1,0 +1,50 @@
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["gh-pages"]
+  pull_request:
+    branches: ["gh-pages"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        run: |
+          curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+      - name: Pnpm install
+        run: |
+          pnpm install
+
+      - name: Build docs
+        run: |
+          pnpm run docs:build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./docs/.vitepress/dist"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
