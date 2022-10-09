@@ -68,8 +68,8 @@
 
 ### 高级使用
 
-即在运行脚本前根据[脚本设置](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E8%84%9A%E6%9C%AC%E8%AE%BE%E7%BD%AE "脚本设置 · Shuery-Shuai/Profiles_for_Clash Wiki")设置项目后运行本项目。
+即在运行脚本前根据[脚本设置](https://pfc.gfw.letsshareall.com/script/ "脚本设置 | 适用于 Clash 的配置文件")设置项目后运行本项目。
 
 ## 配置使用教程
 
-[配置文件 WIKI](https://github.com/Shuery-Shuai/Profiles_for_Clash/wiki/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6 "配置文件 · Shuery-Shuai/Profiles_for_Clash Wiki")。
+[配置文件](https://pfc.letsshareall.com/profile/ "配置文件 | 适用于 Clash 的配置文件")。
