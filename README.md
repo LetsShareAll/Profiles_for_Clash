@@ -68,7 +68,7 @@
 
 ### 高级使用
 
-即在运行脚本前根据[脚本设置](https://pfc.gfw.letsshareall.com/script/ "脚本设置 | 适用于 Clash 的配置文件")设置项目后运行本项目。
+即在运行脚本前根据[脚本设置](https://pfc.letsshareall.com/script/ "脚本设置 | 适用于 Clash 的配置文件")设置项目后运行本项目。
 
 ## 配置使用教程
 
