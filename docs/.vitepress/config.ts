@@ -229,7 +229,7 @@ export default {
     footer: {
       // Footer configuration.
       message: "在 MIT 许可证下发布。",
-      copyright: "版权所有 © 2022 - 现在 Shuery",
+      copyright: "版权所有 © 2022 - 今 Shuery",
     },
     editLink: {
       // Edit Link lets you display a link to edit the page on Git management services such as GitHub, or GitLab.
