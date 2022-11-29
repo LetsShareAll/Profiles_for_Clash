@@ -19,8 +19,10 @@
 1. 直接将配置文件（无需解压）拖入 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash.") **Profiles** 页面。
 
    ![Clash for Windows-本地导入-直接拖拽导入](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-直接拖拽导入.png "Clash for Windows-本地导入-直接拖拽导入")
+
    :::warning 注意
    直接拖拽导入可能会导致如下图所示的**找不到配置文件**的问题，如遇到此问题请**使用其他方法**导入配置文件。
+
    ![Clash for Windows-本地导入-直接拖拽导入-错误](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-直接拖拽导入-错误.png "Clash for Windows-本地导入-直接拖拽导入-错误")
    :::
 
