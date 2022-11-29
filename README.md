@@ -43,7 +43,7 @@
 1. 克隆本项目。
 
    ```sh
-   git clone https://github.com/Shuery-Shuai/Profiles_for_Clash.git
+   git clone https://github.com/LetsShareAll/Profiles_for_Clash.git
    ```
 
 2. 进入 `auto_getter` 目录。
