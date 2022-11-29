@@ -138,8 +138,8 @@ export default {
     siteTitle: "Profiles for Clash", // You can customize this item to replace the default site title (title in app config) in nav.
     nav: [
       // The configuration for the nav menu item.
-      { text: "指引目录", link: "/guide/index" },
-      { text: "项目介绍", link: "/guide/introduction" },
+      { text: "项目介绍", link: "/introduction" },
+      { text: "指引目录", link: "/guide/" },
       {
         text: "脚本使用",
         activeMatch: "/guide/script/usage",
@@ -166,8 +166,8 @@ export default {
         collapsed: false,
         items: [
           // This shows `/guide/index.md` page.
-          { text: "指引目录", link: "/guide/index" },
-          { text: "项目介绍", link: "/guide/introduction" },
+          { text: "项目介绍", link: "/introduction" },
+          { text: "指引目录", link: "/guide/" },
         ],
       },
       {

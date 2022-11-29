@@ -7,7 +7,7 @@
 :::
 
 :::tip 提示
-本项目所有配置均通过 [tiny2013](https://github.com/tindy2013 "Github@tindy2013 (Tindy X)") 开发的 [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.") 自动生成。
+本项目所有配置均通过 [tiny2013](https://github.com/tindy2013 "tindy2013 (Tindy X)@Github") 开发的 [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.") 自动生成。
 :::
 
 :::warning 注意
