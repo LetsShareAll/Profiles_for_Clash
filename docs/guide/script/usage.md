@@ -29,8 +29,23 @@
 2. 下载 `Profile for Clash Auto Getter.zip`。
 3. 解压 `Profile for Clash Auto Getter.zip`。
 4. 根据系统双击 `run` 脚本运行。
+
    - **Linux** or **macOS**：运行 `run.sh`。
    - **Windows**：运行 `run.ps1`。
+
+     :::tip 提示
+     建议在终端中使用 `./run.ps1` 运行脚本以查看脚本运行日志。
+     :::
+
+     :::warning 注意
+
+     当终端中提示 `The file is not digitally signed.` 时，可先运行以下命令修改脚本运行策略。
+
+     ```ps
+     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
+     ```
+
+     :::
 
 #### 克隆本项目后执行
 
