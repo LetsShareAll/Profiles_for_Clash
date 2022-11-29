@@ -35,18 +35,18 @@ Sub Converter 设置。详见 [Sub Converter 文档](https://github.com/tindy201
 
 |   配置名称   |                    配置描述                    |                                                    配置链接                                                    |
 | :----------: | :--------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-| no-url-test  |                   Universal                    |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/universal/no-urltest.ini>  |
-|   url-test   |                   Universal                    |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/universal/urltest.ini>    |
-|    maying    |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/maying.ini>    |
-|    y-too     |                   Customized                   |    <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/ytoo.ini>     |
-| flower-cloud |                   Customized                   | <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/flowercloud.ini> |
-|   nyan-cat   |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/nyancat.ini>   |
-|  nexitally   |                   Customized                   |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/nexitally.ini>  |
-|   so-cloud   |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/socloud.ini>   |
-|     ark      |                   Customized                   |     <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/ark.ini>     |
-|  ssr-cloud   |                   Customized                   |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/ssrcloud.ini>   |
-|   net-ease   | Special：网易云音乐解锁。仅规则，No-URL-Test。 |    <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/netease.ini>     |
-|    basic     |         Special：仅 GEOIP CN + Final。         |     <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/basic.ini>      |
+| no-url-test  |                   Universal                    |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/universal/no-urltest.ini>  |
+|   url-test   |                   Universal                    |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/universal/urltest.ini>    |
+|    maying    |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/maying.ini>    |
+|    y-too     |                   Customized                   |    <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/ytoo.ini>     |
+| flower-cloud |                   Customized                   | <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/flowercloud.ini> |
+|   nyan-cat   |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/nyancat.ini>   |
+|  nexitally   |                   Customized                   |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/nexitally.ini>  |
+|   so-cloud   |                   Customized                   |   <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/socloud.ini>   |
+|     ark      |                   Customized                   |     <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/ark.ini>     |
+|  ssr-cloud   |                   Customized                   |  <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/customized/ssrcloud.ini>   |
+|   net-ease   | Special：网易云音乐解锁。仅规则，No-URL-Test。 |    <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/special/netease.ini>     |
+|    basic     |         Special：仅 GEOIP CN + Final。         |     <https://fastly.jsdelivr.net/gh/SleepyHeeead/subconverter-config@gh-pages/remote-config/special/basic.ini>      |
 
 :::tip 提示
 更多配置可前往 [Sub Converter Config](https://github.com/SleepyHeeead/subconverter-config "SleepyHeeead/subconverter-config") 查看。

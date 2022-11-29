@@ -18,29 +18,29 @@
 
 1. 直接将配置文件（无需解压）拖入 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash.") **Profiles** 页面。
 
-   ![Clash for Windows-本地导入-直接拖拽导入](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-直接拖拽导入.png "Clash for Windows-本地导入-直接拖拽导入")
+   ![Clash for Windows-本地导入-直接拖拽导入](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-直接拖拽导入.png "Clash for Windows-本地导入-直接拖拽导入")
    :::warning 注意
    直接拖拽导入可能会导致如下图所示的**找不到配置文件**的问题，如遇到此问题请**使用其他方法**导入配置文件。
-   ![Clash for Windows-本地导入-直接拖拽导入-错误](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-直接拖拽导入-错误.png "Clash for Windows-本地导入-直接拖拽导入-错误")
+   ![Clash for Windows-本地导入-直接拖拽导入-错误](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-直接拖拽导入-错误.png "Clash for Windows-本地导入-直接拖拽导入-错误")
    :::
 
 #### 通过 Import 按钮导入
 
 1. 解压 **Profiles** 文件夹
 
-   ![Clash for Windows-本地导入-通过 Import 按钮导入-解压 Profiles 文件夹](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-解压_Profiles_文件夹.png "Clash for Windows-本地导入-通过 Import 按钮导入-解压 Profiles 文件夹")
+   ![Clash for Windows-本地导入-通过 Import 按钮导入-解压 Profiles 文件夹](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-通过_Import_按钮导入-解压_Profiles_文件夹.png "Clash for Windows-本地导入-通过 Import 按钮导入-解压 Profiles 文件夹")
 
 2. 点击 **Import** 按钮
 
-   ![Clash for Windows-本地导入-通过 Import 按钮导入-点击 Import 按钮](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-点击_Import_按钮.png "Clash for Windows-本地导入-通过 Import 按钮导入-点击 Import 按钮")
+   ![Clash for Windows-本地导入-通过 Import 按钮导入-点击 Import 按钮](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-通过_Import_按钮导入-点击_Import_按钮.png "Clash for Windows-本地导入-通过 Import 按钮导入-点击 Import 按钮")
 
 3. 定位 **Profiles** 文件夹
 
-   ![Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-定位_Profiles_文件夹.png "Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹")
+   ![Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-通过_Import_按钮导入-定位_Profiles_文件夹.png "Clash for Windows-本地导入-通过 Import 按钮导入-定位 Profiles 文件夹")
 
 4. 选中配置文件并打开
 
-   ![Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-选中配置文件并打开.png "Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开")
+   ![Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-通过_Import_按钮导入-选中配置文件并打开.png "Clash for Windows-本地导入-通过 Import 按钮导入-选中配置文件并打开")
 
    :::warning 注意
    本操作**不支持多选**，如有多个文件需**重复 2 ~ 4 步**。
@@ -48,13 +48,13 @@
 
 5. 导入成功
 
-   ![Clash for Windows-本地导入-通过 Import 按钮导入-导入成功](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-本地导入-通过_Import_按钮导入-导入成功.png "Clash for Windows-本地导入-通过 Import 按钮导入-导入成功")
+   ![Clash for Windows-本地导入-通过 Import 按钮导入-导入成功](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-本地导入-通过_Import_按钮导入-导入成功.png "Clash for Windows-本地导入-通过 Import 按钮导入-导入成功")
 
 ### [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash.") 网络导入
 
 1. 复制配置链接
 
-   ![Clash for Windows-网络导入-复制配置链接](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-网络导入-复制配置链接.png "Clash for Windows-网络导入-复制配置链接")
+   ![Clash for Windows-网络导入-复制配置链接](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-网络导入-复制配置链接.png "Clash for Windows-网络导入-复制配置链接")
 
    :::tip 提示
    本项目[配置文件链接](#配置文件链接 "点击前往“配置文件链接”")。
@@ -62,11 +62,11 @@
 
 2. 粘贴配置链接并点击 **Download** 按钮下载
 
-   ![Clash for Windows-网络导入-粘贴配置链接并下载](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-网络导入-粘贴配置链接并下载.png "Clash for Windows-网络导入-粘贴配置链接并下载")
+   ![Clash for Windows-网络导入-粘贴配置链接并下载](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-网络导入-粘贴配置链接并下载.png "Clash for Windows-网络导入-粘贴配置链接并下载")
 
 3. 导入成功
 
-   ![Clash for Windows-网络导入-导入成功](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@master/Pictures/Clash_for_Windows-网络导入-导入成功.png "Clash for Windows-网络导入-导入成功")
+   ![Clash for Windows-网络导入-导入成功](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@gh-pages/images/Clash_for_Windows-网络导入-导入成功.png "Clash for Windows-网络导入-导入成功")
 
    :::warning 注意
    网络导入成功后会**自动**将配置切换至**刚刚导入的配置**。
