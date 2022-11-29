@@ -19,7 +19,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 在 Github 查看
-      link: https://github.com/Shuery-Shuai/Profiles_for_Clash
+      link: https://github.com/LetsShareAll/Profiles_for_Clash
 features:
     - icon: ⚡️
       title: 配置文件自动获取
