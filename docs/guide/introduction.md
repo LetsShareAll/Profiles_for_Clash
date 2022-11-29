@@ -1,4 +1,4 @@
-# [Profiles for Clash](https://github.com/Shuery-Shuai/Profiles_for_Clash "Shuery-Shuai/Profiles_for_Clash: Profiles can be used in Clash for Windows, Clash for Android and so on.")
+# [Profiles for Clash](https://github.com/LetsShareAll/Profiles_for_Clash "LetsShareAll/Profiles_for_Clash: Profiles can be used in Clash for Windows, Clash for Android and so on.")
 
 使用 Python 自动获取一些可用于 _Clash for Windows_、_Clash for Android_ 等应用的配置文件。
 
@@ -45,7 +45,7 @@
 1. 克隆本项目。
 
    ```sh
-   git clone https://github.com/Shuery-Shuai/Profiles_for_Clash.git
+   git clone https://github.com/LetsShareAll/Profiles_for_Clash.git
    ```
 
 2. 进入 `auto_getter` 目录。

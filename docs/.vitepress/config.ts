@@ -216,7 +216,7 @@ export default {
       // You may define this option to show your social account links with icons in nav.
       {
         icon: "github",
-        link: "https://github.com/Shuery-Shuai/Profiles_for_Clash",
+        link: "https://github.com/LetsShareAll/Profiles_for_Clash",
       },
       // You can also add custom icons by passing SVG as string:
       {
@@ -234,7 +234,7 @@ export default {
     editLink: {
       // Edit Link lets you display a link to edit the page on Git management services such as GitHub, or GitLab.
       pattern:
-        "https://github.com/Shuery-Shuai/Profiles_for_Clash/edit/gh-pages/docs/:path",
+        "https://github.com/LetsShareAll/Profiles_for_Clash/edit/gh-pages/docs/:path",
       text: "在 GitHub 上编辑此页",
     },
     lastUpdatedText: "最后更新时间", // The prefix text showing right before the last updated time.
