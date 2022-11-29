@@ -6,72 +6,45 @@
 通过使用特殊方式访问外网时请**严格遵守当地法律法规**，**禁止借此进行传播“黄、赌、毒”等违法犯罪活动**。节点均来自网络收集，由网友免费提供，请**勿使用节点进行 BT 下载**。
 :::
 
-## 脚本使用教程
+:::tip 提示
+本项目所有配置均通过 [tiny2013](https://github.com/tindy2013 "Github@tindy2013 (Tindy X)") 开发的 [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.") 自动生成。
+:::
 
-### 基本使用
+:::warning 注意
+本项目配置均来自网络，若有侵权，请提出，会尽快删除。
+:::
 
-#### Github Actions
+## 配置来源
 
-1. 进入 [`Settings` -> `Personal access tokens`](https://github.com/settings/tokens "Personal access tokens") 设置。
-2. 点击 `Generate new token`。
-3. 输入密码并点击 `Confirm passwrod`。
-4. 至少勾选 `repo`、`workflow`、`gist` 项。
-5. 点击 `Generate token` 并复制 `Token`。
-6. `Fork` 本仓库。
-7. 进入你 `Fork` 的仓库。
-8. 进入仓库 `Settings` 页面。
-9. 找到并进入 `Security` -> `Secrets` -> `Actions` 分页。
-10. 点击 `New repository secret`。
-11. `Name` 为 `ACCESS TOKEN`，`Value` 为刚刚复制的 `Token`。
-12. 点击 `Add secret`。
-13. 进入 `Actions` 页面。
-14. 选择任意一个 `workflow`。
-15. 右侧点击 `Run workflow`。
-16. 等待脚本执行完成。
+- [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费shadowsocks/ss/ssr/v2ray/goflyway账号/节点分享，vps一键搭建脚本/教程。")
 
-#### 本地执行
+- [翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")
 
-##### 下载发布的版本后执行
+- [SS 节点公益发放](https://t.me/ssList "ssList@Telegram")
 
-1. 前往 `Release` 页面。
-2. 下载 `Profile for Clash Auto Getter.zip`。
-3. 解压 `Profile for Clash Auto Getter.zip`。
-4. 根据系统双击 `run` 脚本运行。
-   - **Linux** or **macOS**：运行 `run.sh`。
-   - **Windows**：运行 `run.ps1`。
+- [SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")
 
-##### 克隆本项目后执行
+- [V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")
 
-1. 克隆本项目。
+## 使用工具
 
-   ```sh
-   git clone https://github.com/LetsShareAll/Profiles_for_Clash.git
-   ```
+- [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.")
 
-2. 进入 `auto_getter` 目录。
+## 推广
 
-   ```sh
-   cd ./Profiles_for_Clash/auto-getter
-   ```
+### 免费机场推荐
 
-3. 安装 Python 依赖包。
+> **提示**：当此处的配置无法使用或下载 Github 上的文件出现问题时，可以尝试使用以下机场的免费代理。
+>
+> **注意**：使用免费机场时请遵守当前机场的条款，否则可能会被封号！
 
-   ```sh
-   pip install -r requirements.txt
-   ```
+- [几鸡](https://b.luxury/waf/ciEPm341fac5nsWG2 "几鸡 - 学习助理")
 
-4. 运行脚本
+   此机场每日签到即可领取流量。但免费用户有网站访问限制，但不影响日常基本使用。点此链接注册能获得 1G 币体验金。
 
-   ```sh
-   python ./main.py
-   ```
+### 服务器提供商推荐
 
-5. 等待脚本运行完成。
+- [Vultr](https://www.vultr.com/?ref=9064539-8H "Vultr - Give $100, Get $35")
 
-### 高级使用
+   此服务商的套餐比较便宜，最低 $3.5/月，且按照小时计费，随删随停，在自搭的服务器出问题时切换服务器方便。点此链接注册还能够获得具有两个星期有效期的 $100 体验金。
 
-即在运行脚本前根据[脚本设置](/script/ "脚本设置")设置项目后运行本项目。
-
-## 配置使用教程
-
-[配置文件](/profile/ "配置文件")。

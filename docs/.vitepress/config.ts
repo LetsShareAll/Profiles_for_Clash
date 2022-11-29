@@ -138,76 +138,52 @@ export default {
     siteTitle: "Profiles for Clash", // You can customize this item to replace the default site title (title in app config) in nav.
     nav: [
       // The configuration for the nav menu item.
+      { text: "指引目录", link: "/guide/" },
+      { text: "项目介绍", link: "/guide/introduction" },
       {
-        text: "指引",
-        activeMatch: "/guide/",
+        text: "脚本使用",
+        activeMatch: "/guide/script/usage",
         items: [
-          {
-            text: "目录",
-            link: "/guide/",
-          },
           {
             text: "基本使用",
             items: [
               {
                 text: "Github Actions",
-                link: "/guide/introduction#github-actions",
+                link: "/guide/script/usage#github-actions",
               },
-              {
-                text: "本地执行",
-                link: "/guide/introduction#本地执行",
-              },
+              { text: "本地执行", link: "/guide/script/usage#本地执行" },
             ],
           },
-          {
-            text: "高级使用",
-            link: "/guide/introduction#高级使用",
-          },
+          { text: "高级使用", link: "/guide/script/usage#高级使用" },
         ],
-      },
-      {
-        text: "配置文件",
-        link: "/profile/",
-      },
-      {
-        text: "脚本设置",
-        link: "/script/",
       },
     ],
     sidebar: [
       // The configuration for the sidebar menu item.
       {
-        text: "指引",
+        text: "项目指引",
         collapsible: true,
         collapsed: false,
         items: [
           // This shows `/guide/index.md` page.
-          { text: "目录", link: "/guide/" },
-          { text: "介绍", link: "/guide/introduction" },
+          { text: "指引目录", link: "/guide/index" },
+          { text: "项目介绍", link: "/guide/introduction" },
         ],
       },
       {
-        text: "配置文件",
+        text: "脚本使用",
         collapsible: true,
         collapsed: true,
         items: [
-          {
-            text: "可使用配置文件的应用",
-            link: "/profile/#可使用配置文件的应用",
-          },
-          { text: "配置文件导入方法", link: "/profile/#配置文件导入方法" },
-          { text: "配置文件及其来源", link: "/profile/#配置文件及其来源" },
-          { text: "配置文件链接", link: "/profile/#配置文件链接" },
+          { text: "使用教程", link: "/guide/script/usage" },
+          { text: "脚本配置", link: "/guide/script/config" },
         ],
       },
       {
-        text: "脚本设置",
+        text: "Clash 教程",
         collapsible: true,
         collapsed: true,
-        items: [
-          { text: "设置项解释", link: "/script/#设置项解释" },
-          { text: "设置示例", link: "/script/#设置示例" },
-        ],
+        items: [{ text: "配置使用", link: "/guide/clash/profile" }],
       },
     ],
     outline: [2, 3], // The levels of header to display in the outline.
