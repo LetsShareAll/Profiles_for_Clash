@@ -123,6 +123,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: China Hengyang 075
+  port: 30501
+  server: eagle01.linkzoones.xyz
+  servername: us01.linknodes.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 66ccac02-76c3-324f-8315-cc722fb229d3
+- alterId: 0
+  cipher: auto
   name: China Jiujiang 063
   port: 30201
   server: lion01.linkzoones.xyz
@@ -403,17 +414,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 3cd81c3d-8589-4baf-8779-53201047a22e
-- alterId: 0
-  cipher: auto
-  name: China Yueyang 075
-  port: 30501
-  server: eagle01.linkzoones.xyz
-  servername: us01.linknodes.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 66ccac02-76c3-324f-8315-cc722fb229d3
 - cipher: aes-256-gcm
   name: France Paris 021
   password: TEzjfAYq2IjtuoS
@@ -547,17 +547,6 @@ proxies:
   server: 85.208.108.93
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: Japan Tokyo 067
-  port: 36206
-  server: lion05.allbluedns.xyz
-  servername: sg05.bestnodes.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3cd81c3d-8589-4baf-8779-53201047a22e
 - alterId: 0
   cipher: auto
   name: Japan Tokyo 095
@@ -910,6 +899,17 @@ proxies:
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: United States Monroe 067
+  port: 36206
+  server: lion05.allbluedns.xyz
+  servername: sg05.bestnodes.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3cd81c3d-8589-4baf-8779-53201047a22e
 - cipher: aes-256-gcm
   name: United States New York 056
   password: Y6R9pAtvxxzmGC
@@ -933,7 +933,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: United States Santa Clarita 092
+  name: United States Santa Clara 092
   network: ws
   port: 443
   server: weixin.babazhuji.com
@@ -976,6 +976,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1002,7 +1003,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1020,7 +1020,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1062,10 +1061,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -1087,6 +1087,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1113,7 +1114,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1131,7 +1131,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1173,10 +1172,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   type: url-test
@@ -1196,6 +1196,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1222,7 +1223,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1240,7 +1240,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1282,10 +1281,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -1319,6 +1319,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1345,7 +1346,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1363,7 +1363,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1405,10 +1404,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -1435,6 +1435,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1461,7 +1462,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1479,7 +1479,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1521,10 +1520,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -1545,6 +1545,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1571,7 +1572,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1589,7 +1589,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1631,10 +1630,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -1655,6 +1655,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1681,7 +1682,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1699,7 +1699,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1741,10 +1740,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -1775,6 +1775,7 @@ proxy-groups:
   - China Beijing 040
   - China Beijing 041
   - China Beijing 042
+  - China Hengyang 075
   - China Jiujiang 063
   - China Jiujiang 069
   - China Jiujiang 081
@@ -1801,7 +1802,6 @@ proxy-groups:
   - China Shenzhen 074
   - China Shenzhen 077
   - China Shenzhen 078
-  - China Yueyang 075
   - France Paris 021
   - "Germany D\xFCsseldorf 099"
   - Germany Frankfurt am Main 048
@@ -1819,7 +1819,6 @@ proxy-groups:
   - Japan Tokyo 034
   - Japan Tokyo 035
   - Japan Tokyo 051
-  - Japan Tokyo 067
   - Japan Tokyo 095
   - Norway Oslo 001
   - Poland Wroclaw 027
@@ -1861,10 +1860,11 @@ proxy-groups:
   - United States Los Angeles 029
   - United States Los Angeles 101
   - United States Manassas 098
+  - United States Monroe 067
   - United States New York 056
   - United States Portland 061
   - United States Santa Clara 046
-  - United States Santa Clarita 092
+  - United States Santa Clara 092
   - United States Seattle 013
   - United States Seattle 026
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
