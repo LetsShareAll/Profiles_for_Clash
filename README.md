@@ -1,4 +1,4 @@
-# [Profiles_for_Clash](https://github.com/Shuery-Shuai/Profiles_for_Clash "Shuery-Shuai/Profiles_for_Clash: Profiles can be used in Clash for Windows, Clash for Android and so on.")
+# [Profiles_for_Clash](https://github.com/LetsShareAll/Profiles_for_Clash "LetsShareAll/Profiles_for_Clash: Profiles can be used in Clash for Windows, Clash for Android and so on.")
 
 使用 Python 自动获取一些可用于 _Clash for Windows_、_Clash for Android_ 等应用的配置文件。
 
