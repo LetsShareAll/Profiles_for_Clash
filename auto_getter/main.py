@@ -134,6 +134,24 @@ def rm_proxy_groups_proxies(proxy_groups, proxy_name):
     return proxy_groups
 
 
+def correct_clash_mode(profile_data, correct_mode_data):
+    """更正 Clash 配置文件中的“mode”参数。
+
+    :param profile_data: 字典：需处理的代理文件数据。
+    :param correct_mode_data: 列表：需要更正的模式数据。
+    :return: 字典：移除加密方式后的代理文件数据。
+    """
+    print('Correcting clash mode...')
+    proxies = profile_data['proxies']
+    correct_modes = correct_mode_data
+    for proxy in proxies:
+        for correct_mode in correct_modes:
+            if proxy.plugin == correct_mode.plugin and proxy.mode == correct_mode.match:
+                proxy.mode = correct_mode.mode
+    profile_data['proxies'] = proxies
+    return profile_data
+
+
 def rm_outdated_proxies(profile_data):
     """移除过时代理。
 
@@ -446,6 +464,7 @@ def get_profile(config_path):
     profile_config = config['profile']
     profile_clash_config = profile_config['clash']
     clash_not_supported_ciphers = profile_clash_config['not-supported-ciphers']
+    correct_plugin_opts_mode = profile_clash_config['correct-plugin-opts-mode']
 
     # 创建文件夹并删除过时链接文件。
     for directory in directories_config:
@@ -502,6 +521,7 @@ def get_profile(config_path):
             profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
             profile_data = rm_proxies_with_ciphers(profile_data, clash_not_supported_ciphers)
             profile_data = rm_outdated_proxies(profile_data)
+            profile_data = correct_clash_mode(profile_data, correct_plugin_opts_mode)
             profile_data = rename_proxies(profile_data)
             proxies = profile_data['proxies']
             proxy_groups = profile_data['proxy-groups']

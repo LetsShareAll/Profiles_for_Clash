@@ -40,6 +40,13 @@ profile:
   clash:
     not-supported-ciphers:
       - 'rc4'
+    correct-plugin-opts-mode:
+      - plugin: 'obfs'
+        match: ''
+        mode: 'tls'
+      - plugin: 'v2ray-plugin'
+        match: ''
+        mode: 'websocket'
 
 # 其他设置
 others:
