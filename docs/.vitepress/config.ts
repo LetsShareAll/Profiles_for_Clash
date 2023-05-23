@@ -16,7 +16,7 @@ export default {
       "link",
       {
         rel: "icon",
-        href: "https://file.letsshareall.com/images/clash-light.png",
+        href: "https://file.letsshareall.com/pictures/clash-light.png",
       },
     ],
   ],
@@ -127,11 +127,11 @@ export default {
     logo: {
       // Logo file to display in nav bar, right before the site title.
       light: {
-        src: "https://file.letsshareall.com/images/clash-light.png",
+        src: "https://file.letsshareall.com/pictures/clash-light.png",
         alt: "Clash",
       },
       dark: {
-        src: "https://file.letsshareall.com/images/clash-dark.png",
+        src: "https://file.letsshareall.com/pictures/clash-dark.png",
         alt: "Clash",
       },
     },
