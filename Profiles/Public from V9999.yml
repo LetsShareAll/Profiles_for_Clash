@@ -5,25 +5,25 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR, server: ssr.zhujicn2.org, port: 50055, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶, server: 107.148.205.131, port: 17862, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, plugin: v2ray-plugin, plugin-opts: {mode: "", host: cloudfront.com, path: /HdkHa, tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国, server: 23.227.38.100, port: 443, type: vmess, uuid: 7b1b2fa3-e361-48cc-b73d-2c9636c76f4b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /UMW36262, headers: {Host: v2ray1.zhujicn2.org}}, udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶, server: t3.freegradely.xyz, port: 22888, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com, server: 167.160.91.118, port: 33110, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: 🎥 NETFLIX
     type: select
@@ -31,8 +31,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: ⛔️ 广告拦截
     type: select
@@ -52,8 +52,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: 🌏 国内媒体
     type: select
@@ -65,16 +65,16 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: 🍎 苹果服务
     type: select
@@ -82,8 +82,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
   - name: 🎯 全球直连
     type: select
@@ -100,8 +100,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com
       - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
