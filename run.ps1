@@ -3,3 +3,4 @@ python -m venv ./venv
 Set-Location ./auto_getter
 pip install -r requirements.txt
 python ./main.py
+deactivate
