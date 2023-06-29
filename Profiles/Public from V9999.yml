@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶, server: t3.freegradely.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇨🇳 www.dongtaiwang.com, server: 46.17.43.192, port: 31199, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com, server: 167.160.90.254, port: 11105, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
   - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki g_美国, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
