@@ -7,7 +7,7 @@ external-controller: :9090
 proxies:
   - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶, server: t3.freegradely.xyz, port: 11122, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
   - {name: 🇨🇳 www.dongtaiwang.com, server: 104.166.124.184, port: 11111, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 🇨🇳 www.dongtaiwang.com 2, server: 104.166.125.192, port: 55809, type: vmess, uuid: 3fa0b2c9-857b-416a-bcea-1ce23749e20d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com 2, server: 23.227.38.111, port: 443, type: vmess, uuid: 012c4549-17d2-475e-b1c1-a3b19cf36622, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
