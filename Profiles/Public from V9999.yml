@@ -6,8 +6,8 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶, server: t3.freegradely.xyz, port: 22222, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇨🇳 www.dongtaiwang.com, server: dongtaiwang4.com, port: 11228, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 🇨🇳 www.dongtaiwang.com 2, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com 洛杉矶 2, server: www.dongtaiwang4.com, port: 22222, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 🇨🇳 www.dongtaiwang.com, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -15,16 +15,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -32,8 +32,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -53,8 +53,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -66,16 +66,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -83,8 +83,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -101,8 +101,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳 www.dongtaiwang.com 洛杉矶
+      - 🇨🇳 www.dongtaiwang.com 洛杉矶 2
       - 🇨🇳 www.dongtaiwang.com
-      - 🇨🇳 www.dongtaiwang.com 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
