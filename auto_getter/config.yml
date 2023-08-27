@@ -21,6 +21,11 @@ profiles-sources:
       files:
         - 'https://raw.githubusercontent.com/du5/free/master/sub.list'
 
+  - name: 'Public from oneClash'
+    sources:
+      subscribes:
+        - 'https://oneclash.cc/wp-content/uploads/$date{%Y/%m/%Y%m%d}.yaml'
+
 # Sub Converter 设置。详见 https://github.com/tindy2013/subconverter/blob/master/README-cn.md。
 sub-converter:
   # 想要生成的配置类型。详见 https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E6%94%AF%E6%8C%81%E7%B1%BB%E5%9E%8B。
