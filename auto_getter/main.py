@@ -146,7 +146,7 @@ def correct_clash_mode(profile_data, correct_mode_data):
     correct_modes = correct_mode_data
     for proxy in proxies:
         for correct_mode in correct_modes:
-            if proxy.plugin == correct_mode.plugin and proxy.mode == correct_mode.match:
+            if 'plugin' in proxy and proxy.plugin == correct_mode.plugin and proxy.mode == correct_mode.match:
                 proxy.mode = correct_mode.mode
     profile_data['proxies'] = proxies
     return profile_data
