@@ -28,7 +28,7 @@ jobs:
         run: |
           Set-TimeZone -Id "China Standard Time"
           $china_date = date +%Y-%m-%d" "%H:%M:%S
-          $message = "Update: ``" + $china_date + "``."
+          $message = "更新（代理配置）: \`${china_date}\` 更新。"
           git config --global user.email "<>"
           git config --global user.name "GitHub Actions Bot"
           git add .

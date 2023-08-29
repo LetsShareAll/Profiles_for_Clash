@@ -35,7 +35,7 @@ jobs:
       - name: Add Commit
         run: |
           china_date=$(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)
-          message="Update: \`${china_date}\`."
+          message="更新（代理配置）: \`${china_date}\` 更新。"
           git config --global user.email "<>"
           git config --global user.name "GitHub Actions Bot"
           git add .
