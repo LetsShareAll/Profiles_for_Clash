@@ -18,11 +18,10 @@ jobs:
           update-setuptools: "true"
           update-wheel: "true"
 
-      - name: Run Py Scripts
+      - name: Run Scripts
         run: |
-          cd auto_getter
           pip3 install beautifulsoup4
-          python3 main.py
+          pwsh ./run.ps1
 
       - name: Add Commit
         run: |
