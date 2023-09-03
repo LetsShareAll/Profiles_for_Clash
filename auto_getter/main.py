@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import datetime
 import json
 import os
 import re
@@ -283,6 +284,35 @@ def rm_dir_files(directory):
         print('The directory "' + directory + '" dos not exits!')
 
 
+def get_date(date_format):
+    """根据格式获取当前时间。
+
+    :param date_format: 字符串：时间格式。
+    :return: 字符串：当前时间。
+    """
+    date = datetime.datetime.now().strftime(date_format)
+    print(date)
+    return date
+
+
+def handle_link(link):
+    """处理链接。
+
+    :param link: 字符串：需处理的字符串。
+    :return: 字符串：处理后的字符串。
+    """
+    print("Handle link...")
+    patterns = re.findall(r"[$][(](.*?)[)]", link)
+    if len(patterns) > 0:
+        for pattern in patterns:
+            print(pattern)
+            keywords = re.findall(r"(.*?)[{]", pattern)
+            for keyword in keywords:
+                print(keyword)
+                if keyword == 'date':
+                    return str.replace(link, '$('+pattern+')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
+
+
 def mkdir(directory):
     """创建文件夹。
 
@@ -419,6 +449,18 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
         print('Source is null!')
 
 
+def get_shared_links_from_subscribe_links(subscribe_link, shared_links_store_file):
+    """从订阅链接获取链接。
+
+    :param: subscribe_link: 字符串：订阅链接。
+    :param: shared_links_store_file: 字符串：存储链接的文件位置。
+    :return: 0。
+    """
+    print('Getting links from "' + subscribe_link + '"...')
+    subscribe_link = handle_link(subscribe_link)
+    save_links(shared_links_store_file, subscribe_link)
+
+
 def get_profile_link(parameters, shared_links_stored_file):
     """获取生成配置文件的链接。
 
@@ -504,6 +546,8 @@ def get_profile(config_path):
                     elif source_type == 'files':
                         get_shared_links_from_files(source, temp_file_path, shared_links_stored_file_path,
                                                     supported_shared_link_begin_with)
+                    elif source_type == 'subscribe-links':
+                        get_shared_links_from_subscribe_links(source, shared_links_stored_file_path)
                     else:
                         print('Don`t support the source type named "' + source_type + '" now!')
                     sleep(3)
