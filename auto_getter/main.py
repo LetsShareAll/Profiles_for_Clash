@@ -311,6 +311,8 @@ def handle_link(link):
                 print(keyword)
                 if keyword == 'date':
                     return str.replace(link, '$('+pattern+')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
+                else: return link
+    else: return link
 
 
 def mkdir(directory):
