@@ -26,8 +26,8 @@ jobs:
 
       - name: Run Scripts
         run: |
-          chmod a+x ./subconverter/darwin64/subconverter
-          chmod -R 777 ./subconverter/darwin64/*
+          chmod a+x ./auto_getter/subconverter/darwin64/subconverter
+          chmod -R 777 ./auto_getter/subconverter/darwin64/*
           pip3 install beautifulsoup4
           bash ./run.sh
 
