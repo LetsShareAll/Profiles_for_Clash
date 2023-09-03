@@ -547,7 +547,7 @@ def get_profile(config_path):
                             print('Telegram channel is null!')
                     elif source_type == 'files':
                         get_shared_links_from_files(source, temp_file_path, shared_links_stored_file_path,
-                                                    supported_shared_link_begin_with)
+                                                    supported_shared_link_begin_with + "|" + supported_subscribe_link_begin_with)
                     elif source_type == 'subscribe-links':
                         get_shared_links_from_subscribe_links(source, shared_links_stored_file_path)
                     else:
