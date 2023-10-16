@@ -6,7 +6,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: Canada Ottawa 002
+  name: Canada Ottawa 001
   network: ws
   port: 8080
   server: dongtaiwang3.com
@@ -14,10 +14,10 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 1b34d97d-0f42-4c2b-b985-b186a69a3fa8
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
   ws-opts:
     headers:
-      Host: dongtaiwang5.dtku47.xyz
+      Host: dongtaiwang8.dtku47.xyz
     path: /1IKYjV0r/
 - cipher: dummy
   name: United States Los Angeles 000
@@ -30,35 +30,25 @@ proxies:
   server: dongtaiwang5.com
   type: ssr
   udp: true
-- cipher: aes-256-gcm
-  name: United States Los Angeles 001
-  password: dongtaiwang.com
-  port: 33333
-  server: www.dongtaiwang4.com
-  type: ss
-  udp: true
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -77,9 +67,8 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -91,25 +80,22 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -125,9 +111,8 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - Canada Ottawa 002
+  - Canada Ottawa 001
   - United States Los Angeles 000
-  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
