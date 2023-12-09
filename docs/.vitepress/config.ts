@@ -8,7 +8,7 @@ export default {
       "link",
       {
         rel: "stylesheet",
-        href: "https://file.letsshareall.com/others/styles/genshin-font.css",
+        href: "https://file.lssa.fun/others/styles/genshin-font.css",
         type: "text/css",
       },
     ],
@@ -16,7 +16,7 @@ export default {
       "link",
       {
         rel: "icon",
-        href: "https://file.letsshareall.com/pictures/clash-light.png",
+        href: "https://file.lssa.fun/pictures/clash-light.png",
       },
     ],
   ],
@@ -127,11 +127,11 @@ export default {
     logo: {
       // Logo file to display in nav bar, right before the site title.
       light: {
-        src: "https://file.letsshareall.com/pictures/clash-light.png",
+        src: "https://file.lssa.fun/pictures/clash-light.png",
         alt: "Clash",
       },
       dark: {
-        src: "https://file.letsshareall.com/pictures/clash-dark.png",
+        src: "https://file.lssa.fun/pictures/clash-dark.png",
         alt: "Clash",
       },
     },
