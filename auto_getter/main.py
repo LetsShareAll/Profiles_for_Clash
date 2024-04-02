@@ -366,26 +366,6 @@ def remove_repetitive_links(shared_links_stored_file):
         print('Removing repetitive links failed! No such file: "' + shared_links_stored_file + '".')
 
 
-def get_shared_links_from_element(page, tag, tag_class, shared_links_store_file, shared_link_begin_with):
-    """从网页元素中获取链接。
-
-    :param page: 字符串：网页链接。
-    :param tag: 字符串：网页元素标签。
-    :param tag_class: 字符串：网页元素所属类。
-    :param shared_links_store_file: 字符串：存储链接的文件。
-    :param shared_link_begin_with: 字符串：链接开头。
-    :return: 0。
-    """
-    print('Getting links from tag="' + tag + '" and class="' + tag_class + '"...')
-    soup = BeautifulSoup(page, 'html.parser')
-    for tag in soup.find_all(tag, class_=tag_class, string=re.compile(shared_link_begin_with)):
-        link = tag.get_text().strip()
-        print('Acquired link: "' + link + '".')
-        save_links(shared_links_store_file, link)
-    print('The links from tag="{tag}" and class="{tag_class}" has been successfully got!'.format(tag=tag,
-                                                                                                 tag_class=tag_class))
-
-
 def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, shared_link_begin_with):
     """从电报频道获取链接。
 
@@ -396,15 +376,7 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
     """
     print('Getting links from telegram channel: "' + tg_channel_name + '"...')
     tg_channel_pre_page = 'https://t.me/s/' + tg_channel_name
-    headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
-    req = Request(tg_channel_pre_page, headers=headers)
-    resp = urlopen(req)
-    soup = BeautifulSoup(resp, 'html.parser')
-    # 将 br 标签替换为 \n
-    message_html_str = str(soup.select('div', class_='tgme_widget_message_text')
-                           ).replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
-    get_shared_links_from_element(message_html_str, 'div', 'tgme_widget_message_text', shared_links_store_file,
-                                  shared_link_begin_with)
+    get_shared_links_from_pages(tg_channel_pre_page, shared_links_store_file, shared_link_begin_with)
     print('The links from telegram channel: "' + tg_channel_name + '" has been successfully got!')
 
 
@@ -445,7 +417,10 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
         headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
         req = Request(source, headers=headers)
         resp = urlopen(req)
-        get_shared_links_from_element(resp, 'p', '', shared_links_store_file, shared_link_begin_with)
+        soup = BeautifulSoup(resp, 'html.parser')
+        for link in soup.find_all(string=re.compile(shared_link_begin_with)):
+            print('Acquired link: "' + link + '".')
+            save_links(shared_links_store_file, link)
         print('The links from "' + source + '" has been successfully got!')
     else:
         print('Source is null!')
