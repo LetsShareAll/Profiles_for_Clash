@@ -548,21 +548,22 @@ def get_profile(config_path):
                 file.write(response.content)
             print('Profile "' + profile_name + '" download complete!')
             # 对下载的配置文件进行操作。
-            profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
-            profile_data = rm_proxies_with_ciphers(profile_data, clash_not_supported_ciphers)
-            profile_data = rm_outdated_proxies(profile_data)
-            profile_data = correct_clash_mode(profile_data, correct_plugin_opts_mode)
-            profile_data = rename_proxies(profile_data)
-            proxies = profile_data['proxies']
-            proxy_groups = profile_data['proxy-groups']
-            proxies = sort_dict_list(proxies, ['name'])
-            for proxy_group in proxy_groups:
-                proxy_group_index = proxy_groups.index(proxy_group)
-                proxy_group['proxies'].sort()
-                proxy_groups[proxy_group_index] = proxy_group
-            profile_data['proxies'] = proxies
-            profile_data['proxy-groups'] = proxy_groups
-            save_yaml_file(profile_data, profile_path)
+            if profile['preprocessing']:
+                profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
+                profile_data = rm_proxies_with_ciphers(profile_data, clash_not_supported_ciphers)
+                profile_data = rm_outdated_proxies(profile_data)
+                profile_data = correct_clash_mode(profile_data, correct_plugin_opts_mode)
+                profile_data = rename_proxies(profile_data)
+                proxies = profile_data['proxies']
+                proxy_groups = profile_data['proxy-groups']
+                proxies = sort_dict_list(proxies, ['name'])
+                for proxy_group in proxy_groups:
+                    proxy_group_index = proxy_groups.index(proxy_group)
+                    proxy_group['proxies'].sort()
+                    proxy_groups[proxy_group_index] = proxy_group
+                profile_data['proxies'] = proxies
+                profile_data['proxy-groups'] = proxy_groups
+                save_yaml_file(profile_data, profile_path)
             print('Profile "' + profile_name + '" update complete!')
         else:
             print('Profile "' + profile_name + '" update failed!')

@@ -7,6 +7,7 @@ profiles-sources:
       pages:
         - 'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7'
         - 'https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7'
+    preprocessing: true
 
 
   # - name: 'Public from FQD'
@@ -25,6 +26,7 @@ profiles-sources:
     sources:
       subscribe-links:
         - 'https://node.oneclash.cc/$(date{%Y/%m/%Y%m%d}).yaml'
+    preprocessing: false
 
 # Sub Converter 设置。详见 https://github.com/tindy2013/subconverter/blob/master/README-cn.md。
 sub-converter:
