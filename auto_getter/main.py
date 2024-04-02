@@ -8,9 +8,9 @@ import sys
 from threading import Thread
 from time import sleep
 from urllib.parse import urlencode
-from urllib.request import urlretrieve, Request, urlopen
 
 import emoji
+import requests
 import yaml
 from bs4 import BeautifulSoup
 from googletrans import Translator
@@ -201,11 +201,10 @@ def rename_proxies(profile_data):
         # 使用 http://ip-api.com 的 API 进行服务器信息查询。
         print('Getting No.{index}: "{server}" information...'.format(index=proxy_index, server=proxy['server']))
         ip_api_link = 'http://ip-api.com/json/' + proxy['server']
-        req = Request(url=ip_api_link)
-        resp = urlopen(req)
-        resp_data = resp.read()
-        encoding = resp.info().get_content_charset('utf-8')
-        ip_info = json.loads(resp_data.decode(encoding))
+        response = requests.get(ip_api_link)
+        response_data = response.content
+        encoding = response.encoding
+        ip_info = json.loads(response_data.decode(encoding))
         # 此时可判断域名是否存在。
         if 'country' not in ip_info:
             print('No such server: "{server}.'.format(server=proxy['server']))
@@ -310,9 +309,11 @@ def handle_link(link):
             for keyword in keywords:
                 print(keyword)
                 if keyword == 'date':
-                    return str.replace(link, '$('+pattern+')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
-                else: return link
-    else: return link
+                    return str.replace(link, '$(' + pattern + ')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
+                else:
+                    return link
+    else:
+        return link
 
 
 def mkdir(directory):
@@ -391,7 +392,9 @@ def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file,
     """
     print('Getting links from "' + remote_file + '"...')
     if remote_file != '':
-        urlretrieve(remote_file, temp_file)
+        response = requests.get(remote_file)
+        with open(temp_file, 'wb') as file:
+            file.write(response.content)
         with open(temp_file, 'r', encoding='utf-8') as search_file:
             for line in search_file:
                 link_list = re.compile(shared_link_begin_with).findall(line)
@@ -414,10 +417,10 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
     """
     print('Getting links from "' + source + '"...')
     if source != '':
-        headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
-        req = Request(source, headers=headers)
-        resp = urlopen(req)
-        soup = BeautifulSoup(resp, 'html.parser')
+        headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                                 'Chrome/112.0.0.0 Safari/537.36 uacq'}
+        response = requests.get(source, headers=headers)
+        soup = BeautifulSoup(response.text, 'html.parser')
         for link in soup.find_all(string=re.compile(shared_link_begin_with)):
             print('Acquired link: "' + link + '".')
             save_links(shared_links_store_file, link)
@@ -426,7 +429,7 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
         print('Source is null!')
 
 
-def get_shared_links_from_subscribe_links(subscribe_link, shared_links_store_file):
+def get_shared_links_from_subscribe_links(subscribe_link, shared_links_store_file, profile_path):
     """从订阅链接获取链接。
 
     :param: subscribe_link: 字符串：订阅链接。
@@ -435,6 +438,10 @@ def get_shared_links_from_subscribe_links(subscribe_link, shared_links_store_fil
     """
     print('Getting links from "' + subscribe_link + '"...')
     subscribe_link = handle_link(subscribe_link)
+    headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
+    response = requests.get(subscribe_link, headers=headers)
+    with open(profile_path, 'wb') as file:
+        file.write(response.content)
     save_links(shared_links_store_file, subscribe_link)
 
 
@@ -524,7 +531,7 @@ def get_profile(config_path):
                         get_shared_links_from_files(source, temp_file_path, shared_links_stored_file_path,
                                                     supported_shared_link_begin_with + "|" + supported_subscribe_link_begin_with)
                     elif source_type == 'subscribe-links':
-                        get_shared_links_from_subscribe_links(source, shared_links_stored_file_path)
+                        get_shared_links_from_subscribe_links(source, shared_links_stored_file_path, profile_path)
                     else:
                         print('Don`t support the source type named "' + source_type + '" now!')
                     sleep(3)
@@ -536,7 +543,9 @@ def get_profile(config_path):
         # 下载配置。
         sub_converter_link = get_profile_link(sub_converter_config, shared_links_stored_file_path)
         if sub_converter_link != '':
-            urlretrieve(sub_converter_link, profile_path)
+            response = requests.get(sub_converter_link)
+            with open(profile_path, 'wb') as file:
+                file.write(response.content)
             print('Profile "' + profile_name + '" download complete!')
             # 对下载的配置文件进行操作。
             profile_data = load_yaml_data(profile_path, not_supported_yaml_tags)
