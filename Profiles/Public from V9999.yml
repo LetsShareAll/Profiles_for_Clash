@@ -5,10 +5,10 @@ mode: Rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: United States La Jara 001
+  name: United States Los Angeles 001
   password: dongtaiwang.com
-  port: 22222
-  server: 23.177.216.245
+  port: 23456
+  server: 166.1.190.209
   type: ss
   udp: true
 - alterId: 0
@@ -21,7 +21,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 884dde2c-3f6f-496f-b55b-c6288d0eca8b
+  uuid: fba82601-e773-42db-b9dc-2b7fa1882d3f
   ws-opts:
     headers:
       Host: www.bing.com
@@ -40,7 +40,7 @@ proxies:
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -49,14 +49,14 @@ proxy-groups:
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -77,7 +77,7 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -91,7 +91,7 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -99,7 +99,7 @@ proxy-groups:
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -107,7 +107,7 @@ proxy-groups:
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -125,7 +125,7 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - United States La Jara 001
+  - United States Los Angeles 001
   - United States Los Angeles 002
   - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
