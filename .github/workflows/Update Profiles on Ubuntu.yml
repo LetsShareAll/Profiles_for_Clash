@@ -11,6 +11,8 @@ on:
     branches: [main]
     paths-ignore:
       - 'README.md'
+  schedule:
+    - cron: "0 0 3 ? * 3,6"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
