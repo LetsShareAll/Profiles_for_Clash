@@ -3,7 +3,7 @@ name: Update Profiles on Windows
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 3 ? * 4,7"
+    - cron: "0 0 3 ? * WED,SAT "
 
 jobs:
   update-profiles:

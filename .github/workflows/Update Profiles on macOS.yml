@@ -3,7 +3,7 @@ name: Update Profiles on macOS
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 3 ? * 2,5"
+    - cron: "0 0 3 ? * MON,THU "
 
 jobs:
   update-profiles:
