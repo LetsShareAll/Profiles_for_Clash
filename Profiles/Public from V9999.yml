@@ -14,20 +14,13 @@ proxies:
   tls: true
   type: vmess
   udp: true
-  uuid: 60240c7e-e6c7-429c-9845-5b814b9f436b
+  uuid: f1c4fe24-3b2b-43d6-a8b5-66e12f6056d3
   ws-opts:
     headers:
       Host: ip2.3235134.xyz
     path: "\u52A8\u6001\u7F51"
-- cipher: aes-256-gcm
-  name: United States Los Angeles 001
-  password: dongtaiwang.com
-  port: 12345
-  server: 91.149.239.116
-  type: ss
-  udp: true
 - cipher: dummy
-  name: United States Wilmington 000
+  name: United States Dallas 000
   obfs: plain
   obfs-param: ''
   password: dongtaiwang.com
@@ -37,12 +30,19 @@ proxies:
   server: dongtaiwang5.com
   type: ssr
   udp: true
+- cipher: aes-256-gcm
+  name: United States Los Angeles 001
+  password: dongtaiwang.com
+  port: 12345
+  server: 91.149.239.116
+  type: ss
+  udp: true
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
@@ -50,15 +50,15 @@ proxy-groups:
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -78,8 +78,8 @@ proxy-groups:
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -92,24 +92,24 @@ proxy-groups:
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -126,8 +126,8 @@ proxy-groups:
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
   - Canada Toronto 002
+  - United States Dallas 000
   - United States Los Angeles 001
-  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
