@@ -3,14 +3,14 @@ name: 部署博客
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
     paths-ignore:
       - "./README.md"
 
   pull_request:
     branches:
-      - main
+      - gh-pages
 
     paths-ignore:
       - "./README.md"
@@ -54,12 +54,12 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          > ./src/.vuepress/dist/.nojekyll
+          > ./docs/.vuepress/dist/.nojekyll
 
       - name: 上传产物
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './src/.vuepress/dist'
+          path: './docs/.vuepress/dist'
 
   deploy:
     environment:
