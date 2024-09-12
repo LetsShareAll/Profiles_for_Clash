@@ -10,7 +10,7 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/assets/icon/clash-light.png",
+        href: "/icon/clash-light.png",
       },
     ],
     [
@@ -211,8 +211,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     i18nRouting: true,
     logo: {
-      light: "/assets/icon/clash-light.png",
-      dark: "/assets/icon/clash-dark.png",
+      light: "/icon/clash-light.png",
+      dark: "/icon/clash-dark.png",
       alt: "Clash",
     },
     siteTitle: "PFC",

@@ -16,8 +16,8 @@ hero:
   text: 适用于 Clash 的配置文件。
   tagline: 简单，高效，便捷地生成配置文件。
   image:
-    light: /assets/icon/clash-light.png
-    dark: /assets/icon/clash-dark.png
+    light: /icon/clash-light.png
+    dark: /icon/clash-dark.png
     alt: Clash
   actions:
     - theme: brand
