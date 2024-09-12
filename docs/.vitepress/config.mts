@@ -50,7 +50,7 @@ export default defineConfig({
   cacheDir: "./.vitepress/cache",
   ignoreDeadLinks: true,
   metaChunk: true,
-  mpa: true,
+  mpa: false,
 
   appearance: true,
   lastUpdated: true,
