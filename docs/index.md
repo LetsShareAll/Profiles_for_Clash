@@ -41,7 +41,7 @@ features:
       title: 支持自定义设置
       details: 不止于生成 Clash 配置。
 
-navbar: false
+navbar: true
 sidebar: false
 aside: false
 outline: false
