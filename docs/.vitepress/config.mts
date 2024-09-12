@@ -57,10 +57,10 @@ export default defineConfig({
 
   markdown: {
     // https://github.com/vuejs/vitepress/blob/main/src/node/markdown/markdown.ts
-    // preConfig: "",
-    // config: "",
+    preConfig() {},
+    config() {},
     cache: true,
-    // externalLinks: "",
+    externalLinks: {},
 
     theme: {
       // https://shiki.style/themes#bundled-themes
