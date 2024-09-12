@@ -1,0 +1,74 @@
+name: 部署博客
+
+on:
+  push:
+    branches:
+      - main
+
+    paths-ignore:
+      - "./README.md"
+
+  pull_request:
+    branches:
+      - main
+
+    paths-ignore:
+      - "./README.md"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
+
+      - name: 设置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 启用 CorePack
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      - name: 安装依赖
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          pnpm run docs:build
+          > ./src/.vuepress/dist/.nojekyll
+
+      - name: 上传产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './src/.vuepress/dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 部署页面
+        id: deployment
+        uses: actions/deploy-pages@v4
