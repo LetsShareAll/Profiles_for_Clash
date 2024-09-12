@@ -21,8 +21,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -39,6 +39,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      
+      - name: 配置页面
+        uses: actions/configure-pages@v4
 
       - name: 启用 CorePack
         run: |
@@ -54,20 +57,19 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          > ./docs/.vitepress/dist/.nojekyll
 
       - name: 上传产物
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './docs/.vitepress/dist'
+          path: "./docs/.vitepress/dist"
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
     steps:
       - name: 部署页面
         id: deployment
