@@ -6,7 +6,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: Canada Toronto 004
+  name: Canada Toronto 003
   network: ws
   port: 443
   server: 104.21.238.111
@@ -19,26 +19,15 @@ proxies:
     headers:
       Host: ip2.3235134.xyz
     path: "\u52A8\u6001\u7F51"
-- cipher: dummy
-  name: Russia Moscow 001
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: dongtaiwang.com
-  port: 443
-  protocol: auth_chain_a
-  protocol-param: ''
-  server: ssr.4465779.xyz
-  type: ssr
-  udp: true
 - cipher: aes-256-gcm
-  name: Russia Moscow 003
+  name: Russia Moscow 002
   password: dongtaiwang.com
   port: 11111
   server: 185.22.153.250
   type: ss
   udp: true
 - cipher: dummy
-  name: United States Atlanta 002
+  name: United States Atlanta 001
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -49,7 +38,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: dummy
-  name: United States Dallas 000
+  name: United States Wilmington 000
   obfs: plain
   obfs-param: ''
   password: dongtaiwang.com
@@ -62,31 +51,28 @@ proxies:
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -105,11 +91,10 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -121,31 +106,28 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -161,11 +143,10 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - Canada Toronto 004
-  - Russia Moscow 001
-  - Russia Moscow 003
-  - United States Atlanta 002
-  - United States Dallas 000
+  - Canada Toronto 003
+  - Russia Moscow 002
+  - United States Atlanta 001
+  - United States Wilmington 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
