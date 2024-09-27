@@ -6,23 +6,20 @@
 
 ## 脚本使用教程
 
-[脚本使用](https://pfc.letsshareall.com/guide/script/usage "脚本使用教程 | 适用于 Clash 的配置文件")。
+[脚本使用](https://pfc.lssa.fun/guide/script/usage "脚本使用教程 | 适用于 Clash 的配置文件")。
 
 ## 配置使用教程
 
-[配置文件](https://pfc.letsshareall.com/guide/clash/profile "配置文件 | 适用于 Clash 的配置文件")。
+[配置文件](https://pfc.lssa.fun/guide/clash/profile "配置文件 | 适用于 Clash 的配置文件")。
 
 ## 配置来源
 
-- [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费shadowsocks/ss/ssr/v2ray/goflyway账号/节点分享，vps一键搭建脚本/教程。")
-
-- [翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")
-
-- [SS 节点公益发放](https://t.me/ssList "ssList@Telegram")
-
-- [SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")
-
-- [V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")
+- [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费 shadowsocks/ss/ssr/v2ray/goflyway 账号/节点分享，vps 一键搭建脚本/教程。")
+- [oneClash](https://oneclash.cc "oneClash | 每日精选 SSR/V2ray/Clash 免费节点每天更新")
+- ~~[翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")~~
+- ~~[SS 节点公益发放](https://t.me/ssList "ssList@Telegram")~~
+- ~~[SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")~~
+- ~~[V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")~~
 
 ## 使用工具
 
