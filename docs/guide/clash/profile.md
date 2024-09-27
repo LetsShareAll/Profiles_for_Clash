@@ -2,13 +2,16 @@
 
 ## 可使用配置文件的应用
 
-- [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash.")
+适用于 **Windows**、**Linux**、**macOS**。
 
-  适用于 **Windows**、**macOS**、**Linux**。
+- [Clash Nyanpasu](https://nyanpasu.elaina.moe/ "Clash Nyanpasu")
+- [Clash-for-Windows-Chinese](https://github.com/Z-Siqi/Clash-for-Windows_Chinese/tree/main "Z-Siqi/Clash-for-Windows-Chinese: clash for windows汉化版. 提供clash for windows的汉化版, 汉化补丁及汉化版安装程序")
+- ~~[Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg "Fndroid/clash_for_windows_pkg: A Windows/macOS GUI based on Clash.")~~
 
-- [Clash for Android](https://github.com/Kr328/ClashForAndroid "Kr328/ClashForAndroid: A rule-based tunnel for Android.")
+适用于 **Android**。
 
-  适用于 **Android**。
+- [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid "MetaCubeX/ClashMetaForAndroid: A rule-based tunnel for Android.")
+- ~~[Clash for Android](https://github.com/Kr328/ClashForAndroid "Kr328/ClashForAndroid: A rule-based tunnel for Android.")~~
 
 ## 配置文件导入方法
 
@@ -84,9 +87,9 @@
 
 ## 配置文件及其来源
 
-“Public from V9999”来自 [Alvin9999](https://github.com/Alvin9999 "Alvin9999@Github (自由上网)") 在项目 [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费shadowsocks/ss/ssr/v2ray/goflyway账号/节点分享，vps一键搭建脚本/教程。") 中的分享。
-
-“Public from FQD”来自[翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")在群组 [SS 节点公益发放](https://t.me/ssList "ssList@Telegram")、[SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")、[V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")中的分享。
+- `Public from V9999` 来自 [Alvin9999](https://github.com/Alvin9999 "Alvin9999@Github (自由上网)") 在项目 [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费shadowsocks/ss/ssr/v2ray/goflyway账号/节点分享，vps一键搭建脚本/教程。") 中的分享。
+- `Public from oneClash` 来自 [oneClash](https://oneclash.cc "oneClash | 每日精选 SSR/V2ray/Clash 免费节点每天更新") 的分享。
+- ~~`Public from FQD` 来自[翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")在群组 [SS 节点公益发放](https://t.me/ssList "ssList@Telegram")、[SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")、[V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")中的分享。~~
 
 :::tip 提示
 本项目所有配置均通过 [tiny2013](https://github.com/tindy2013 "tindy2013@Github (Tindy X)") 开发的 [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.") 自动生成。
@@ -106,7 +109,7 @@
 
 - Public from V9999
 
-  - _<https://raw.githubusercontent.com/{你的_Github_用户名}/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml>_
+  - _<https://raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml>_
 
   示例：
 
@@ -114,21 +117,35 @@
 
     _<https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml>_
 
-- Public from FQD
+- Public from oneClash
 
-  - _<https://raw.githubusercontent.com/{你的_Github_用户名}/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_
+  - _<https://raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml>_
 
   示例：
 
-  - [Public from FQD](https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml "“Public from FQD”链接（“右击”后选择“复制链接”）")
+  - [Public from oneClash](https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml "“Public from oneClash”链接（“右击”后选择“复制链接”）")
 
-    _<https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_
+    _<https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml>_
+
+- ~~Public from FQD~~
+
+  - ~~_<https://raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_~~
+
+  ~~示例：~~
+
+  - ~~[Public from FQD](https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml "“Public from FQD”链接（“右击”后选择“复制链接”）")~~
+
+    ~~_<https://raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_~~
 
 ### JSDelivr 配置文件链接
 
+:::warning 注意
+JSDelivr 上的链接存在一定的**更新延迟**。
+:::
+
 - Public from V9999
 
-  - _<https://fastly.jsdelivr.net/gh/{你的_Github_用户名}/Profiles_for_Clash@main/Profiles/Public%20from%20V9999.yml>_
+  - _<https://fastly.jsdelivr.net/gh/{YourGithubUsername}/Profiles_for_Clash@main/Profiles/Public%20from%20V9999.yml>_
 
   示例：
 
@@ -136,16 +153,57 @@
 
     _<https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20V9999.yml>_
 
-- Public from FQD
+- Public from oneClash
 
-  - _<https://fastly.jsdelivr.net/gh/{你的_Github_用户名}/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml>_
+  - _<https://fastly.jsdelivr.net/gh/{YourGithubUsername}/Profiles_for_Clash@main/Profiles/Public%20from%20oneClash.yml>_
 
   示例：
 
-  - [Public from FQD](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml "“Public from FQD”链接（“右击”后选择“复制链接”）")
+  - [Public from oneClash](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20oneClash.yml "“Public from oneClash”链接（“右击”后选择“复制链接”）")
 
-    _<https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml>_
+    _<https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20oneClash.yml>_
 
-:::warning 注意
-JSDelivr 上的链接存在一定的**更新延迟**。
+- ~~Public from FQD~~
+
+  - ~~_<https://fastly.jsdelivr.net/gh/{YourGithubUsername}/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml>_~~
+
+  ~~示例：~~
+
+  - ~~[Public from FQD](https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml "“Public from FQD”链接（“右击”后选择“复制链接”）")~~
+
+    ~~_<https://fastly.jsdelivr.net/gh/LetsShareAll/Profiles_for_Clash@main/Profiles/Public%20from%20FQD.yml>_~~
+
+### 使用代理的配置文件链接
+
+:::tip 提示
+以下使用的代理为 <https://mirror.ghproxy.com>，你也可以换成其他的代理如 <https://ghproxy.net>。
 :::
+- Public from V9999
+
+  - _<https://mirror.ghproxy.com/raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml>_
+
+  示例：
+
+  - [Public from V9999](https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml "“Public from V9999”链接（“右击”后选择“复制链接”）")
+
+    _<https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20V9999.yml>_
+
+- Public from oneClash
+
+  - _<https://mirror.ghproxy.com/raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml>_
+
+  示例：
+
+  - [Public from oneClash](https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml "“Public from oneClash”链接（“右击”后选择“复制链接”）")
+
+    _<https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20oneClash.yml>_
+
+- ~~Public from FQD~~
+
+  - ~~_<https://mirror.ghproxy.com/raw.githubusercontent.com/{YourGithubUsername}/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_~~
+
+  ~~示例：~~
+
+  - ~~[Public from FQD](https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml "“Public from FQD”链接（“右击”后选择“复制链接”）")~~
+
+    ~~_<https://mirror.ghproxy.com/raw.githubusercontent.com/LetsShareAll/Profiles_for_Clash/main/Profiles/Public%20from%20FQD.yml>_~~

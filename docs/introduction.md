@@ -16,15 +16,12 @@
 
 ## 配置来源
 
-- [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费shadowsocks/ss/ssr/v2ray/goflyway账号/节点分享，vps一键搭建脚本/教程。")
-
-- [翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")
-
-- [SS 节点公益发放](https://t.me/ssList "ssList@Telegram")
-
-- [SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")
-
-- [V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")
+- [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费 shadowsocks/ss/ssr/v2ray/goflyway 账号/节点分享，vps 一键搭建脚本/教程。")
+- [oneClash](https://oneclash.cc "oneClash | 每日精选 SSR/V2ray/Clash 免费节点每天更新")
+- ~~[翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")~~
+- ~~[SS 节点公益发放](https://t.me/ssList "ssList@Telegram")~~
+- ~~[SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")~~
+- ~~[V2ray,Vmess 节点免费发放](https://t.me/V2List "V2List@Telegram")~~
 
 ## 使用工具
 
@@ -42,9 +39,9 @@
 使用免费机场时请遵守当前机场的条款，否则可能会被封号！
 :::
 
-- [几鸡](https://b.luxury/waf/ciEPm341fac5nsWG2 "几鸡 - 学习助理")
+- ~~[几鸡](https://b.luxury/waf/ciEPm341fac5nsWG2 "几鸡 - 学习助理")~~
 
-  此机场每日签到即可领取流量。但免费用户有网站访问限制，但不影响日常基本使用。点此链接注册能获得 1G 币体验金。
+  ~~此机场每日签到即可领取流量。但免费用户有网站访问限制，但不影响日常基本使用。点此链接注册能获得 1G 币体验金。~~
 
 ### 服务器提供商推荐
 
