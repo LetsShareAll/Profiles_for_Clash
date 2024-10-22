@@ -23,7 +23,7 @@ proxies:
   type: ssr
   udp: true
 - cipher: dummy
-  name: United States Atlanta 001
+  name: United States Los Angeles 001
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -33,28 +33,12 @@ proxies:
   server: ssr2.4465779.xyz
   type: ssr
   udp: true
-- alterId: 0
-  cipher: auto
-  name: United States Los Angeles 003
-  network: ws
-  port: 12345
-  server: 23.170.40.116
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0c7fe100-fcce-4c6d-8208-a53f73e93e17
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: github.com/Alvin9999
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
@@ -63,16 +47,14 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -93,8 +75,7 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -108,8 +89,7 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -117,8 +97,7 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -126,8 +105,7 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -145,8 +123,7 @@ proxy-groups:
   proxies:
   - Russia Moscow 002
   - United States Atlanta 000
-  - United States Atlanta 001
-  - United States Los Angeles 003
+  - United States Los Angeles 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
