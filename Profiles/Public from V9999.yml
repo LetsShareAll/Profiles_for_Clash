@@ -5,7 +5,7 @@ mode: Rule
 port: 7890
 proxies:
 - cipher: dummy
-  name: France Paris 001
+  name: Mexico Mexico City 001
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -14,14 +14,18 @@ proxies:
   protocol-param: ''
   server: ssr2.4465779.xyz
   type: ssr
-  udp: true
 - cipher: aes-256-gcm
-  name: Poland Warsaw 002
+  name: Poland Warsaw 003
   password: dongtaiwang.com
   port: 20022
   server: 92.118.205.85
   type: ss
-  udp: true
+- cipher: aes-256-gcm
+  name: Russia Moscow 002
+  password: dongtaiwang.com
+  port: 11111
+  server: 195.133.5.254
+  type: ss
 - cipher: dummy
   name: United States Salt Lake City 000
   obfs: plain
@@ -32,12 +36,12 @@ proxies:
   protocol-param: ''
   server: dongtaiwang5.com
   type: ssr
-  udp: true
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -45,15 +49,17 @@ proxy-groups:
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -73,8 +79,9 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -87,24 +94,27 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -121,8 +131,9 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - France Paris 001
-  - Poland Warsaw 002
+  - Mexico Mexico City 001
+  - Poland Warsaw 003
+  - Russia Moscow 002
   - United States Salt Lake City 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -223,19 +234,10 @@ rules:
 - "DOMAIN-SUFFIX,blog.google,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,googletraveladservices.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,clientservices.googleapis.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,update.googleapis.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,dl.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,dl.l.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,update.googleapis.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt1-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt2-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt3-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt4-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt5-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt6-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt7-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN,alt8-mtalk.google.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
+- "DOMAIN,translate.googleapis.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,fairplay.l.qq.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,livew.l.qq.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN,vd.l.qq.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -9175,11 +9177,8 @@ rules:
 - "DOMAIN-SUFFIX,overcast.fm,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,abema.io,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,abema.tv,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN-SUFFIX,abema-tv.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,ameba.jp,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,hayabusa.io,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN-SUFFIX,hayabusa.media,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN,api-abematv.bucketeer.jp,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-KEYWORD,abematv.akamaized.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,c4assets.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,channel4.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
@@ -9243,10 +9242,6 @@ rules:
 - "DOMAIN-SUFFIX,encoretvb.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,edge.api.brightcove.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,bcbolt446c5271-a.akamaihd.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN-SUFFIX,ott.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN-SUFFIX,hamivideo.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN,hls-hichannel.cdn.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN-KEYWORD,hamivideo.cdn.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,hbo.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,hbogo.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,hbonow.com,\U0001F30D \u56FD\u5916\u5A92\u4F53"
@@ -9304,7 +9299,6 @@ rules:
 - "DOMAIN-SUFFIX,kktv.com.tw,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,kktv.me,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,kktv-theater.kk.stream,\U0001F30D \u56FD\u5916\u5A92\u4F53"
-- "DOMAIN,theater-kktv.cdn.hinet.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,linetv.tw,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN,d3c7rimkq79yfu.cloudfront.net,\U0001F30D \u56FD\u5916\u5A92\u4F53"
 - "DOMAIN-SUFFIX,litv.tv,\U0001F30D \u56FD\u5916\u5A92\u4F53"
@@ -9910,7 +9904,7 @@ rules:
 - "DOMAIN-SUFFIX,paypal-mktg.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,paypalobjects.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "DOMAIN-SUFFIX,cm.steampowered.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
-- "DOMAIN-SUFFIX,steamserver.net,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
+- "DOMAIN,api.steampowered.com,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
 - "IP-CIDR,182.254.116.0/24,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
 - "IP-CIDR,203.205.238.0/23,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
 - "IP-CIDR,203.205.254.0/23,\U0001F3AF \u5168\u7403\u76F4\u8FDE,no-resolve"
