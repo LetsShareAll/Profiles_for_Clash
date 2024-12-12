@@ -19,10 +19,12 @@ common:
   quanx_rule_base: base/all_base.tpl
   loon_rule_base: base/all_base.tpl
   sssub_rule_base: base/all_base.tpl
+  singbox_rule_base: base/all_base.tpl
   proxy_config: SYSTEM
   proxy_ruleset: SYSTEM
   proxy_subscription: NONE
   append_proxy_type: false
+  reload_conf_on_request: false
 
 userinfo:
   stream_rule: 
@@ -48,6 +50,7 @@ node_pref:
   append_sub_userinfo: true
   clash_use_new_field_name: true
   clash_proxies_style: flow
+  singbox_add_clash_modes: true
   rename_node:
 #  - {match: "\\(?((x|X)?(\\d+)(\\.?\\d+)?)((\\s?倍率?)|(x|X))\\)?", replace: "$1x"}
 #  - {script: "function rename(node){}"}
@@ -105,6 +108,8 @@ template:
   - {key: clash.socks_port, value: 7891}
   - {key: clash.allow_lan, value: true}
   - {key: clash.log_level, value: info}
+  - {key: singbox.allow_lan, value: true}
+  - {key: singbox.mixed_port, value: 2080}
   
 aliases:
   - {uri: /v, target: /version}
@@ -116,6 +121,7 @@ aliases:
   - {uri: /mellow, target: "/sub?target=mellow"}
   - {uri: /surfboard, target: "/sub?target=surfboard"}
   - {uri: /loon, target: "/sub?target=loon"}
+  - {uri: /singbox, target: "/sub?target=singbox"}
   - {uri: /ss, target: "/sub?target=ss"}
   - {uri: /ssd, target: "/sub?target=ssd"}
   - {uri: /sssub, target: "/sub?target=sssub"}
