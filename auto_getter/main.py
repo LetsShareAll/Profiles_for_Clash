@@ -379,16 +379,18 @@ def get_shared_links_from_tg_channels(tg_channel_name, shared_links_store_file, 
     print('The links from telegram channel: "' + tg_channel_name + '" has been successfully got!')
 
 
-def get_shared_links_from_files(remote_file, temp_file, shared_links_store_file, shared_link_begin_with):
+def get_shared_links_from_link_files(remote_file, temp_file, shared_links_store_file, supported_shared_link_begin_with, supported_subscribe_link_begin_with):
     """从文件行获取链接。
 
     :param remote_file: 字符串：远程文件链接。
     :param temp_file: 字符串：临时文件存放路径。
     :param shared_links_store_file: 字符串：链接存储文件。
-    :param shared_link_begin_with: 字符串：链接开头。
+    :param supported_shared_link_begin_with: 字符串：支持的服务器分享链接开头。
+    :param supported_subscribe_link_begin_with: 字符串：支持的订阅链接开头。
     :return: 0。
     """
     print('Getting links from "' + remote_file + '"...')
+    shared_link_begin_with = supported_shared_link_begin_with + '|' + supported_subscribe_link_begin_with
     if remote_file != '':
         response = requests.get(remote_file)
         with open(temp_file, 'wb') as file:
@@ -478,7 +480,7 @@ def get_profile(config_path):
     directories_config = others_config['directories']
     shared_links_stored_dir = directories_config['shared-links-stored-dir']
     profiles_stored_dir = directories_config['profiles-stored-dir']
-    temp_file_stored_dir = directories_config['temp-file-stored-dir']
+    temp_files_stored_dir = directories_config['temp-files-stored-dir']
     supported_shared_link_begin_with = others_config['supported-shared-link-begin-with']
     supported_subscribe_link_begin_with = others_config['supported-subscribe-link-begin-with']
     not_supported_yaml_tags = others_config['not-supported-yaml-tags']
@@ -501,7 +503,7 @@ def get_profile(config_path):
         profile_name = profile['name']
         shared_links_stored_file_path = shared_links_stored_dir + '/' + profile_name + '.txt'
         profile_path = profiles_stored_dir + '/' + profile_name + '.yml'
-        temp_file_path = temp_file_stored_dir + '/' + profile_name + '.txt'
+        temp_file_path = temp_files_stored_dir + '/' + profile_name + '.yml'
 
         # 生成配置文件。
         print('Getting profile for ' + profile_name + '...')
@@ -516,23 +518,23 @@ def get_profile(config_path):
                     source = profile['sources'][source_type][i]
 
                     # 根据来源类型选择相应方法。
-                    if source_type == 'pages':
-                        get_shared_links_from_pages(source, shared_links_stored_file_path,
-                                                    supported_shared_link_begin_with)
-                    elif source_type == 'tg-channels':
-                        if source != '':
-                            get_shared_links_from_tg_channels(source, shared_links_stored_file_path,
-                                                              supported_shared_link_begin_with)
+                    if source != '':
+                        if source_type == 'pages':
+                            get_shared_links_from_pages(source, shared_links_stored_file_path,
+                                                        supported_shared_link_begin_with)
+                        elif source_type == 'tg-channels':
+                                get_shared_links_from_tg_channels(source, shared_links_stored_file_path,
+                                                                  supported_shared_link_begin_with)
+                        elif source_type == 'link-files':
+                            get_shared_links_from_link_files(source, temp_file_path, shared_links_stored_file_path,
+                                                        supported_shared_link_begin_with, supported_subscribe_link_begin_with)
+                        elif source_type == 'subscribe-links':
+                            get_shared_links_from_subscribe_links(source, shared_links_stored_file_path, profile_path)
                         else:
-                            print('Telegram channel is null!')
-                    elif source_type == 'files':
-                        get_shared_links_from_files(source, temp_file_path, shared_links_stored_file_path,
-                                                    supported_shared_link_begin_with + "|" + supported_subscribe_link_begin_with)
-                    elif source_type == 'subscribe-links':
-                        get_shared_links_from_subscribe_links(source, shared_links_stored_file_path, profile_path)
+                            print('Don`t support the source type named "' + source_type + '" now!')
+                        sleep(3)
                     else:
-                        print('Don`t support the source type named "' + source_type + '" now!')
-                    sleep(3)
+                        print('Source is null!')
             else:
                 print(source_type + ' in "' + profile_name + '" is NULL!')
 
