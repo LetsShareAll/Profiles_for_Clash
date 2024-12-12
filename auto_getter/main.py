@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import datetime
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 import json
 import os
 import pytz
@@ -291,7 +292,6 @@ def get_date(date_format):
     :return: 字符串：当前时间。
     """
     date = datetime.datetime.now().astimezone(pytz.timezone('Asia/Shanghai')).strftime(date_format)
-    print(date)
     return date
 
 
@@ -309,9 +309,8 @@ def handle_link(link):
             for keyword in keywords:
                 if keyword == 'date':
                     link = str.replace(link, '$(' + pattern + ')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
-        return link
-    else:
-        return link
+    print(f'Handled link: "{link}".')
+    return link
 
 
 def mkdir(directory):
@@ -429,40 +428,56 @@ def get_shared_links_from_pages(source, shared_links_store_file, shared_link_beg
         print('Source is null!')
 
 
-def get_shared_links_from_subscribe_links(subscribe_link, shared_links_store_file, profile_path):
-    """从订阅链接获取链接。
+def get_profiles_from_subscribe_links(subscribe_link, index, temp_profiles_path):
+    """从订阅链接获取配置文件。
 
     :param: subscribe_link: 字符串：订阅链接。
-    :param: shared_links_store_file: 字符串：存储链接的文件位置。
+    :param: index: 整数：当前链接序号。
+    :param: temp_profiles_path: 字符串：存储临时配置文件的位置。
     :return: 0。
     """
     print('Getting links from "' + subscribe_link + '"...')
     subscribe_link = handle_link(subscribe_link)
     headers = {'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36'}
     response = requests.get(subscribe_link, headers=headers)
-    with open(profile_path, 'wb') as file:
+    with open(temp_profiles_path + '/' + str(index) + '.yml', 'wb') as file:
         file.write(response.content)
-    save_links(shared_links_store_file, subscribe_link)
 
 
-def get_profile_link(parameters, shared_links_stored_file):
+def get_profile_link(parameters, shared_links_stored_file, temp_profiles_stored_dir):
     """获取生成配置文件的链接。
 
     :param parameters: 字典：用于 Sub Converter 的参数。
     :param shared_links_stored_file: 字符串：存储链接的文件的路径。
+    :param temp_profiles_stored_dir: 字符串：存储临时配置文件的路径。
     :return: 配置文件的链接。
     """
+    base_url = 'http://127.0.0.1:25500/sub?'
+    url = ''
     if os.path.exists(shared_links_stored_file):
-        url = ''
         for link in open(shared_links_stored_file, encoding='utf-8'):
-            url = url + '|' + link.strip()
+            if url == '':
+                url = link.strip()
+            else:
+                url = url + '|' + link.strip()
+    if os.path.isdir(temp_profiles_stored_dir):
+        if len(os.listdir(temp_profiles_stored_dir)) != 0:
+            for root, _, profiles in os.walk(temp_profiles_stored_dir):
+                for profile in profiles:
+                    # 将路径中的空格转换为 %20。
+                    profile_path = os.path.join(root, profile).replace('\\', '/').replace('./', '', 1).replace(' ', '%20')
+                    if url == '':
+                        url = 'http://' + web_host + ':'+ str(web_port) + '/' + profile_path
+                    else:
+                        url = url + '|http://' + web_host + ':'+ str(web_port) + '/' + profile_path
+
+    if url != '':
         parameters['url'] = url
-        base_url = 'http://127.0.0.1:25500/sub?'
         profile_link = base_url + urlencode(parameters)
         print('Generating Sub_Converter link: "' + profile_link + '".')
         return profile_link
     else:
-        print('Profile get failed! No such file: "' + shared_links_stored_file + '".')
+        print('Profile get failed! No such file or directory: "' + shared_links_stored_file + temp_profiles_stored_dir + '".')
         return ''
 
 
@@ -481,6 +496,7 @@ def get_profile(config_path):
     shared_links_stored_dir = directories_config['shared-links-stored-dir']
     profiles_stored_dir = directories_config['profiles-stored-dir']
     temp_files_stored_dir = directories_config['temp-files-stored-dir']
+    temp_profiles_stored_dir = directories_config['temp-profiles-stored-dir']
     supported_shared_link_begin_with = others_config['supported-shared-link-begin-with']
     supported_subscribe_link_begin_with = others_config['supported-subscribe-link-begin-with']
     not_supported_yaml_tags = others_config['not-supported-yaml-tags']
@@ -504,6 +520,7 @@ def get_profile(config_path):
         shared_links_stored_file_path = shared_links_stored_dir + '/' + profile_name + '.txt'
         profile_path = profiles_stored_dir + '/' + profile_name + '.yml'
         temp_file_path = temp_files_stored_dir + '/' + profile_name + '.yml'
+        temp_profiles_path = temp_profiles_stored_dir  + '/' + profile_name
 
         # 生成配置文件。
         print('Getting profile for ' + profile_name + '...')
@@ -529,7 +546,8 @@ def get_profile(config_path):
                             get_shared_links_from_link_files(source, temp_file_path, shared_links_stored_file_path,
                                                         supported_shared_link_begin_with, supported_subscribe_link_begin_with)
                         elif source_type == 'subscribe-links':
-                            get_shared_links_from_subscribe_links(source, shared_links_stored_file_path, profile_path)
+                            mkdir(temp_profiles_path)
+                            get_profiles_from_subscribe_links(source, i, temp_profiles_path)
                         else:
                             print('Don`t support the source type named "' + source_type + '" now!')
                         sleep(3)
@@ -541,7 +559,7 @@ def get_profile(config_path):
         remove_repetitive_links(shared_links_stored_file_path)
 
         # 下载配置。
-        sub_converter_link = get_profile_link(sub_converter_config, shared_links_stored_file_path)
+        sub_converter_link = get_profile_link(sub_converter_config, shared_links_stored_file_path, temp_profiles_stored_dir)
         if sub_converter_link != '':
             response = requests.get(sub_converter_link)
             with open(profile_path, 'wb') as file:
@@ -595,17 +613,41 @@ def run_sub_converter():
         print('The platform "' + system_platform + '" does not support now!')
 
 
+def run_web_server(host, port):
+    """
+    启动 HTTP Web 服务器。
+
+    :param host: 字符串：服务器主机。
+    :param port: 字符串：服务器端口。
+    :return: 0。
+    """
+    server = HTTPServer((host, port), SimpleHTTPRequestHandler)
+    print(f"Web 服务器已启动，访问地址: http://{host}:{port}")
+    try:
+        server.serve_forever()
+    except OSError as e:
+        print(f"端口 {port} 被占用或无法访问: {e}")
+    except KeyboardInterrupt:
+        print("\nWeb 服务器已停止。")
+    except Exception as e:
+        print(f"启动服务器时出现错误: {e}")
+
+
 def main():
     """从此处开始运行。
 
     :return: 0。
     """
-    sub_converter = Thread(target=run_sub_converter, daemon=True)
-    profile_getter = Thread(target=run_get_profile, daemon=True)
-    sub_converter.start()
-    profile_getter.start()
-    profile_getter.join()
+    sub_converter_thread = Thread(target=run_sub_converter, daemon=True)
+    profile_getter_thread = Thread(target=run_get_profile, daemon=True)
+    web_server_thread = Thread(target=run_web_server, args=(web_host, web_port), daemon=True)
+    sub_converter_thread.start()
+    web_server_thread.start()
+    profile_getter_thread.start()
+    profile_getter_thread.join()
 
 
 if __name__ == '__main__':
+    web_host = 'localhost'
+    web_port = 8000
     main()

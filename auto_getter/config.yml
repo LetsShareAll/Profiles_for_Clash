@@ -71,12 +71,14 @@ profile:
 others:
   # 关于文件夹的设置。
   directories:
-    # 保存分享链接文件的文件夹位置。
-    shared-links-stored-dir: './links'
     # 保存配置文件的文件夹位置。
     profiles-stored-dir: '../Profiles'
     # 临时保存文件的文件夹位置。
     temp-files-stored-dir: './temp'
+    # 保存分享链接文件的文件夹位置。
+    shared-links-stored-dir: './temp/links'
+    # 保存临时配置文件的文件夹位置。
+    temp-profiles-stored-dir: './temp/profiles'
   # 受支持的链接的开头的正则表达式。
   supported-shared-link-begin-with: 'ss://.*|ssr://.*|vmess://.*|vless://.*|trojan://.*'
   supported-subscribe-link-begin-with: 'http://.*|https://.*'
