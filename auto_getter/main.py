@@ -2,6 +2,7 @@
 import datetime
 import json
 import os
+import pytz
 import re
 import subprocess
 import sys
@@ -289,7 +290,7 @@ def get_date(date_format):
     :param date_format: 字符串：时间格式。
     :return: 字符串：当前时间。
     """
-    date = datetime.datetime.now().strftime(date_format)
+    date = datetime.datetime.now().astimezone(pytz.timezone('Asia/Shanghai')).strftime(date_format)
     print(date)
     return date
 
