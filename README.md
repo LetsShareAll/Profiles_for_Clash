@@ -16,6 +16,7 @@
 
 - [new-pac](https://github.com/Alvin9999/new-pac "Alvin9999/new-pac: 科学上网/自由上网/翻墙/软件/方法，一键翻墙浏览器，免费 shadowsocks/ss/ssr/v2ray/goflyway 账号/节点分享，vps 一键搭建脚本/教程。")
 - [oneClash](https://oneclash.cc "oneClash | 每日精选 SSR/V2ray/Clash 免费节点每天更新")
+- [ClashNode](https://clashnode.cc "ClashNode 每天更新 | SSR/V2ray/Clash 免费节点订阅。")
 - ~~[翻墙党](https://fanqiangdang.com "翻墙论坛 | 翻墙党社区 - Powered by Discuz!")~~
 - ~~[SS 节点公益发放](https://t.me/ssList "ssList@Telegram")~~
 - ~~[SSR 节点免费发放](https://t.me/ssrList "ssrList@Telegram")~~
@@ -23,4 +24,5 @@
 
 ## 使用工具
 
-- [subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.")
+- [tindy2013/subconverter](https://github.com/tindy2013/subconverter "tindy2013/subconverter: Utility to convert between various subscription format.")
+- [asdlokj1qpi233/subconverter](https://github.com/asdlokj1qpi233/subconverter "asdlokj1qpi233/subconverter: About Utility to convert between various subscription format.Support hy2、hy and vless for singbox and clash meta.original git: https://github.com/asdlokj1qpi23/subconverter.")

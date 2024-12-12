@@ -27,6 +27,16 @@ profiles-sources:
       subscribe-links:
         - 'https://oneclash.githubrowcontent.com/$(date{%Y/%m/%Y%m%d}).yaml'
     preprocessing: false
+  
+  - name: 'Public from ClashNode'
+    sources:
+      subscribe-links:
+        - 'https://clashnode.cc/uploads/$(date{%Y/%m})/0-$(date{%Y%m%d}).yaml'
+        - 'https://clashnode.cc/uploads/$(date{%Y/%m})/1-$(date{%Y%m%d}).yaml'
+        - 'https://clashnode.cc/uploads/$(date{%Y/%m})/2-$(date{%Y%m%d}).yaml'
+        - 'https://clashnode.cc/uploads/$(date{%Y/%m})/3-$(date{%Y%m%d}).yaml'
+        - 'https://clashnode.cc/uploads/$(date{%Y/%m})/4-$(date{%Y%m%d}).yaml'
+    preprocessing: false
 
 # Sub Converter 设置。详见 https://github.com/tindy2013/subconverter/blob/master/README-cn.md。
 sub-converter:
