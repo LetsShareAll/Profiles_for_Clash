@@ -305,14 +305,11 @@ def handle_link(link):
     patterns = re.findall(r"[$][(](.*?)[)]", link)
     if len(patterns) > 0:
         for pattern in patterns:
-            print(pattern)
             keywords = re.findall(r"(.*?)[{]", pattern)
             for keyword in keywords:
-                print(keyword)
                 if keyword == 'date':
-                    return str.replace(link, '$(' + pattern + ')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
-                else:
-                    return link
+                    link = str.replace(link, '$(' + pattern + ')', get_date(re.findall(r"[{](.*?)[}]", pattern)[0]))
+        return link
     else:
         return link
 
