@@ -4,14 +4,8 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: Russia Zelenograd 001
-  password: dongtaiwang.com
-  port: 23456
-  server: 185.22.155.228
-  type: ss
-- cipher: dummy
-  name: United States Salt Lake City 000
+- cipher: aes-256-cfb
+  name: Russia Moscow 000
   obfs: tls1.2_ticket_fastauth
   obfs-param: ''
   password: dongtaiwang.com
@@ -20,25 +14,31 @@ proxies:
   protocol-param: ''
   server: dongtaiwang5.com
   type: ssr
+- cipher: aes-256-gcm
+  name: The Netherlands Amsterdam 001
+  password: dongtaiwang.com
+  port: 33333
+  server: 109.104.154.146
+  type: ss
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -57,8 +57,8 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -70,22 +70,22 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -101,8 +101,8 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - Russia Zelenograd 001
-  - United States Salt Lake City 000
+  - Russia Moscow 000
+  - The Netherlands Amsterdam 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
