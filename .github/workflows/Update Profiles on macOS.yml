@@ -8,6 +8,9 @@ on:
 jobs:
   update-profiles:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        python-version: ['3.12', '3.13' ]
 
     steps:
       - uses: actions/checkout@v3
@@ -15,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.x
+          python-version: "${{ matrix.python-version }}"
           architecture: x64
 
       - name: Install Python dependencies

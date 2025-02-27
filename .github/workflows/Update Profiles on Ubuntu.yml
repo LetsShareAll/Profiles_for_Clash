@@ -22,6 +22,10 @@ jobs:
   update-profiles:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    strategy:
+      # Define a matrix of different job configurations
+      matrix:
+        python-version: ['3.12', '3.13' ]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -31,7 +35,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.x
+          python-version: "${{ matrix.python-version }}"
           architecture: x64
 
       # this Action should follow steps to set up Python build environment

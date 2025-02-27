@@ -8,17 +8,26 @@ on:
 jobs:
   update-profiles:
     runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: ['3.12', '3.13' ]
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
         with:
-          path: "auto_getter/requirements.txt"
-          update-pip: "true"
-          update-setuptools: "true"
-          update-wheel: "true"
+          python-version: "${{ matrix.python-version }}"
+          architecture: x64
+
+      # - name: Install Python dependencies
+      #   uses: py-actions/py-dependency-install@v3
+      #   with:
+      #     path: "auto_getter/requirements.txt"
+      #     update-pip: "true"
+      #     update-setuptools: "true"
+      #     update-wheel: "true"
 
       - name: Run Scripts
         run: |
