@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR.ini
 # 模版最后更新日期：2025/02/10 17:22:37
-# 配置生成日期：2025-03-10 12:58:34
+# 配置生成日期：2025-03-12 03:57:44
 
 mixed-port: 7890
 allow-lan: false
@@ -57,7 +57,6 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
   - name: 重度用户推荐使用机场
     type: ss
@@ -66,7 +65,6 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
-    udp: true
     cipher: aes-128-gcm
   - name: 免费节点可能会泄漏访问记录
     type: ss
@@ -75,45 +73,55 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
-    udp: true
-    cipher: aes-128-gcm
-  - name: 低月租大流量卡：121234.top
-    type: ss
-    server: 127.0.0.1
-    port: 443
-    tls: false
-    password: 6601fb90e9b3
-    ip-version: dual
-    udp: true
     cipher: aes-128-gcm
   - name: 🇺🇸_US_美国_1
     type: ss
-    server: 54.201.149.176
+    server: 35.86.111.233
     port: 443
     tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_3
+  - name: 🇺🇦_UA_乌克兰_1
     type: ss
-    server: 34.214.175.186
-    port: 443
+    server: at1.opensocks.site
+    port: 8388
     tls: false
-    password: amazonskr05
+    password: ODA2MGZh
     ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
+    cipher: chacha20-ietf-poly1305
+  - name: 🇷🇺_RU_俄罗斯_1
+    type: vmess
+    server: 185.174.138.199
+    port: 2052
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    network: ws
+    tls: true
+    servername: yellow-paper-029c.yvonna.workers.dev
+    skip-cert-verify: true
+    ip-version: dual
+    cipher: auto
+  - name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
+    type: vmess
+    server: 45.142.120.190
+    port: 2082
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    network: ws
+    tls: true
+    servername: yellow-paper-029c.yvonna.workers.dev
+    skip-cert-verify: true
+    ip-version: dual
+    cipher: auto
   - name: 🇺🇸_US_美国->🇯🇵_JP_日本
     type: vmess
     server: 172.67.202.155
     port: 2082
     uuid: 5ce824bc-d76b-4420-aef3-45a7bade5228
     network: ws
-    tls: false
+    tls: true
+    servername: zoornazanfarsineveshtam.onetwothree123.ir
+    skip-cert-verify: true
     ip-version: dual
-    udp: true
-    alterId: 0
     cipher: auto
   - name: 🇺🇸_US_美国_4
     type: ss
@@ -122,8 +130,18 @@ proxies:
     tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
     cipher: aes-256-cfb
+  - name: 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+    type: vmess
+    server: 185.174.138.209
+    port: 2095
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    network: ws
+    tls: true
+    servername: yellow-paper-029c.yvonna.workers.dev
+    skip-cert-verify: true
+    ip-version: dual
+    cipher: auto
   - name: 🇺🇸_US_美国_5
     type: ss
     server: 35.91.216.191
@@ -131,25 +149,41 @@ proxies:
     tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
+    cipher: aes-256-cfb
+  - name: 🇷🇺_RU_俄罗斯_2
+    type: vmess
+    server: 185.174.138.196
+    port: 2082
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    network: ws
+    tls: true
+    servername: yellow-paper-029c.yvonna.workers.dev
+    skip-cert-verify: true
+    ip-version: dual
+    cipher: auto
+  - name: 🇺🇦_UA_乌克兰_2
+    type: ss
+    server: 95.164.36.59
+    port: 8388
+    tls: false
+    password: ODA2MGZh
+    ip-version: dual
+    cipher: chacha20-ietf-poly1305
+  - name: 🇺🇸_US_美国_6
+    type: ss
+    server: 35.87.37.159
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_7
     type: ss
-    server: 34.217.73.31
+    server: 35.91.235.173
     port: 443
     tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_8
-    type: ss
-    server: 35.86.111.233
-    port: 443
-    tls: false
-    password: amazonskr05
-    ip-version: dual
-    udp: true
     cipher: aes-256-cfb
   - name: 🇨🇳_CN_中国
     type: vmess
@@ -157,85 +191,18 @@ proxies:
     port: 63092
     uuid: 2ecc00a4-25c3-344e-ae6c-8872b9092e25
     network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    cipher: auto
-  - name: 🇺🇸_US_美国_10
-    type: ss
-    server: 35.92.145.143
-    port: 443
-    tls: false
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_11
-    type: trojan
-    server: 63.177.204.133
-    port: 22222
-    network: tcp
     tls: true
-    password: telegram-id-directvpn
-    sni: trojan.burgerip.co.uk
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
+    servername: de01-cdn.airport-v2.com
+    skip-cert-verify: true
     ip-version: dual
-    udp: true
-  - name: 🇺🇦_UA_乌克兰_1
-    type: ss
-    server: 85.90.194.200
-    port: 8080
-    tls: false
-    password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇦_UA_乌克兰_2
-    type: ss
-    server: at1.opensocks.site
-    port: 8388
-    tls: false
-    password: ODA2MGZh
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇸_US_美国_16
+    cipher: auto
+  - name: 🇺🇸_US_美国_11
     type: ss
     server: 35.91.198.93
     port: 443
     tls: false
     password: amazonskr05
     ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_17
-    type: ss
-    server: 35.87.37.159
-    port: 443
-    tls: false
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_18
-    type: ss
-    server: 35.91.235.173
-    port: 443
-    tls: false
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇩🇰_DK_丹麦
-    type: ss
-    server: 185.186.79.53
-    port: 989
-    tls: false
-    password: f8f7aCzcPKbsF8p3
-    ip-version: dual
-    udp: true
     cipher: aes-256-cfb
 proxy-groups:
   - name: 🚀 节点选择
@@ -246,23 +213,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -272,23 +236,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -298,23 +259,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -323,23 +281,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -348,23 +303,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -373,23 +325,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -415,23 +364,20 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
-      - 低月租大流量卡：121234.top
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_3
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
       - 🇺🇸_US_美国_4
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国_10
-      - 🇺🇸_US_美国_11
-      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_2
       - 🇺🇦_UA_乌克兰_2
-      - 🇺🇸_US_美国_16
-      - 🇺🇸_US_美国_17
-      - 🇺🇸_US_美国_18
-      - 🇩🇰_DK_丹麦
+      - 🇺🇸_US_美国_6
+      - 🇺🇸_US_美国_7
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_11
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
