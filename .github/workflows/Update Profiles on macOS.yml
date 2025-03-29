@@ -37,8 +37,8 @@ jobs:
         run: |
           china_date=$(TZ='Asia/Shanghai' date +%Y-%m-%d" "%H:%M:%S)
           message="更新（代理配置）: \`${china_date}\` 更新。"
-          git config --global user.email "<>"
-          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git add .
           git commit -m "${message}"
           git pull --rebase
