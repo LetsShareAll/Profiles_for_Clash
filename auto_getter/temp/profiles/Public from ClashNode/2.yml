@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR.ini
 # 模版最后更新日期：2025/02/11 01:22:37
-# 配置生成日期：2025-03-30 14:08:29
+# 配置生成日期：2025-03-31 20:43:09
 
 mixed-port: 7890
 allow-lan: false
@@ -57,6 +57,7 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
+    udp: true
     cipher: aes-128-gcm
   - name: 重度用户推荐使用机场
     type: ss
@@ -65,6 +66,7 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
+    udp: true
     cipher: aes-128-gcm
   - name: 免费节点可能会泄漏访问记录
     type: ss
@@ -73,57 +75,244 @@ proxies:
     tls: false
     password: 6601fb90e9b3
     ip-version: dual
+    udp: true
     cipher: aes-128-gcm
-  - name: 🇺🇸_US_美国_2
-    type: ss
-    server: 54.185.253.219
-    port: 443
+  - name: 🇺🇸_US_美国_1
+    type: vmess
+    server: 134.195.211.116
+    port: 21022
+    uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+    network: ws
     tls: false
-    password: amazonskr05
     ip-version: dual
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 🇬🇧_GB_英国->🇨🇳_CN_中国
+    type: trojan
+    server: 51.21.7.106
+    port: 22222
+    tls: true
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: false
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+    type: trojan
+    server: 111.62.241.211
+    port: 20086
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 6.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国_1
+    type: trojan
+    server: 111.62.241.211
+    port: 20104
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 4.2gyh5ybsic.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇮🇸_IS_冰岛
     type: ss
-    server: 185.231.233.112
+    server: 37.235.49.152
     port: 989
     tls: false
     password: f8f7aCzcPKbsF8p3
     ip-version: dual
+    udp: true
     cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_2
+    type: ss
+    server: 52.40.170.193
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+    type: trojan
+    server: 20.2.156.186
+    port: 443
+    tls: true
+    password: 6557bf4a-852b-4a69-ad35-d53293386a13
+    sni: ru.mjt000.com
+    skip-cert-verify: false
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_3
+    type: vmess
+    server: 134.195.211.116
+    port: 21023
+    uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+    network: ws
+    tls: false
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 🇩🇪_DE_德国->🇺🇸_US_美国
+    type: ss
+    server: 45.87.175.188
+    port: 8080
+    tls: false
+    password: 4a2rfixophdjffa8KVA4Aa
+    ip-version: dual
+    udp: true
+    cipher: chacha20-ietf-poly1305
   - name: 🇺🇸_US_美国_4
+    type: trojan
+    server: ru.mjt000.com
+    port: 443
+    tls: true
+    password: 6557bf4a-852b-4a69-ad35-d53293386a13
+    sni: ru.mjt000.com
+    skip-cert-verify: false
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国->🇨🇳_CN_中国
+    type: vmess
+    server: 134.195.211.116
+    port: 21027
+    uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+    network: ws
+    tls: false
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 🇺🇸_US_美国_5
+    type: ss
+    server: 34.209.118.169
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+    type: trojan
+    server: 20.2.156.105
+    port: 443
+    tls: true
+    password: 6557bf4a-852b-4a69-ad35-d53293386a13
+    sni: ru.mjt000.com
+    skip-cert-verify: false
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国_2
+    type: trojan
+    server: 111.62.241.211
+    port: 20106
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 6.2gyh5ybsic.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_6
+    type: ss
+    server: 34.219.71.252
+    port: 443
+    tls: false
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_8
     type: ss
     server: 35.93.21.189
     port: 443
     tls: false
     password: amazonskr05
     ip-version: dual
+    udp: true
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_5
-    type: ss
-    server: 54.191.187.21
-    port: 443
-    tls: false
-    password: amazonskr05
-    ip-version: dual
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇮🇳_IN_印度
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
     type: trojan
-    server: 35ba5dc4c753892feb3270a8e745e72b.lianjianode.xyz
-    port: 42168
+    server: 111.62.241.211
+    port: 20091
     network: tcp
     tls: true
-    password: c017fb27-a4b4-48f9-80f6-2bdb504adf75
-    sni: data.bilibili.com
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 11.p5zqtpj2n7.xyz
     skip-cert-verify: true
     ip-version: dual
-  - name: 🇺🇸_US_美国_8
-    type: ss
-    server: 54.71.217.123
-    port: 443
-    tls: false
-    password: amazonskr05
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+    type: trojan
+    server: 111.62.241.211
+    port: 20087
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 7.p5zqtpj2n7.xyz
+    skip-cert-verify: true
     ip-version: dual
-    cipher: aes-256-cfb
+    udp: true
+  - name: 🇨🇳_CN_中国_3
+    type: trojan
+    server: 111.62.241.211
+    port: 20096
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 16.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+    type: trojan
+    server: 111.62.241.211
+    port: 20093
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 13.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+    type: trojan
+    server: 111.62.241.211
+    port: 20098
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 18.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+    type: trojan
+    server: 111.62.241.211
+    port: 20083
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 3.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
+    type: trojan
+    server: 111.62.241.211
+    port: 20084
+    network: tcp
+    tls: true
+    password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+    sni: 4.p5zqtpj2n7.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -133,12 +322,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -148,12 +354,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -163,12 +386,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: 📲 电报信息
     type: select
     proxies:
@@ -177,12 +417,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -191,12 +448,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -205,12 +479,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -236,12 +527,29 @@ proxy-groups:
       - 6元高速机场：cczzuu.top
       - 重度用户推荐使用机场
       - 免费节点可能会泄漏访问记录
+      - 🇺🇸_US_美国_1
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国_1
+      - 🇮🇸_IS_冰岛
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇩🇪_DE_德国->🇺🇸_US_美国
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
       - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
+      - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯_2
+      - 🇨🇳_CN_中国_2
+      - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_8
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+      - 🇨🇳_CN_中国_3
+      - 🇨🇳_CN_中国->🇮🇩_ID_印度尼西亚
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
