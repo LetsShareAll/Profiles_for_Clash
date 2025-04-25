@@ -6,213 +6,304 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"vless","name":"dongtaiwang.com节点2_1","server":"195.154.200.156","port":19188,"uuid":"22a54b72-9c39-4bb0-97d0-41bbaaca2a67","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"HKG_1","server":"8.210.222.238","port":38513,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"US_1","server":"47.92.152.169","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"NRT_1","server":"20.243.85.49","port":10443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|12.69Mb","server":"47.92.152.169","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
   - {"type":"vless","name":"dongtaiwang.com节点2_2","server":"163.172.122.94","port":19188,"uuid":"22a54b72-9c39-4bb0-97d0-41bbaaca2a67","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"trojan","name":"HKG_1","server":"8.210.222.238","port":38513,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_2","server":"8.210.222.238","port":38513,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_3","server":"47.238.136.218","port":35961,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_4","server":"103.135.248.172","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_5","server":"103.135.248.172","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"JP","server":"8.221.142.97","port":587,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"FUK_1","server":"210.96.92.11","port":12423,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_1","server":"20.243.85.49","port":10443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_6","server":"47.238.136.218","port":35961,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_2","server":"147.79.20.239","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"FUK_2","server":"210.96.92.11","port":12423,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_3","server":"147.79.20.239","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"KR_1","server":"59.23.155.196","port":10397,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_4","server":"202.144.192.76","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"FUK_1","server":"210.96.92.11","port":12423,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"FUK_2","server":"210.96.92.11","port":12423,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|3.89Mb","server":"112.132.215.34","port":"50007","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
   - {"type":"trojan","name":"FUK_3","server":"183.98.186.160","port":18020,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_5","server":"202.144.192.76","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"FUK_4","server":"183.98.186.160","port":18020,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"SIN_1","server":"124.156.202.172","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_6","server":"20.243.85.49","port":10443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|0.21Mb","server":"47.104.186.133","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"FUK_4","server":"183.98.186.160","port":18020,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|5.05Mb","server":"47.116.166.178","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"NRT_2","server":"20.243.85.49","port":10443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"SIN_2","server":"124.156.202.172","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"NRT_7","server":"74.176.199.104","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"HK_1","server":"18.167.20.157","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"HK_2","server":"18.167.37.206","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"KR_2","server":"220.118.248.123","port":30012,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"NRT_8","server":"74.176.199.104","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_7","server":"38.22.88.199","port":18026,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"ICN_1","server":"119.195.104.2","port":32400,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"KR_3","server":"183.106.162.127","port":18888,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"ICN_2","server":"119.202.249.46","port":50000,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|23.81Mb","server":"120.210.205.59","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"|2.48Mb","server":"112.132.215.12","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"ICN_1","server":"119.195.104.2","port":32400,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"ICN_2","server":"119.195.104.2","port":32400,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"ICN_3","server":"119.202.249.46","port":50000,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"PL","server":"185.188.147.79","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"HKG_8","server":"38.22.88.199","port":18026,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"ICN_4","server":"119.195.104.2","port":32400,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_1","server":"38.59.246.41","port":9443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_1","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"LAX_1","server":"154.17.224.83","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_2","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"LAX_2","server":"154.9.249.84","port":65432,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_2","server":"38.59.242.169","port":27738,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"FRA_1","server":"79.137.204.220","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"LAX_3","server":"154.17.224.83","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"FRA_2","server":"79.137.204.220","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_3","server":"107.173.111.232","port":20087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_1","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"LAX_4","server":"154.9.249.84","port":65432,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_1","server":"thaddeus.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_4","server":"27.50.49.230","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_5","server":"108.165.152.36","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_6","server":"104.129.167.255","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_7","server":"38.59.246.41","port":9443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_8","server":"108.165.152.113","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_2","server":"kip.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_9","server":"104.129.167.255","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_2","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_10","server":"27.50.49.74","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_11","server":"108.165.152.29","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_12","server":"167.68.4.131","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_3","server":"pranab.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"官方优选_4","server":"thaddeus.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_13","server":"108.165.152.36","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_14","server":"108.165.152.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_15","server":"103.116.7.235","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_16","server":"27.50.49.74","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_17","server":"188.164.159.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_18","server":"188.164.159.74","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_19","server":"108.165.152.207","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_20","server":"103.116.7.235","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_5","server":"duke.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_21","server":"108.165.152.1","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_22","server":"27.50.49.230","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_23","server":"188.164.159.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_3","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_4","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"GB","server":"217.163.76.97","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"US_3","server":"167.68.4.10","port":2096,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_6","server":"lynn.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_24","server":"198.62.62.61","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_25","server":"162.120.94.23","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_26","server":"27.50.49.209","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"AT_1","server":"212.183.88.193","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_27","server":"27.50.49.136","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_28","server":"108.165.152.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_29","server":"27.50.49.177","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_7","server":"kip.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_30","server":"154.197.64.248","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_31","server":"188.164.159.74","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_32","server":"108.165.152.175","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_5","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"LAX_5","server":"154.17.230.119","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_33","server":"27.50.49.136","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_34","server":"108.165.152.163","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_35","server":"46.254.93.134","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_36","server":"108.165.152.55","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_37","server":"213.109.205.45","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_4","server":"63.141.128.193","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"官方优选_8","server":"theo.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_38","server":"162.120.94.23","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_6","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_7","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_39","server":"198.62.62.61","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"官方优选_9","server":"duke.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_40","server":"46.254.93.175","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_41","server":"108.165.152.239","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_5","server":"63.141.128.102","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_42","server":"108.165.152.163","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_43","server":"167.68.4.223","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_8","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_44","server":"188.164.159.246","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_45","server":"108.165.152.55","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_46","server":"108.165.152.66","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_47","server":"108.165.152.130","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_48","server":"27.50.49.177","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_49","server":"161.145.150.29","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_50","server":"27.50.49.41","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_51","server":"108.165.152.1","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"US_6","server":"bestcf.030101.xyz","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_52","server":"154.197.64.67","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_53","server":"27.50.49.61","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_9","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_54","server":"38.59.242.169","port":27738,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_7","server":"bestcf.030101.xyz","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_55","server":"108.165.152.29","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_56","server":"213.109.205.45","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_57","server":"154.197.64.62","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_58","server":"188.164.159.246","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_59","server":"154.197.64.67","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_60","server":"27.50.49.209","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_10","server":"theo.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_8","server":"63.141.128.140","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"AT_2","server":"212.183.88.136","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"RU","server":"45.67.215.117","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"AT_3","server":"212.183.88.193","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_10","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_61","server":"167.68.4.131","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_62","server":"161.145.150.29","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_11","server":"theo.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_12","server":"duke.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"ICN_4","server":"119.202.249.46","port":50000,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"|28.32Mb","server":"120.26.55.225","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"US_2","server":"47.104.186.133","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"美国_1","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vmess","name":"_中国_1","server":"112.132.215.12","port":"50002","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"HKG_2","server":"38.22.88.199","port":18026,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"日期：04-04","server":"183.236.51.36","port":"59003","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"|17.99Mb","server":"183.236.51.36","port":"59003","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"SJC_1","server":"38.59.242.169","port":27738,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"LAX_1","server":"154.17.230.119","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"FRA_1","server":"79.137.204.220","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"KR","server":"146.56.136.39","port":10099,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"LAX_2","server":"154.17.224.83","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_3","server":"154.17.21.134","port":18446,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"CH","server":"140.238.212.95","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"FRA_2","server":"79.137.204.220","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_2","server":"38.59.246.41","port":9443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_4","server":"192.9.248.209","port":60000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"LAX_3","server":"154.17.230.119","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"🇩🇪德国11|⬇️1.1MB/s","server":"188.114.97.3","port":443,"uuid":"f2e486f9-1697-4be6-be59-6c4fb42c7a24","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"paS-kaLE-AGhA.pageS.deV","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"paS-kaLE-AGhA.pageS.deV"}}}
+  - {"type":"vless","name":"US_5","server":"192.9.227.116","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"官方优选_1","server":"arvind.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_3","server":"107.173.111.232","port":20087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_1","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"LAX_4","server":"154.17.224.83","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_6","server":"138.2.235.224","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_4","server":"108.165.152.29","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_7","server":"192.9.139.160","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国10|⬇️1.9MB/s","server":"185.18.250.242","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_5","server":"38.59.246.41","port":9443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_6","server":"167.68.4.58","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"🇮🇳印度1|⬇️1.8MB/s","server":"172.67.208.128","port":80,"uuid":"033a4982-a8c7-4bfb-9481-5a8a1c62cfd6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"azadnet.b0b723a182.workers.dev","ws-opts":{"path":"/iDE2j5JJnqTGPjmS?ed=2560","headers":{"host":"azadnet.b0b723a182.workers.dev"}}}
+  - {"type":"vless","name":"🇹🇼台湾1|⬇️3.1MB/s","server":"195.85.59.161","port":8080,"uuid":"dbf403f4-b871-4446-8712-675562dbbb7b","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"0221.enedrehd.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"host":"0221.enedrehd.workers.dev"}}}
+  - {"type":"trojan","name":"官方优选_2","server":"sage.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_2","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_8","server":"160.79.104.162","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国8|⬇️3.3MB/s","server":"185.18.250.240","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"trojan","name":"官方优选_3","server":"sage.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_7","server":"23.95.240.37","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_8","server":"198.62.62.61","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"dongtaiwang.com节点2_3","server":"195.154.56.233","port":37123,"uuid":"22a54b72-9c39-4bb0-97d0-41bbaaca2a67","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"SJC_9","server":"167.68.4.58","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_10","server":"27.50.49.136","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_11","server":"188.164.159.246","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_12","server":"45.67.214.41","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_13","server":"46.254.93.134","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_14","server":"27.50.49.230","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_4","server":"lynn.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_5","server":"thaddeus.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"🇺🇸美国40|⬇️5.6MB/s","server":"185.18.250.121","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_15","server":"108.165.152.29","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_16","server":"27.50.49.230","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_9","server":"160.79.105.142","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_17","server":"104.129.167.255","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_18","server":"198.62.62.61","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_6","server":"arvind.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_10","server":"192.18.130.65","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_3","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_11","server":"160.79.105.76","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_4","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_19","server":"108.165.152.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"US_12","server":"bestcf.030101.xyz","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_13","server":"192.18.143.57","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"ZA_1","server":"160.123.255.131","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_5","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国43|⬇️3.8MB/s","server":"45.85.118.93","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/TM-AZARBAYJAB1TM-AZARBAYJAB1?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_20","server":"27.50.49.74","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_21","server":"27.50.49.41","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_22","server":"45.150.115.195","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"官方优选_7","server":"duke.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_6","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_7","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_8","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_9","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_23","server":"108.165.152.113","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_24","server":"108.165.152.130","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_25","server":"103.116.7.235","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_26","server":"154.197.64.164","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"AU","server":"152.67.125.161","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"BR_1","server":"185.133.35.112","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_14","server":"192.0.63.29","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_10","server":"www.udemy.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_27","server":"108.165.152.239","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_28","server":"108.165.152.130","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_29","server":"108.165.152.163","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"LAX_5","server":"154.212.46.70","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_30","server":"154.197.64.67","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_31","server":"104.129.167.255","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_32","server":"23.95.240.37","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_33","server":"108.165.152.239","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_11","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国22|⬇️5.1MB/s","server":"172.66.44.68","port":443,"uuid":"87ced8c4-b4d4-4c7b-ba67-11b78833a1b6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"37c60f8d.ALBAnGURaKUqi.paGEs.dEv","ws-opts":{"path":"/telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420,telegram-@EXPRESSVPN_420?ed=2560","headers":{"host":"37c60f8d.ALBAnGURaKUqi.paGEs.dEv"}}}
+  - {"type":"vless","name":"🇹🇼台湾6|⬇️1.5MB/s","server":"45.131.210.157","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1224.j9q1xuv8.workers.dev","ws-opts":{"path":"/Telegram","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_34","server":"108.165.152.113","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_35","server":"46.254.93.134","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_12","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_36","server":"46.254.93.175","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_37","server":"92.243.75.49","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_8","server":"duke.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_13","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_14","server":"tasteatlas.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_15","server":"192.0.54.25","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_16","server":"69.84.182.141","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇨🇭瑞士2|⬇️7.4MB/s","server":"152.67.68.116","port":443,"uuid":"7c317161-5cf8-4cbc-811a-d1297c41bb23","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"YAPC-1.afshin.ir","tls":true,"udp":true}
+  - {"type":"vless","name":"🇺🇸美国6|⬇️1.7MB/s","server":"141.193.213.0","port":80,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"psycho.suex12.ir","ws-opts":{"path":"/Telegram@V2ray_Alpha","headers":{"host":"psycho.suex12.ir"}}}
+  - {"type":"vless","name":"🇹🇼台湾3|⬇️4.5MB/s","server":"172.67.202.6","port":2082,"uuid":"2737560d-1867-47fa-aa80-351c36d771c7","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"0118.kznyoum2.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"host":"0118.kznyoum2.workers.dev"}}}
+  - {"type":"vless","name":"🇹🇼台湾2|⬇️2.8MB/s","server":"172.67.138.70","port":2052,"uuid":"2737560d-1867-47fa-aa80-351c36d771c7","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"0118.kznyoum2.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"host":"0118.kznyoum2.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_38","server":"27.50.49.74","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_39","server":"108.165.152.1","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_40","server":"154.197.64.62","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_41","server":"108.165.152.1","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_42","server":"108.165.152.175","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_9","server":"ignacio.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_17","server":"160.79.105.77","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_15","server":"www.wto.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"BR_2","server":"185.133.35.60","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_18","server":"160.79.105.203","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国42|⬇️1.3MB/s","server":"45.85.118.16","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/TM-AZARBAYJAB1TM-AZARBAYJAB1?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"vless","name":"🇺🇸美国34|⬇️2.4MB/s","server":"172.66.44.118","port":443,"uuid":"63005378-e32e-4e23-bc6e-84812f147a6f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ConFIgmr.PaGeS.dEV","ws-opts":{"path":"/VrChX4o5oasIm4In?ed=2560","headers":{"host":"ConFIgmr.PaGeS.dEV"}}}
+  - {"type":"vless","name":"🇺🇸美国2|⬇️3.8MB/s","server":"104.24.147.64","port":80,"uuid":"03e4d6fe-f461-499f-b9c6-35c60f192e1a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ppal03-ppal03.letiwe3303.workers.dev","ws-opts":{"path":"/","headers":{"host":"ppal03-ppal03.letiwe3303.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_43","server":"45.67.214.41","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_44","server":"154.197.64.248","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_45","server":"45.150.115.195","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_16","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_17","server":"198.62.62.4","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_19","server":"160.79.104.195","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_18","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"美国_2","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_46","server":"156.225.72.199","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_10","server":"ignacio.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_47","server":"167.68.5.248","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_48","server":"130.250.137.63","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_49","server":"162.120.94.23","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_5","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_20","server":"192.0.54.74","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_21","server":"160.79.105.66","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_6","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"RU_1","server":"45.67.215.167","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇰🇷韩国6|⬇️1.1MB/s","server":"172.67.176.159","port":80,"uuid":"41398380-2073-4d85-878a-24194a6f04a3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"3.azadteam.workers.dev","ws-opts":{"path":"/Sy0HOf5sZffep0QQ?ed=2560","headers":{"host":"3.azadteam.workers.dev"}}}
+  - {"type":"vless","name":"🌀其他2-未识别|⬇️1.7MB/s","server":"45.131.5.58","port":2086,"uuid":"f366e744-abcd-4b5b-bd5e-2bd97b6443bf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev","ws-opts":{"path":"/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560","headers":{"host":"fva64rbmjfkfznnptk6imz6sihrno35m4csom83admge5tfxniwduyuyt954fdh.ks3om.workers.Dev"}}}
+  - {"type":"trojan","name":"SJC_50","server":"108.165.152.91","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_51","server":"154.197.64.62","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"Relay_|125.72Mb","ws-opts":{"path":"/","headers":{"host":"rak2.890602.xyz"}},"server":"104.21.32.1","port":"2083","uuid":"0245c2d4-0ad1-4f0f-eb9c-fbd5f1c47be7","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"US_22","server":"160.79.105.155","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"官方优选_11","server":"theo.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_52","server":"108.165.152.175","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_53","server":"154.197.64.164","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_54","server":"188.164.159.74","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_55","server":"161.145.150.29","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_56","server":"154.211.8.109","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_7","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"BR_3","server":"185.133.35.67","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_23","server":"192.200.160.119","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇹🇼台湾5|⬇️4.5MB/s","server":"172.67.120.187","port":2052,"uuid":"2737560d-1867-47fa-aa80-351c36d771c7","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"0118.kznyoum2.workers.dev","ws-opts":{"path":"/?ed=2560","headers":{"host":"0118.kznyoum2.workers.dev"}}}
+  - {"type":"vless","name":"🇨🇭瑞士4|⬇️8.3MB/s","server":"152.67.68.116","port":443,"uuid":"7c317161-5cf8-4cbc-811a-d1297c41bb23","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yapc-1.afshin.ir","tls":true,"udp":true}
+  - {"type":"trojan","name":"SJC_57","server":"154.197.64.219","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_58","server":"27.50.49.61","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_19","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇰🇷韩国7|⬇️1.0MB/s","server":"154.83.2.61","port":8443,"uuid":"d6b8011a-c725-435a-9fec-bf6d3530392c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"vlee.amclubs.rr.nu","ws-opts":{"path":"/","headers":{"host":"vlee.amclubs.rr.nu"}}}
+  - {"type":"trojan","name":"官方优选_12","server":"damien.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_59","server":"154.197.64.228","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_60","server":"154.197.64.248","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_61","server":"108.165.152.66","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"BR_4","server":"185.133.35.26","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_20","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"ZA_2","server":"160.123.255.18","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_24","server":"160.79.104.165","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_62","server":"27.50.49.177","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"SJC_63","server":"154.211.8.109","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_9","server":"63.141.128.209","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"官方优选_13","server":"damien.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_64","server":"154.211.8.227","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_65","server":"167.68.4.223","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_66","server":"154.197.64.219","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_67","server":"45.150.115.195","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_14","server":"thaddeus.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_68","server":"154.197.64.228","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_69","server":"108.165.152.207","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_70","server":"154.211.8.109","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_71","server":"108.165.152.239","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_72","server":"154.197.64.219","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_73","server":"45.150.115.195","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_74","server":"108.165.152.175","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_75","server":"154.197.64.166","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_76","server":"46.254.93.134","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_77","server":"108.165.152.66","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"官方优选_15","server":"pranab.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_10","server":"63.141.128.163","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/ss.vs2024.us.kg","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"官方优选_16","server":"ignacio.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_78","server":"154.197.64.228","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_79","server":"154.197.64.164","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_80","server":"130.250.137.63","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_81","server":"156.225.72.199","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_11","server":"192.0.54.0","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"官方优选_17","server":"kip.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_82","server":"27.50.49.61","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_83","server":"27.50.49.41","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_84","server":"154.197.64.164","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_18","server":"ignacio.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_85","server":"108.165.152.113","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_86","server":"167.68.5.248","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_87","server":"154.211.8.227","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_88","server":"45.67.214.41","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"官方优选_19","server":"damien.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_89","server":"108.165.152.130","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_90","server":"107.172.180.73","port":3306,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"US_12","server":"135.84.76.110","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_91","server":"167.68.4.58","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_92","server":"45.67.214.41","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"官方优选_20","server":"lynn.ns.cloudflare.com","port":443,"uuid":"ee6774c0-9b19-4ff1-8b30-2da4b71977e2","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edcca.ambercc.filegear-sg.me","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"edcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_93","server":"154.197.64.166","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_94","server":"167.68.4.58","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_95","server":"156.225.72.199","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_96","server":"154.197.64.62","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_97","server":"130.250.137.63","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_98","server":"46.254.93.175","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_99","server":"167.68.5.248","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"LAX_6","server":"154.212.46.70","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"MAD_1","server":"31.129.22.41","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"DEN_1","server":"147.45.79.236","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"MAD_2","server":"31.129.22.41","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_64","server":"108.165.152.36","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_25","server":"160.79.104.55","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_26","server":"160.79.104.233","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_27","server":"160.79.105.72","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国41|⬇️1.6MB/s","server":"185.18.250.12","port":80,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ana-SErVICe.xAbjCDZ.wORkErs.deV","ws-opts":{"path":"/1Y6MN5DFV8zB82Ai?ed=2560","headers":{"host":"ana-SErVICe.xAbjCDZ.wORkErs.deV"}}}
+  - {"type":"trojan","name":"SJC_65","server":"38.59.242.169","port":27738,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_66","server":"92.243.75.49","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_13","server":"thaddeus.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_14","server":"damien.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_67","server":"167.68.5.248","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_68","server":"213.109.205.45","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_69","server":"161.145.150.29","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_21","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_22","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"ZA_3","server":"160.123.255.203","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_23","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_70","server":"154.197.64.67","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_71","server":"108.165.152.55","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_72","server":"188.164.159.74","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_73","server":"27.50.49.209","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_8","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"官方优选_15","server":"duke.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_28","server":"192.0.54.174","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"官方优选_16","server":"kip.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_74","server":"108.165.152.36","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_75","server":"154.197.64.219","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_76","server":"27.50.49.61","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"RU_2","server":"45.67.215.209","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸美国19|⬇️1.4MB/s","server":"185.18.250.52","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fuckingcloudflare.2-5e8.workers.dev","ws-opts":{"path":"/@AZARBAYJAB1@AZARBAYJAB1-TABREZ.NET?ed=2560","headers":{"host":"fuckingcloudflare.2-5e8.workers.dev"}}}
+  - {"type":"trojan","name":"SJC_77","server":"108.165.152.163","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_78","server":"130.250.137.63","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"NL_1","server":"45.154.98.99","port":1010,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_79","server":"103.116.7.235","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_80","server":"108.165.152.207","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_81","server":"107.172.180.73","port":3306,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_82","server":"46.254.93.175","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_83","server":"154.211.8.227","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"US_29","server":"bestcf.030101.xyz","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_84","server":"154.211.8.227","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_17","server":"theo.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_85","server":"108.165.152.207","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_86","server":"167.68.4.131","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_87","server":"27.50.49.136","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"RU_3","server":"45.67.215.143","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"LAX_6","server":"154.212.46.70","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_88","server":"167.68.4.223","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_9","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vless","name":"US_30","server":"160.79.104.199","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_89","server":"154.197.64.166","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_90","server":"154.197.64.166","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"sv.ylka.dpdns.org_24","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_91","server":"108.165.152.55","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_92","server":"27.50.49.177","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CMCC-IPV6_10","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
   - {"type":"trojan","name":"LHR_1","server":"5.144.181.144","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"官方优选_18","server":"kip.ns.cloudflare.com","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_93","server":"188.164.159.246","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"CA","server":"140.238.158.238","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vmess","name":"Relay_|119.87Mb","ws-opts":{"path":"/rongseven?ed=2048","headers":{"host":"us.freeyyds.dpdns.org"}},"server":"www.wn03.cc","port":"80","uuid":"2f38f848-a899-4c87-9807-207a41615e3c","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"SJC_94","server":"154.197.64.228","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_95","server":"108.165.152.66","port":2083,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"NL_2","server":"45.154.98.99","port":5006,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_96","server":"167.68.4.131","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"🇳🇱荷兰6|⬇️12.5MB/s","http-opts":{"path":["/"],"headers":{"Host":["nl1.bugfreenet.biz.ddns-ip.net"]}},"server":"0:0:0:0:0:ffff:9df5:4c61","port":"2095","uuid":"6ba15edd-efc5-426b-baf7-70b9c6607e26","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vless","name":"🇨🇭瑞士1|⬇️11.3MB/s","server":"152.67.68.116","port":443,"uuid":"7c317161-5cf8-4cbc-811a-d1297c41bb23","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision-udp443","servername":"YAPC-1.afshin.ir","tls":true,"udp":true}
+  - {"type":"trojan","name":"SJC_97","server":"27.50.49.209","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_98","server":"167.68.4.223","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"Relay_|110.68Mb","ws-opts":{"path":"/P879mtCoHQqaWO67qEaMINZ1","headers":{"host":"3sdfgvcxxx.938.pp.ua"}},"server":"3sdfgvcxxx.938.pp.ua","port":"443","uuid":"0212fab5-e93c-4904-b7a8-187fd535f354","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"SJC_99","server":"162.120.94.23","port":2087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"MAD_1","server":"31.129.22.41","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"CDG_1","server":"152.228.191.232","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"US_31","server":"129.146.46.164","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"MAD_2","server":"31.129.22.41","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"LHR_2","server":"5.144.181.144","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"🇨🇭瑞士3|⬇️13.2MB/s","server":"yapc-1.afshin.ir","port":443,"uuid":"7c317161-5cf8-4cbc-811a-d1297c41bb23","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yapc-1.afshin.ir","tls":true,"udp":true}
+  - {"type":"trojan","name":"SJC_100","server":"213.109.205.45","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"🌀其他1-CZ|⬇️11.2MB/s","server":"89.18.58.63","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"SJC_101","server":"27.50.49.41","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"Relay_-🇨🇿CZ_45|381.96Mb","server":"89.18.58.63","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"CDG_2","server":"152.228.191.232","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"DEN_1","server":"147.45.79.236","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
   - {"type":"trojan","name":"DEN_2","server":"147.45.79.236","port":2053,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"CDG_1","server":"152.228.191.232","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"CDG_2","server":"152.228.191.232","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"LAX_7","server":"154.17.230.119","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_100","server":"23.95.240.37","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_11","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"LAX_8","server":"154.212.46.70","port":443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"CMCC-IPV6_12","server":"[2606","port":4700,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_101","server":"154.197.64.248","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
-  - {"type":"vless","name":"AE","server":"193.123.80.245","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"vless","name":"CA","server":"140.238.158.238","port":443,"uuid":"55520747-311e-4015-83ce-be46e2060ce3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xx.bgm2024.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xx.bgm2024.dpdns.org"}}}
-  - {"type":"trojan","name":"SJC_102","server":"107.172.180.73","port":3306,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_103","server":"23.95.240.37","port":8443,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
-  - {"type":"trojan","name":"SJC_104","server":"107.173.111.232","port":20087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb","server":"89.18.58.206","port":"180","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vless","name":"🇨🇭瑞士2|⬇️13.6MB/s","server":"yapc-1.afshin.ir","port":443,"uuid":"7c317161-5cf8-4cbc-811a-d1297c41bb23","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision-udp443","servername":"YAPC-1.afshin.ir","tls":true,"udp":true}
+  - {"type":"vmess","name":"_中国_2","server":"120.198.71.216","port":"35001","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"|58.21Mb","ws-opts":{"path":"/dabai.in104.21.83.57","headers":{"host":"100-4-20-123.s2.db-link02.top"}},"server":"s2.db-link02.top","port":"2082","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"Relay_🏁ZZ-🇺🇸US_1343|19.75Mb","ws-opts":{"path":"/DAxJddOdTd5pVam9w","headers":{"host":"9uyiopsdfh.iran.pp.ua"}},"server":"9uyiopsdfh.iran.pp.ua","port":"443","uuid":"906ba92f-ef96-4133-8eee-f33202a5a721","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"HKG_3","server":"8.210.222.238","port":38513,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vmess","name":"|54.28Mb","ws-opts":{"path":"/usYhm60UxQ8YJFJxz","headers":{"host":"7fa54343-7c0a-45c9.2031.pp.ua"}},"server":"7fa54343-7c0a-45c9.2031.pp.ua","port":"443","uuid":"15b24b56-d667-4fa8-b548-f3dc942fb461","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"🇺🇸美国9|⬇️1.9MB/s","server":"31.59.111.49","port":33718,"uuid":"e657e5fb-c417-4d3f-d84e-a3a8f010f9fa","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.cdn-apple.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"HKG_4","server":"38.22.88.199","port":18026,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"🇫🇷法国4|⬇️7.9MB/s","server":"tgju.org","port":8080,"uuid":"690ab90e-3f21-422b-8cb1-bc9845c7af1e","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"IO.IhJtq0hklC.ZULAiR.OrG.","ws-opts":{"path":"/?ed=2048","headers":{"host":"IO.IhJtq0hklC.ZULAiR.OrG."}}}
+  - {"type":"vmess","name":"Relay_|33.27Mb","ws-opts":{"path":"/","headers":{"host":"mass2.890603.xyz"}},"server":"mass2-d.445.pp.ua","port":"2087","uuid":"3a1c628b-806d-461b-c28d-44b3bdff5220","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"Relay_|17.22Mb","ws-opts":{"path":"/","headers":{"host":"mass2.890602.xyz"}},"server":"104.21.32.1","port":"8443","uuid":"3a1c628b-806d-461b-c28d-44b3bdff5220","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"|30.15Mb","ws-opts":{"path":"/dabai.in104.24.114.165","headers":{"host":"100-9-89-92.s2.db-link02.top"}},"server":"s2.db-link02.top","port":"8880","uuid":"4b36625c-b9d9-3ea6-aed5-86d62c70e16d","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"🇫🇷法国2|⬇️1.3MB/s","server":"tgju.org","port":8080,"uuid":"56652249-2e67-4429-b86c-3df8b838ad85","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"4j.QBAo1g5z6k.ZulaIR.org.","ws-opts":{"path":"/?ed=2048","headers":{"host":"4j.QBAo1g5z6k.ZulaIR.org."}}}
+  - {"type":"vless","name":"AE","server":"193.123.80.245","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"trojan","name":"SJC_102","server":"107.173.111.232","port":20087,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epccd.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epccd.ambercc.filegear-sg.me"}}}
+  - {"type":"vmess","name":"Relay_|5.11Mb","ws-opts":{"path":"/","headers":{"host":"mass2.890602.xyz"}},"server":"152.70.155.147","port":"8443","uuid":"3a1c628b-806d-461b-c28d-44b3bdff5220","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"SJC_103","server":"156.225.72.199","port":2096,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"trojan","name":"SJC_104","server":"107.172.180.73","port":3306,"password":"Aimer","udp":true,"skip-cert-verify":true,"sni":"epcca.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ts.hpc.tw","headers":{"host":"epcca.ambercc.filegear-sg.me"}}}
+  - {"type":"vless","name":"JP","server":"202.84.53.85","port":19999,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sv.ylka.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"sv.ylka.dpdns.org"}}}
+  - {"type":"vmess","name":"🇨🇳广东省广州市移动","server":"183.236.51.38","port":"59554","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -220,213 +311,304 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -434,213 +616,304 @@ proxy-groups:
     tolerance: 50
     proxies:
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -648,852 +921,1216 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1517,213 +2154,304 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - dongtaiwang.com节点2_1
-      - dongtaiwang.com节点2_2
       - HKG_1
-      - HKG_2
-      - HKG_3
-      - HKG_4
-      - HKG_5
-      - JP
-      - FUK_1
+      - US_1
       - NRT_1
-      - HKG_6
-      - NRT_2
+      - '|12.69Mb'
+      - dongtaiwang.com节点2_2
+      - FUK_1
       - FUK_2
-      - NRT_3
-      - KR_1
-      - NRT_4
+      - '|3.89Mb'
       - FUK_3
-      - NRT_5
-      - FUK_4
       - SIN_1
-      - NRT_6
+      - '|0.21Mb'
+      - FUK_4
+      - '|5.05Mb'
+      - NRT_2
       - SIN_2
-      - NRT_7
-      - HK_1
-      - HK_2
-      - KR_2
-      - NRT_8
-      - HKG_7
+      - '|23.81Mb'
+      - '|2.48Mb'
       - ICN_1
-      - KR_3
       - ICN_2
       - ICN_3
-      - PL
-      - HKG_8
       - ICN_4
-      - SJC_1
-      - US_1
-      - LAX_1
+      - '|28.32Mb'
       - US_2
-      - LAX_2
-      - SJC_2
+      - 美国_1
+      - _中国_1
+      - HKG_2
+      - 日期：04-04
+      - '|17.99Mb'
+      - SJC_1
+      - LAX_1
       - FRA_1
-      - LAX_3
+      - KR
+      - LAX_2
+      - US_3
+      - CH
       - FRA_2
-      - SJC_3
-      - CMCC-IPV6_1
-      - LAX_4
+      - SJC_2
+      - US_4
+      - LAX_3
+      - 🇩🇪德国11|⬇️1.1MB/s
+      - US_5
       - 官方优选_1
+      - SJC_3
+      - sv.ylka.dpdns.org_1
+      - LAX_4
+      - US_6
       - SJC_4
+      - US_7
+      - 🇺🇸美国10|⬇️1.9MB/s
       - SJC_5
       - SJC_6
+      - 🇮🇳印度1|⬇️1.8MB/s
+      - 🇹🇼台湾1|⬇️3.1MB/s
+      - 官方优选_2
+      - sv.ylka.dpdns.org_2
+      - US_8
+      - 🇺🇸美国8|⬇️3.3MB/s
+      - 官方优选_3
       - SJC_7
       - SJC_8
-      - 官方优选_2
+      - dongtaiwang.com节点2_3
       - SJC_9
-      - CMCC-IPV6_2
       - SJC_10
       - SJC_11
       - SJC_12
-      - 官方优选_3
-      - 官方优选_4
       - SJC_13
       - SJC_14
+      - 官方优选_4
+      - 官方优选_5
+      - 🇺🇸美国40|⬇️5.6MB/s
       - SJC_15
       - SJC_16
+      - US_9
       - SJC_17
       - SJC_18
+      - 官方优选_6
+      - US_10
+      - sv.ylka.dpdns.org_3
+      - CMCC-IPV6_1
+      - US_11
+      - sv.ylka.dpdns.org_4
       - SJC_19
+      - US_12
+      - US_13
+      - ZA_1
+      - sv.ylka.dpdns.org_5
+      - 🇺🇸美国43|⬇️3.8MB/s
       - SJC_20
-      - 官方优选_5
       - SJC_21
       - SJC_22
+      - 官方优选_7
+      - sv.ylka.dpdns.org_6
+      - sv.ylka.dpdns.org_7
+      - sv.ylka.dpdns.org_8
+      - sv.ylka.dpdns.org_9
       - SJC_23
-      - CMCC-IPV6_3
-      - CMCC-IPV6_4
-      - GB
-      - US_3
-      - 官方优选_6
       - SJC_24
       - SJC_25
       - SJC_26
-      - AT_1
+      - AU
+      - BR_1
+      - US_14
+      - sv.ylka.dpdns.org_10
       - SJC_27
       - SJC_28
       - SJC_29
-      - 官方优选_7
+      - LAX_5
       - SJC_30
       - SJC_31
       - SJC_32
-      - CMCC-IPV6_5
-      - LAX_5
       - SJC_33
+      - sv.ylka.dpdns.org_11
+      - 🇺🇸美国22|⬇️5.1MB/s
+      - 🇹🇼台湾6|⬇️1.5MB/s
       - SJC_34
       - SJC_35
+      - sv.ylka.dpdns.org_12
       - SJC_36
       - SJC_37
-      - US_4
       - 官方优选_8
+      - sv.ylka.dpdns.org_13
+      - sv.ylka.dpdns.org_14
+      - US_15
+      - US_16
+      - CMCC-IPV6_2
+      - IPV6_1
+      - 🇨🇭瑞士2|⬇️7.4MB/s
+      - 🇺🇸美国6|⬇️1.7MB/s
+      - 🇹🇼台湾3|⬇️4.5MB/s
+      - 🇹🇼台湾2|⬇️2.8MB/s
       - SJC_38
-      - CMCC-IPV6_6
-      - CMCC-IPV6_7
       - SJC_39
-      - 官方优选_9
       - SJC_40
       - SJC_41
-      - US_5
       - SJC_42
+      - 官方优选_9
+      - CMCC-IPV6_3
+      - US_17
+      - sv.ylka.dpdns.org_15
+      - BR_2
+      - US_18
+      - CMCC-IPV6_4
+      - 🇺🇸美国42|⬇️1.3MB/s
+      - 🇺🇸美国34|⬇️2.4MB/s
+      - 🇺🇸美国2|⬇️3.8MB/s
       - SJC_43
-      - CMCC-IPV6_8
       - SJC_44
       - SJC_45
+      - sv.ylka.dpdns.org_16
+      - sv.ylka.dpdns.org_17
+      - US_19
+      - sv.ylka.dpdns.org_18
+      - 美国_2
       - SJC_46
+      - 官方优选_10
       - SJC_47
       - SJC_48
       - SJC_49
+      - CMCC-IPV6_5
+      - US_20
+      - US_21
+      - CMCC-IPV6_6
+      - RU_1
+      - 🇰🇷韩国6|⬇️1.1MB/s
+      - 🌀其他2-未识别|⬇️1.7MB/s
       - SJC_50
       - SJC_51
-      - US_6
+      - Relay_|125.72Mb
+      - US_22
+      - 官方优选_11
       - SJC_52
       - SJC_53
-      - CMCC-IPV6_9
       - SJC_54
-      - US_7
       - SJC_55
       - SJC_56
+      - CMCC-IPV6_7
+      - BR_3
+      - US_23
+      - 🇹🇼台湾5|⬇️4.5MB/s
+      - 🇨🇭瑞士4|⬇️8.3MB/s
       - SJC_57
       - SJC_58
+      - sv.ylka.dpdns.org_19
+      - 🇰🇷韩国7|⬇️1.0MB/s
+      - 官方优选_12
       - SJC_59
       - SJC_60
-      - 官方优选_10
-      - US_8
-      - AT_2
-      - RU
-      - AT_3
-      - CMCC-IPV6_10
       - SJC_61
+      - BR_4
+      - sv.ylka.dpdns.org_20
+      - ZA_2
+      - US_24
       - SJC_62
-      - 官方优选_11
-      - 官方优选_12
       - SJC_63
-      - US_9
-      - 官方优选_13
       - SJC_64
+      - US_25
+      - US_26
+      - US_27
+      - 🇺🇸美国41|⬇️1.6MB/s
       - SJC_65
       - SJC_66
-      - SJC_67
+      - 官方优选_13
       - 官方优选_14
+      - SJC_67
       - SJC_68
       - SJC_69
+      - sv.ylka.dpdns.org_21
+      - sv.ylka.dpdns.org_22
+      - ZA_3
+      - sv.ylka.dpdns.org_23
       - SJC_70
       - SJC_71
       - SJC_72
       - SJC_73
+      - CMCC-IPV6_8
+      - 官方优选_15
+      - US_28
+      - 官方优选_16
       - SJC_74
       - SJC_75
       - SJC_76
+      - RU_2
+      - 🇺🇸美国19|⬇️1.4MB/s
       - SJC_77
-      - 官方优选_15
-      - US_10
-      - 官方优选_16
       - SJC_78
+      - NL_1
       - SJC_79
       - SJC_80
       - SJC_81
-      - US_11
-      - 官方优选_17
       - SJC_82
       - SJC_83
+      - US_29
       - SJC_84
-      - 官方优选_18
+      - 官方优选_17
       - SJC_85
       - SJC_86
       - SJC_87
+      - RU_3
+      - LAX_6
       - SJC_88
-      - 官方优选_19
+      - CMCC-IPV6_9
+      - US_30
       - SJC_89
       - SJC_90
-      - US_12
+      - sv.ylka.dpdns.org_24
       - SJC_91
       - SJC_92
-      - 官方优选_20
+      - CMCC-IPV6_10
+      - LHR_1
+      - 官方优选_18
       - SJC_93
+      - CA
+      - Relay_|119.87Mb
       - SJC_94
       - SJC_95
+      - NL_2
       - SJC_96
+      - 🇳🇱荷兰6|⬇️12.5MB/s
+      - 🇨🇭瑞士1|⬇️11.3MB/s
       - SJC_97
       - SJC_98
+      - Relay_|110.68Mb
       - SJC_99
-      - LAX_6
       - MAD_1
-      - DEN_1
-      - MAD_2
-      - LHR_1
-      - LHR_2
-      - DEN_2
       - CDG_1
-      - CDG_2
-      - LAX_7
+      - US_31
+      - MAD_2
+      - LHR_2
+      - 🇨🇭瑞士3|⬇️13.2MB/s
       - SJC_100
-      - CMCC-IPV6_11
-      - LAX_8
-      - CMCC-IPV6_12
+      - 🌀其他1-CZ|⬇️11.2MB/s
       - SJC_101
+      - Relay_-🇨🇿CZ_45|381.96Mb
+      - CDG_2
+      - DEN_1
+      - DEN_2
+      - Relay_🇭🇷HR-🇨🇿CZ_868|30.15Mb
+      - 🇨🇭瑞士2|⬇️13.6MB/s
+      - _中国_2
+      - '|58.21Mb'
+      - Relay_🏁ZZ-🇺🇸US_1343|19.75Mb
+      - HKG_3
+      - IPV6_2
+      - '|54.28Mb'
+      - 🇺🇸美国9|⬇️1.9MB/s
+      - HKG_4
+      - 🇫🇷法国4|⬇️7.9MB/s
+      - Relay_|33.27Mb
+      - Relay_|17.22Mb
+      - '|30.15Mb'
+      - 🇫🇷法国2|⬇️1.3MB/s
       - AE
-      - CA
       - SJC_102
+      - Relay_|5.11Mb
       - SJC_103
       - SJC_104
+      - JP
+      - 🇨🇳广东省广州市移动
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
