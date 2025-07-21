@@ -5,7 +5,7 @@ mode: Rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf
-  name: France Orly 000
+  name: France Paris 000
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
@@ -18,7 +18,7 @@ proxies:
   cipher: auto
   name: France Paris 002
   network: ws
-  port: 17739
+  port: 61605
   server: 195.154.40.247
   skip-cert-verify: true
   tls: false
@@ -37,7 +37,7 @@ proxies:
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -46,14 +46,14 @@ proxy-groups:
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -74,7 +74,7 @@ proxy-groups:
   type: select
 - name: "\U0001F30D \u56FD\u5916\u5A92\u4F53"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -88,7 +88,7 @@ proxy-groups:
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -96,7 +96,7 @@ proxy-groups:
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
@@ -104,7 +104,7 @@ proxy-groups:
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
@@ -122,7 +122,7 @@ proxy-groups:
   type: select
 - name: "\U0001F41F \u6F0F\u7F51\u4E4B\u9C7C"
   proxies:
-  - France Orly 000
+  - France Paris 000
   - France Paris 002
   - Russia Moscow 001
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
