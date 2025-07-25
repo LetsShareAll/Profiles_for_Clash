@@ -5,91 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_2, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.link}}}
-  - {name: 🇺🇸 _US_美国_1, server: 69.84.182.108, port: 80, type: vmess, uuid: 527a7c04-9a2c-4fdb-aa18-37337e62e917, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_3, server: v37.heduian.link, port: 30837, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v37.heduian.link}}}
-  - {name: 未知_1, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
-  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本_1, server: 36.151.251.7, port: 3596, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: 未知_2, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
-  - {name: 🇺🇸 _US_美国->🇨🇳_CN_中国, server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA}
-  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本_2, server: 36.151.251.7, port: 32962, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_4, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75}
-  - {name: 🇩🇪 _CN_中国->🇩🇪_DE_德国, server: v33.heduian.link, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v33.heduian.link}}}
-  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国, server: 103.116.7.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
-  - {name: 🇰🇷 _KR_韩国, server: p222.panda001.net, port: 15098, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: 🇺🇸 _US_美国_2, server: 108.165.216.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
-  - {name: 🇨🇦 _CN_中国->🇨🇦_CA_加拿大, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
   - {name: 🇲🇩 _MD_摩尔多瓦, server: 91.132.94.200, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国_1, server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: 🇷🇺 _RU_俄罗斯, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国_2, server: 108.165.216.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
+  - {name: 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1, server: fastcup.net, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: fastcup.net}}}
+  - {name: 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2, server: csgo.com, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: csgo.com}}}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本_1, server: 36.151.251.7, port: 32962, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 🇩🇪 _DE_德国_1, server: 45.87.175.69, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本_2, server: 36.151.251.7, port: 3596, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
+  - {name: 未知_1, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
+  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国, server: 103.116.7.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}}
+  - {name: 🇺🇸 _US_美国->🇨🇳_CN_中国, server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA}
+  - {name: 未知_2, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
+  - {name: 🇩🇪 _CN_中国->🇩🇪_DE_德国, server: v33.heduian.link, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v33.heduian.link}}}
+  - {name: 🇸🇰 _SK_斯洛伐克, server: 156.146.40.194, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦, server: 185.213.23.226, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_2, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_3, server: v37.heduian.link, port: 30837, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v37.heduian.link}}}
+  - {name: 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3, server: pubg.ac, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: pubg.ac}}}
+  - {name: 🇩🇪 _DE_德国_2, server: 193.108.119.230, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,23 +124,27 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -135,68 +155,80 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,23 +244,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
-      - 未知_1
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
-      - 未知_2
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国_2
-      - 🇨🇦 _CN_中国->🇨🇦_CA_加拿大
       - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_1
       - 🇷🇺 _RU_俄罗斯
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_1
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_1
+      - 🇩🇪 _DE_德国_1
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本_2
+      - 未知_1
+      - 🇯🇵 _JP_日本->🇺🇸_US_美国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 未知_2
+      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
+      - 🇸🇰 _SK_斯洛伐克
+      - 🇮🇹 _IT_意大利->🇲🇩_MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国_3
+      - 🇩🇪 _DE_德国_2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
