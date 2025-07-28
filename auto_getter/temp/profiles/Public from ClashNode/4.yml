@@ -5,1138 +5,1054 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"HK_1","server":"47.57.13.107","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"KR_1","server":"115.94.98.93","port":50000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"NL_1","server":"158.101.214.54","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"KR_2","server":"115.94.98.93","port":50000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"NL_2","server":"158.101.214.54","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_1","server":"tasteatlas.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_2","server":"pranab.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_1","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_2","server":"www.udemy.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_3","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CH_1","server":"140.238.212.95","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_3","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_4","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_4","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_5","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_5","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_6","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_7","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_6","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_7","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"HK_2","server":"62.60.229.240","port":9443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_8","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_9","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_10","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_11","server":"www.whatismyip.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_12","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_8","server":"damien.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_9","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_13","server":"nikon.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_10","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_11","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_12","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_14","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_15","server":"www.udemy.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_16","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_13","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_14","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_15","server":"nikon.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_17","server":"damien.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_18","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_16","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_17","server":"tasteatlas.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"🇺🇸US_1","server":"198.62.62.156","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_18","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_19","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_5","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_6","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_19","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_20","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_21","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_20","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_21","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_22","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_23","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_22","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_23","server":"ashton.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_24","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_7","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_8","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_25","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_24","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_25","server":"uriah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_26","server":"www.whatismyip.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_26","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_27","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_9","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_28","server":"ip.gs","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_29","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"🇺🇸US_2","server":"198.62.62.156","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_30","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_27","server":"pranab.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_28","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_31","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_1","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_29","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_30","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_31","server":"lewis.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_32","server":"www.ipget.net","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_32","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_33","server":"www.ipget.net","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_34","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_35","server":"www.wto.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_33","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_34","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_36","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_35","server":"www.wto.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_36","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_37","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_37","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"HK_3","server":"62.60.229.240","port":9443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_38","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CA","server":"140.238.158.238","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_38","server":"uriah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_10","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_39","server":"lewis.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_40","server":"ashton.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_11","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_41","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_12","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_13","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_14","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_15","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_16","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_2","server":"129.213.130.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_17","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_18","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_19","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_39","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_20","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_21","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_3","server":"150.136.87.192","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_4","server":"129.213.130.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_22","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_23","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_5","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_42","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_6","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_7","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_24","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_8","server":"129.213.202.222","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_9","server":"172.245.205.226","port":6666,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_10","server":"129.213.202.222","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_11","server":"150.136.87.192","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_25","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_26","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_40","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_12","server":"172.245.205.226","port":6666,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_27","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_28","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_29","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_41","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_30","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_31","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_42","server":"ip.gs","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"xxx.ylks0033.dpdns.org_43","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"ccc.ylks0033.dpdns.org_43","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_32","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"SG_1","server":"64.235.61.162","port":7000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"SG_2","server":"64.235.61.162","port":7000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_33","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_34","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_35","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_36","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CMCC-IPV6_37","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"TW_1","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"TW_2","server":"210.61.97.241","port":81,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"CH_2","server":"140.238.212.95","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_13","server":"45.145.42.229","port":4002,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"xxx.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"xxx.ylks0033.dpdns.org"}}}
-  - {"type":"vless","name":"US_14","server":"45.145.42.229","port":4002,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ccc.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"ccc.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_1","server":"45.145.42.229","port":4002,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"NL_1","server":"158.101.214.54","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_1","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_1","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_2","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_2","server":"moura.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_3","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_4","server":"benedict.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_5","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_3","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_4","server":"ashton.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_2","server":"192.18.134.22","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_5","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_6","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_7","server":"ashton.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_8","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_6","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_9","server":"nikon.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_10","server":"lewis.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_11","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_7","server":"braden.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_12","server":"www.digitalocean.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_13","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_8","server":"otto.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_14","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_9","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_10","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_11","server":"steamdb.info","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_15","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_12","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_13","server":"www.whatismyip.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"NL_2","server":"158.101.214.54","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_14","server":"damien.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_15","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_16","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_17","server":"nikon.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸US_1","server":"198.62.62.156","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_18","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_3","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_16","server":"cris.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_17","server":"www.whatismyip.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_18","server":"dylan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_19","server":"icook.tw","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_19","server":"www.pcmag.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_20","server":"rustam.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_21","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_20","server":"damien.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_21","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_22","server":"wilson.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_22","server":"time.is","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_23","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_24","server":"ip.gs","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_25","server":"ip.sb","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_26","server":"www.udemy.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_23","server":"www.hugedomains.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_24","server":"craig.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_27","server":"lewis.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_25","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_26","server":"www.wto.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_27","server":"www.udemy.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_28","server":"kyree.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_29","server":"bowen.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_5","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_28","server":"iplocation.io","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_29","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_30","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_30","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_31","server":"whatismyipaddress.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_32","server":"julio.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_31","server":"uriah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_32","server":"pranab.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_33","server":"tasteatlas.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_33","server":"trevor.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_6","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_4","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_34","server":"sullivan.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_34","server":"decker.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_35","server":"abdullah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_5","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_36","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_37","server":"www.ipget.net","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_35","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_36","server":"toy-people.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_7","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_8","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_38","server":"pranab.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_9","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_39","server":"huxley.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_40","server":"www.wto.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"🇺🇸US_2","server":"198.62.62.156","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_10","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_11","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_41","server":"uriah.ns.cloudflare.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"JP_1","server":"168.138.46.67","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_37","server":"dnschecker.org","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_12","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_38","server":"tasteatlas.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_6","server":"129.213.130.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_13","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_14","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_15","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"IPV6_1","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_16","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_7","server":"129.213.130.70","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_8","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"JP_2","server":"168.138.46.67","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_17","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_18","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_9","server":"129.213.136.180","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_19","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_39","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_42","server":"comicabc.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_10","server":"150.136.87.192","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_20","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_21","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_22","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_23","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_24","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_25","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1c.ylks0033.dpdns.org_43","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_26","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"IPV6_2","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_27","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_28","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_29","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_30","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_31","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"IPV6_3","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_32","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"IPV6_4","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_33","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_34","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_35","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"US_11","server":"icook.hk","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_36","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_40","server":"ipinfo.in","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_41","server":"www.ipget.net","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_42","server":"www.iakeys.com","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"1x.ylks0033.dpdns.org_43","server":"ip.gs","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1x.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1x.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"CMCC-IPV6_37","server":"[2606","port":4700,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
+  - {"type":"vless","name":"KR","server":"115.94.98.93","port":50000,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1c.ylks0033.dpdns.org","ws-opts":{"path":"/?ed=2560","headers":{"host":"1c.ylks0033.dpdns.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1159,163 +1075,151 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_1
-      - KR_1
+      - US_1
       - NL_1
-      - KR_2
-      - NL_2
-      - xxx.ylks0033.dpdns.org_1
-      - xxx.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_1
-      - ccc.ylks0033.dpdns.org_2
-      - ccc.ylks0033.dpdns.org_3
-      - CH_1
-      - xxx.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_1
+      - 1x.ylks0033.dpdns.org_1
+      - 1c.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_2
+      - 1x.ylks0033.dpdns.org_3
+      - 1x.ylks0033.dpdns.org_4
+      - 1x.ylks0033.dpdns.org_5
+      - 1c.ylks0033.dpdns.org_3
+      - 1c.ylks0033.dpdns.org_4
+      - US_2
+      - 1c.ylks0033.dpdns.org_5
+      - 1x.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_7
+      - 1x.ylks0033.dpdns.org_8
+      - 1c.ylks0033.dpdns.org_6
+      - 1x.ylks0033.dpdns.org_9
+      - 1x.ylks0033.dpdns.org_10
+      - 1x.ylks0033.dpdns.org_11
+      - 1c.ylks0033.dpdns.org_7
       - CMCC-IPV6_1
-      - ccc.ylks0033.dpdns.org_4
       - CMCC-IPV6_2
-      - xxx.ylks0033.dpdns.org_4
-      - xxx.ylks0033.dpdns.org_5
-      - ccc.ylks0033.dpdns.org_5
-      - xxx.ylks0033.dpdns.org_6
-      - xxx.ylks0033.dpdns.org_7
-      - ccc.ylks0033.dpdns.org_6
-      - ccc.ylks0033.dpdns.org_7
-      - HK_2
-      - xxx.ylks0033.dpdns.org_8
-      - xxx.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_10
-      - xxx.ylks0033.dpdns.org_11
-      - xxx.ylks0033.dpdns.org_12
-      - ccc.ylks0033.dpdns.org_8
-      - ccc.ylks0033.dpdns.org_9
-      - xxx.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_10
-      - ccc.ylks0033.dpdns.org_11
-      - ccc.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_12
+      - 1x.ylks0033.dpdns.org_13
       - CMCC-IPV6_3
-      - xxx.ylks0033.dpdns.org_14
-      - xxx.ylks0033.dpdns.org_15
-      - xxx.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_13
-      - ccc.ylks0033.dpdns.org_14
-      - ccc.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_8
+      - 1x.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_9
+      - 1c.ylks0033.dpdns.org_10
+      - 1c.ylks0033.dpdns.org_11
+      - 1x.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_12
       - CMCC-IPV6_4
-      - xxx.ylks0033.dpdns.org_17
-      - xxx.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_16
-      - ccc.ylks0033.dpdns.org_17
+      - 1c.ylks0033.dpdns.org_13
+      - NL_2
+      - 1c.ylks0033.dpdns.org_14
+      - 1c.ylks0033.dpdns.org_15
+      - 1c.ylks0033.dpdns.org_16
+      - 1c.ylks0033.dpdns.org_17
       - 🇺🇸US_1
-      - ccc.ylks0033.dpdns.org_18
-      - ccc.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_18
+      - US_3
+      - 1x.ylks0033.dpdns.org_16
+      - 1x.ylks0033.dpdns.org_17
+      - 1x.ylks0033.dpdns.org_18
+      - 1x.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_19
+      - 1c.ylks0033.dpdns.org_20
+      - 1c.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_20
+      - 1x.ylks0033.dpdns.org_21
+      - 1x.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_22
+      - 1c.ylks0033.dpdns.org_23
+      - 1c.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_25
+      - 1c.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_23
+      - 1x.ylks0033.dpdns.org_24
+      - 1c.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_25
+      - 1x.ylks0033.dpdns.org_26
+      - 1x.ylks0033.dpdns.org_27
+      - 1x.ylks0033.dpdns.org_28
+      - 1x.ylks0033.dpdns.org_29
       - CMCC-IPV6_5
+      - 1c.ylks0033.dpdns.org_28
+      - 1c.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_30
+      - 1x.ylks0033.dpdns.org_30
+      - 1c.ylks0033.dpdns.org_31
+      - 1c.ylks0033.dpdns.org_32
+      - 1x.ylks0033.dpdns.org_31
+      - 1x.ylks0033.dpdns.org_32
+      - 1c.ylks0033.dpdns.org_33
+      - 1x.ylks0033.dpdns.org_33
       - CMCC-IPV6_6
-      - xxx.ylks0033.dpdns.org_19
-      - xxx.ylks0033.dpdns.org_20
-      - xxx.ylks0033.dpdns.org_21
-      - ccc.ylks0033.dpdns.org_20
-      - ccc.ylks0033.dpdns.org_21
-      - xxx.ylks0033.dpdns.org_22
-      - xxx.ylks0033.dpdns.org_23
-      - ccc.ylks0033.dpdns.org_22
-      - ccc.ylks0033.dpdns.org_23
-      - xxx.ylks0033.dpdns.org_24
+      - US_4
+      - 1x.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_34
+      - 1c.ylks0033.dpdns.org_35
+      - US_5
+      - 1c.ylks0033.dpdns.org_36
+      - 1c.ylks0033.dpdns.org_37
+      - 1x.ylks0033.dpdns.org_35
+      - 1x.ylks0033.dpdns.org_36
       - CMCC-IPV6_7
       - CMCC-IPV6_8
-      - xxx.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_24
-      - ccc.ylks0033.dpdns.org_25
-      - ccc.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_26
-      - xxx.ylks0033.dpdns.org_27
+      - 1c.ylks0033.dpdns.org_38
       - CMCC-IPV6_9
-      - xxx.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_29
+      - 1c.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_40
       - 🇺🇸US_2
-      - xxx.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_27
-      - ccc.ylks0033.dpdns.org_28
-      - xxx.ylks0033.dpdns.org_31
-      - US_1
-      - ccc.ylks0033.dpdns.org_29
-      - ccc.ylks0033.dpdns.org_30
-      - ccc.ylks0033.dpdns.org_31
-      - xxx.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_32
-      - ccc.ylks0033.dpdns.org_33
-      - ccc.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_33
-      - xxx.ylks0033.dpdns.org_34
-      - ccc.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_35
-      - xxx.ylks0033.dpdns.org_36
-      - xxx.ylks0033.dpdns.org_37
-      - ccc.ylks0033.dpdns.org_37
-      - HK_3
-      - ccc.ylks0033.dpdns.org_38
-      - CA
-      - xxx.ylks0033.dpdns.org_38
       - CMCC-IPV6_10
-      - xxx.ylks0033.dpdns.org_39
-      - xxx.ylks0033.dpdns.org_40
       - CMCC-IPV6_11
-      - xxx.ylks0033.dpdns.org_41
+      - 1c.ylks0033.dpdns.org_41
+      - JP_1
+      - 1x.ylks0033.dpdns.org_37
       - CMCC-IPV6_12
+      - 1x.ylks0033.dpdns.org_38
+      - US_6
       - CMCC-IPV6_13
       - CMCC-IPV6_14
       - CMCC-IPV6_15
+      - IPV6_1
       - CMCC-IPV6_16
-      - US_2
+      - US_7
+      - US_8
+      - JP_2
       - CMCC-IPV6_17
       - CMCC-IPV6_18
+      - US_9
       - CMCC-IPV6_19
-      - ccc.ylks0033.dpdns.org_39
+      - 1x.ylks0033.dpdns.org_39
+      - 1c.ylks0033.dpdns.org_42
+      - US_10
       - CMCC-IPV6_20
       - CMCC-IPV6_21
-      - US_3
-      - US_4
       - CMCC-IPV6_22
       - CMCC-IPV6_23
-      - US_5
-      - xxx.ylks0033.dpdns.org_42
-      - US_6
-      - US_7
       - CMCC-IPV6_24
-      - US_8
-      - US_9
-      - US_10
-      - US_11
       - CMCC-IPV6_25
+      - 1c.ylks0033.dpdns.org_43
       - CMCC-IPV6_26
-      - ccc.ylks0033.dpdns.org_40
-      - US_12
-      - CMCC-IPV6_27
-      - IPV6_1
       - IPV6_2
+      - CMCC-IPV6_27
       - CMCC-IPV6_28
       - CMCC-IPV6_29
-      - IPV6_3
-      - ccc.ylks0033.dpdns.org_41
       - CMCC-IPV6_30
       - CMCC-IPV6_31
-      - ccc.ylks0033.dpdns.org_42
-      - xxx.ylks0033.dpdns.org_43
-      - ccc.ylks0033.dpdns.org_43
-      - IPV6_4
+      - IPV6_3
       - CMCC-IPV6_32
-      - SG_1
-      - SG_2
+      - IPV6_4
       - CMCC-IPV6_33
       - CMCC-IPV6_34
       - CMCC-IPV6_35
+      - US_11
       - CMCC-IPV6_36
+      - 1x.ylks0033.dpdns.org_40
+      - 1x.ylks0033.dpdns.org_41
+      - 1x.ylks0033.dpdns.org_42
+      - 1x.ylks0033.dpdns.org_43
       - CMCC-IPV6_37
-      - TW_1
-      - TW_2
-      - CH_2
-      - US_13
-      - US_14
+      - KR
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
