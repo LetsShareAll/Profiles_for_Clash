@@ -5,135 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _中国, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v5.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v5.heduian.link}}}
-  - {name: _13, server: 195.154.169.198, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇨🇳 江苏省 移动, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v8.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
-  - {name: 62 |  3.3MB/s|Openai|Gemini, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: ocbc.com, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}}
-  - {name: RU_138, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇨🇳 福建省厦门市 电信, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: ae6e933b-8874-4bf4-a384-0de216ef2bf4}
-  - {name: 🇨🇳 CN-36.151.194.29-0523, server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v35.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}}
-  - {name: IQ_78, server: 91.132.94.200, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: US_152, server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: ⚡ b2n.ir/v2ray-configs | 416, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _US_美国_1, server: 108.165.216.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: TG.WangCai2.s2.db-link02.top, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}}
-  - {name: 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms, server: fastcup.net, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn-node-oss-99.paofu.de, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}}
-  - {name: 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms, server: csgo.com, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn-node-oss-99.paofu.de, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}}
-  - {name: 🇺🇸 美国4|@ripaojiedian, server: 36.151.251.7, port: 32962, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: LT_103, server: 45.87.175.69, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 36.151.251.7, port: 3596, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true}
-  - {name: 未知_1, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: TG.WangCai2.s2.db-link02.top, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}}
-  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国, server: 103.116.7.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: TG.WangCai2.s2.db-link02.top, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v35.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}}
-  - {name: 🇺🇸 _US_美国_2, server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA}
-  - {name: 未知_2, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: TG.WangCai2.s2.db-link02.top, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}}
-  - {name: 🇩🇪 _CN_中国->🇩🇪_DE_德国, server: v33.heduian.link, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v33.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v33.heduian.link}}}
-  - {name: US_144, server: 156.146.40.194, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: IT_88, server: 185.213.23.226, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: PL_118, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75}
-  - {name: 🇨🇳 CN-36.151.194.29-0536, server: v37.heduian.link, port: 30837, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v37.heduian.link, network: ws, ws-opts: {path: /oooo, headers: {Host: v37.heduian.link}}}
-  - {name: 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms, server: pubg.ac, port: 80, type: vmess, uuid: dac2d4dd-9a4d-4eb0-92a6-028532caed52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn-node-oss-99.paofu.de, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}}
-  - {name: _27, server: 193.108.119.230, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
+  - {name: 🇲🇩 _MD_摩尔多瓦, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_2, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: ae6e933b-8874-4bf4-a384-0de216ef2bf4}
+  - {name: 🇺🇸 _US_美国, server: 35.86.81.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _DK_丹麦->🇺🇸_US_美国, server: fastcup.net, port: 80, type: vmess, uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: fastcup.net}}}
+  - {name: 🇯🇵 _JP_日本->🇺🇸_US_美国, server: 103.116.7.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in}}
+  - {name: 🇰🇷 _KR_韩国, server: p222.panda001.net, port: 15098, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_3, server: 0916af88-t064g0-t1l1nh-d6ar.77.iwskwai.com, port: 3686, type: vmess, uuid: a16d62f6-048d-11f0-af5a-f23c93136cb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_4, server: jpiplc.deuen.com, port: 36529, type: ss, cipher: aes-256-gcm, password: vGCBLG1SUe7YdXI1fPhdsA==}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_5, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.link}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,34 +80,16 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -190,101 +100,47 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,34 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _中国
-      - _13
-      - 🇨🇳 江苏省 移动
-      - 62 |  3.3MB/s|Openai|Gemini
-      - RU_138
-      - 🇨🇳 福建省厦门市 电信
-      - 🇨🇳 CN-36.151.194.29-0523
-      - IQ_78
-      - US_152
-      - ⚡ b2n.ir/v2ray-configs | 416
-      - 🇺🇸 _US_美国_1
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.25ms
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.18ms
-      - 🇺🇸 美国4|@ripaojiedian
-      - LT_103
-      - 🇺🇸 美国3|@ripaojiedian
-      - 未知_1
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_2
+      - 🇺🇸 _US_美国
+      - 🇺🇸 _DK_丹麦->🇺🇸_US_美国
       - 🇯🇵 _JP_日本->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 未知_2
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - US_144
-      - IT_88
-      - PL_118
-      - 🇨🇳 CN-36.151.194.29-0536
-      - 🇨🇾 @v2ray_configs_pool📡🇨🇾®️Cyprus©️Káto Lakatámeia🅿️ping:8.67ms
-      - _27
+      - 🇰🇷 _KR_韩国
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国_5
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
