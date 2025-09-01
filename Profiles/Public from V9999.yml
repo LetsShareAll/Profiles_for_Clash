@@ -14,15 +14,9 @@ proxies:
   protocol-param: ''
   server: 2001:bc8:1203:106::301
   type: ssr
-- cipher: aes-256-gcm
-  name: France Paris 002
-  password: dongtaiwang.com
-  port: 22222
-  server: 62.210.25.13
-  type: ss
 - alterId: 0
   cipher: auto
-  name: France Paris 003
+  name: France Paris 002
   network: ws
   port: 63115
   server: 2001:bc8:32d7:30b::201
@@ -35,22 +29,21 @@ proxies:
       Host: www.bing.com
     path: github.com/Alvin9999
 - cipher: chacha20-ietf
-  name: The Netherlands Haarlem 000
+  name: United States Seattle 000
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: dongtaiwang.com
   port: 33336
   protocol: auth_chain_a
   protocol-param: ''
-  server: dongtaiwang5.com
+  server: ssr.762988.xyz
   type: ssr
 proxy-groups:
 - name: "\U0001F530 \u8282\u70B9\u9009\u62E9"
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   type: select
@@ -59,16 +52,14 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: "\U0001F3A5 NETFLIX"
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -89,8 +80,7 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -104,8 +94,7 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -113,8 +102,7 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
   type: select
@@ -122,8 +110,7 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
@@ -141,8 +128,7 @@ proxy-groups:
   proxies:
   - France Paris 001
   - France Paris 002
-  - France Paris 003
-  - The Netherlands Haarlem 000
+  - United States Seattle 000
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F530 \u8282\u70B9\u9009\u62E9"
