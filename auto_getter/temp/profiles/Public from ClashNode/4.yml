@@ -5,424 +5,347 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"trojan","name":"台湾_1","server":"125.227.86.46","port":443,"password":"8a1ab0df6abea549","udp":true,"skip-cert-verify":true,"sni":"TG.WangCai2","network":"grpc"}
-  - {"type":"trojan","name":"台湾_2","server":"125.227.86.45","port":443,"password":"8a1ab0df6abea549","udp":true,"skip-cert-verify":true,"sni":"TG.WangCai2","network":"grpc"}
-  - {"type":"trojan","name":"ipv4.ip.sb","server":"ipv4.ip.sb","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"vless","name":"德國_1","server":"92.112.22.117","port":443,"uuid":"6337837a-2b47-4e0d-a695-75c5a4a8ad51","skip-cert-verify":true}
+  - {"type":"vless","name":"英國","server":"51.89.230.180","port":25365,"uuid":"72c17850-c1a8-4915-a437-45de2645a6e1","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
+  - {"type":"vless","name":"德國_1","server":"hybrid.arvancloud.online","port":44443,"uuid":"53fff6cc-b4ec-43e8-ade5-e0c42972fc33","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"美國_1","server":"69.84.182.18","port":443,"uuid":"82ba36ec-dafe-40eb-b9ad-0f8a98101020","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"cdn-node-oss-93.paofu.de","ws-opts":{"path":"/profile/telegram@ssrsub","headers":{"host":"cdn-node-oss-93.paofu.de"}}}
   - {"type":"vless","name":"德國_2","server":"92.112.22.117","port":443,"uuid":"6337837a-2b47-4e0d-a695-75c5a4a8ad51","skip-cert-verify":true}
-  - {"type":"trojan","name":"🇺🇸US_1","server":"104.17.128.1","port":2096,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"🇭🇰HK","server":"104.17.68.85","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"🇺🇸US_2","server":"104.17.128.1","port":2096,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"www.glassdoor.com","server":"www.glassdoor.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"104.17.142.12","server":"104.17.142.12","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"trevor.ns.cloudflare.com","server":"trevor.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"ip.gs","server":"ip.gs","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"decker.ns.cloudflare.com","server":"decker.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"moura.ns.cloudflare.com_1","server":"moura.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"IPV6_1","server":"[2606","port":4700,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"comicabc.com_1","server":"comicabc.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"vless","name":"德國_3","server":"178.20.215.2","port":443,"uuid":"192ea2c7-d7d0-6676-2929-b04a072b387d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"speed.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美國_2","server":"172.67.162.50","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"eEedFR5.7777155.Xyz","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"eEedFR5.7777155.Xyz"}}}
+  - {"type":"vless","name":"美國_3","server":"172.67.162.50","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"eEedFR5.7777155.Xyz","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"eEedFR5.7777155.Xyz"}}}
+  - {"type":"vless","name":"美國_4","server":"104.21.90.226","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"444RRrt5.7777155.xYZ","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"444RRrt5.7777155.xYZ"}}}
+  - {"type":"vless","name":"美國_5","server":"104.21.90.226","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"444RRrt5.7777155.xYZ","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"444RRrt5.7777155.xYZ"}}}
+  - {"type":"vless","name":"美國_6","server":"172.67.131.76","port":443,"uuid":"afc9d688-520a-46fa-a98d-4511d1198cdd","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"EEeE3.222767.xYz","ws-opts":{"path":"/Bla4bwO5lnIT6TyxDFklcPSbclvX","headers":{"host":"EEeE3.222767.xYz"}}}
+  - {"type":"vless","name":"美國_7","server":"172.67.130.204","port":443,"uuid":"c226ac5d-65e9-4379-95c3-fb542bc242d8","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"HHhhhHhhhhH.777198.xYz","ws-opts":{"path":"/OjdW89Bpg4ykd4O","headers":{"host":"HHhhhHhhhhH.777198.xYz"}}}
+  - {"type":"vless","name":"美國_8","server":"172.67.131.76","port":443,"uuid":"afc9d688-520a-46fa-a98d-4511d1198cdd","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"EEeE3.222767.xYz","ws-opts":{"path":"/Bla4bwO5lnIT6TyxDFklcPSbclvX","headers":{"host":"EEeE3.222767.xYz"}}}
   - {"type":"vless","name":"法國","server":"178.20.215.2","port":443,"uuid":"192ea2c7-d7d0-6676-2929-b04a072b387d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"speed.cloudflare.com","tls":false,"udp":true}
-  - {"type":"trojan","name":"103.160.204.59","server":"103.160.204.59","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"rustam.ns.cloudflare.com","server":"rustam.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"🇺🇸US_3","server":"198.62.62.156","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"www.hugedomains.com","server":"www.hugedomains.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"toy-people.com","server":"toy-people.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"comicabc.com_2","server":"comicabc.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"time.is","server":"time.is","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"shopify.com_1","server":"shopify.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"shopify.com_2","server":"shopify.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"whatismyipaddress.com_1","server":"whatismyipaddress.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"lewis.ns.cloudflare.com_1","server":"lewis.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"whatismyipaddress.com_2","server":"whatismyipaddress.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"abdullah.ns.cloudflare.com","server":"abdullah.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"162.159.133.85","server":"162.159.133.85","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"huxley.ns.cloudflare.com","server":"huxley.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"benedict.ns.cloudflare.com","server":"benedict.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"moura.ns.cloudflare.com_2","server":"moura.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"dylan.ns.cloudflare.com","server":"dylan.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"198.62.62.4","server":"198.62.62.4","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"uriah.ns.cloudflare.com","server":"uriah.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"www.digitalocean.com","server":"www.digitalocean.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"lewis.ns.cloudflare.com_2","server":"lewis.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"craig.ns.cloudflare.com","server":"craig.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"kyree.ns.cloudflare.com","server":"kyree.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"cris.ns.cloudflare.com","server":"cris.ns.cloudflare.com","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"🇺🇸US_4","server":"198.62.62.156","port":443,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"tn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"tn1.ylka.dpdns.org"}}}
   - {"type":"vless","name":"香港","server":"hk01.youyacloud.me","port":28888,"uuid":"8da7bd17-70ab-472d-a925-cc827857dc35","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.tvb.com","tls":false,"udp":true}
-  - {"type":"vless","name":"美國_1","server":"104.21.90.226","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"444RRrt5.7777155.xYZ","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"444RRrt5.7777155.xYZ"}}}
-  - {"type":"vless","name":"美國_2","server":"172.67.131.76","port":443,"uuid":"afc9d688-520a-46fa-a98d-4511d1198cdd","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"EEeE3.222767.xYz","ws-opts":{"path":"/Bla4bwO5lnIT6TyxDFklcPSbclvX","headers":{"host":"EEeE3.222767.xYz"}}}
-  - {"type":"vless","name":"伊朗","server":"direct-jde6zos4zet26b15zzd1.appcity-download.ir","port":17337,"uuid":"21441ba7-8364-496c-d43b-39fc7f9cb8d7","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"美國_3","server":"172.67.131.76","port":443,"uuid":"afc9d688-520a-46fa-a98d-4511d1198cdd","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"EEeE3.222767.xYz","ws-opts":{"path":"/Bla4bwO5lnIT6TyxDFklcPSbclvX","headers":{"host":"EEeE3.222767.xYz"}}}
-  - {"type":"vless","name":"美國_4","server":"172.67.162.50","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"eEedFR5.7777155.Xyz","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"eEedFR5.7777155.Xyz"}}}
-  - {"type":"vless","name":"美國_5","server":"172.67.162.50","port":443,"uuid":"e4cbe8b8-37db-4aaa-8469-b84f34c51ebc","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"eEedFR5.7777155.Xyz","ws-opts":{"path":"/6OWLjRc26b0nHYr5hYXD","headers":{"host":"eEedFR5.7777155.Xyz"}}}
-  - {"type":"trojan","name":"IPV6_2","server":"[2606","port":4700,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"trojan","name":"IPV6_3","server":"[2606","port":4700,"password":"06e4425e-a8cb-4b63-929f-2105604ab0a9","udp":true,"skip-cert-verify":true,"sni":"yn1.ylka.dpdns.org","network":"ws","ws-opts":{"path":"/?ed=2560&PROT_TYPE=trojan","headers":{"host":"yn1.ylka.dpdns.org"}}}
-  - {"type":"vless","name":"美国","server":"fearless-change.oneeat.co","port":80,"uuid":"b055036a-2d81-4d46-ab18-4e1898b58cec","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"type":"vless","name":"德國_4","server":"hybrid.arvancloud.online","port":44443,"uuid":"53fff6cc-b4ec-43e8-ade5-e0c42972fc33","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.speedtest.net","tls":false,"udp":true}
+  - {"type":"vless","name":"VLESS节点1","server":"212.129.5.242","port":34510,"uuid":"1760348a-b1be-4d31-99b1-fa6598ccce84","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"台湾_1","server":"125.227.86.45","port":443,"password":"8a1ab0df6abea549","udp":true,"skip-cert-verify":true,"sni":"TG.WangCai2","network":"grpc"}
+  - {"type":"trojan","name":"台湾_2","server":"125.227.86.46","port":443,"password":"8a1ab0df6abea549","udp":true,"skip-cert-verify":true,"sni":"TG.WangCai2","network":"grpc"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_1","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"3f43277b-0259-45c1-872e-b9e20e0b3f50","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_2","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"0a8b328d-064b-4e2e-8592-a287e22ba245","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_3","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"5d2cd170-f91c-425b-8c77-6052f1d85e4a","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_4","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"8c39103a-222a-407c-946d-6568c1d51470","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国西雅图原生_1","server":"xiaozhu1.kkieo555.cn","port":30210,"password":"22479ea1-90ba-443e-9a41-3d738de266bc","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇭🇰香港02","server":"xiaozhu1.kkieo555.cn","port":49213,"password":"4b3b0443-d2fa-4c6c-b186-4cfd434e09e1","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国洛杉矶原生_1","server":"xiaozhu1.kkieo555.cn","port":19216,"password":"80942762-1fb0-40b5-94f9-d58a5aa42134","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_5","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"ee0afca3-8ec4-475a-8bbf-0148ccb9e41e","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_6","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"cc205be4-bb25-448f-ab4c-cfdb61b0e10a","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国西雅图原生_2","server":"xiaozhu1.kkieo555.cn","port":30210,"password":"a076d98f-2489-4e38-b5ad-3cd28acc21b4","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_7","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"9a0826ef-f632-4296-8ef4-994e52e9f34a","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国洛杉矶原生_2","server":"xiaozhu1.kkieo555.cn","port":19216,"password":"b09ec211-ecd6-4b23-a049-6c1ee5f5e3ed","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国纽约_8","server":"xiaozhu1.kkieo555.cn","port":41275,"password":"dc051e42-ce07-4dc5-838b-188844ac9c13","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本1_1","server":"xxz.dadakkk2088.com","port":41273,"password":"c0f074f3-b947-47a3-b1fa-806a62638d89","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇰🇷韩国01","server":"xiaozhu1.kkieo555.cn","port":49214,"password":"d1efe31b-2bed-4107-bd78-2ef4458bb384","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本1_2","server":"xiaozhu1.kkieo555.cn","port":41273,"password":"ca739125-aec0-4f10-b679-72b629681fe9","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本2_1","server":"xiaozhu1.kkieo555.cn","port":41273,"password":"29f418d4-08ed-469b-9177-e555302769a7","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇸🇬新加坡1","server":"xiaozhu1.kkieo555.cn","port":41277,"password":"460e97b2-f5e4-4aad-9521-5e7b6c51eb2a","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本2_2","server":"xiaozhu1.kkieo555.cn","port":41273,"password":"e772ef4e-a771-488c-b252-b7b0dd5dba5d","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本2_3","server":"xiaozhu1.kkieo555.cn","port":41273,"password":"aa8befc9-a444-440c-8d09-48aca69b7548","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本2_4","server":"xiaozhu1.kkieo555.cn","port":41273,"password":"fcb5ac26-d8f6-435b-9a6f-da9fa7da937c","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"youneed.win_1","server":"141.94.68.216","port":2053,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"youneed.win_2","server":"138.124.118.34","port":443,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/proxyip=proxyip.fxxk.dedyn.io","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"youneed.win_3","server":"83.147.254.185","port":443,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"youneed.win_4","server":"62.60.156.205","port":2443,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"youneed.win_5","server":"158.101.11.204","port":15805,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"美国_1","server":"194.76.173.98","port":2053,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
+  - {"type":"trojan","name":"美国_2","server":"135.125.232.253","port":2053,"password":"iwangjie","udp":true,"skip-cert-verify":true,"sni":"nodes.830901.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"nodes.830901.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -445,61 +368,50 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾_1
-      - 台湾_2
-      - ipv4.ip.sb
+      - 英國
       - 德國_1
-      - 德國_2
-      - 🇺🇸US_1
-      - 🇭🇰HK
-      - 🇺🇸US_2
-      - www.glassdoor.com
-      - 104.17.142.12
-      - trevor.ns.cloudflare.com
-      - ip.gs
-      - decker.ns.cloudflare.com
-      - moura.ns.cloudflare.com_1
-      - IPV6_1
-      - comicabc.com_1
-      - 德國_3
-      - 法國
-      - 103.160.204.59
-      - rustam.ns.cloudflare.com
-      - 🇺🇸US_3
-      - www.hugedomains.com
-      - toy-people.com
-      - comicabc.com_2
-      - time.is
-      - shopify.com_1
-      - shopify.com_2
-      - whatismyipaddress.com_1
-      - lewis.ns.cloudflare.com_1
-      - whatismyipaddress.com_2
-      - abdullah.ns.cloudflare.com
-      - 162.159.133.85
-      - huxley.ns.cloudflare.com
-      - benedict.ns.cloudflare.com
-      - moura.ns.cloudflare.com_2
-      - dylan.ns.cloudflare.com
-      - 198.62.62.4
-      - uriah.ns.cloudflare.com
-      - www.digitalocean.com
-      - lewis.ns.cloudflare.com_2
-      - craig.ns.cloudflare.com
-      - kyree.ns.cloudflare.com
-      - cris.ns.cloudflare.com
-      - 🇺🇸US_4
-      - 香港
       - 美國_1
+      - 德國_2
       - 美國_2
-      - 伊朗
       - 美國_3
       - 美國_4
       - 美國_5
-      - IPV6_2
-      - IPV6_3
-      - 美国
-      - 德國_4
+      - 美國_6
+      - 美國_7
+      - 美國_8
+      - 法國
+      - 香港
+      - VLESS节点1
+      - 台湾_1
+      - 台湾_2
+      - 🇺🇸美国纽约_1
+      - 🇺🇸美国纽约_2
+      - 🇺🇸美国纽约_3
+      - 🇺🇸美国纽约_4
+      - 🇺🇸美国西雅图原生_1
+      - 🇭🇰香港02
+      - 🇺🇸美国洛杉矶原生_1
+      - 🇺🇸美国纽约_5
+      - 🇺🇸美国纽约_6
+      - 🇺🇸美国西雅图原生_2
+      - 🇺🇸美国纽约_7
+      - 🇺🇸美国洛杉矶原生_2
+      - 🇺🇸美国纽约_8
+      - 🇯🇵日本1_1
+      - 🇰🇷韩国01
+      - 🇯🇵日本1_2
+      - 🇯🇵日本2_1
+      - 🇸🇬新加坡1
+      - 🇯🇵日本2_2
+      - 🇯🇵日本2_3
+      - 🇯🇵日本2_4
+      - youneed.win_1
+      - youneed.win_2
+      - youneed.win_3
+      - youneed.win_4
+      - youneed.win_5
+      - 美国_1
+      - 美国_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
