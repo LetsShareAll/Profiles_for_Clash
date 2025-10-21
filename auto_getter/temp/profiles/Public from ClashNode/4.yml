@@ -5,452 +5,361 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+  - {"type":"vless","name":"美國_1","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_1","server":"81.19.140.131","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
+  - {"type":"vless","name":"希臘","server":"185.39.207.121","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
+  - {"type":"vless","name":"美國_2","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
   - {"type":"vless","name":"美国_1","server":"212.129.5.242","port":22008,"uuid":"77a33d77-7af9-4c33-9556-d6711becca04","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"希臘_1","server":"185.39.207.121","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"加拿大_1","server":"81.19.140.131","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"法国_1","server":"178.20.215.2","port":443,"uuid":"192ea2c7-d7d0-6676-2929-b04a072b387d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"speed.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"土耳其_1","server":"185.39.204.70","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
   - {"type":"vless","name":"伊朗_1","server":"mci.dl101movis.ir","port":80,"uuid":"117ca567-3180-4d62-abcc-8fc0104c93ff","skip-cert-verify":true}
-  - {"type":"vless","name":"美國_1","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"美國_2","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"芬蘭_1","server":"109.172.54.49","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"土耳其","server":"185.39.204.70","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"美國_3","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_2","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美国_3","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美國_4","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_4","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美國_5","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"德国_1","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"德国_1","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
+  - {"type":"vless","name":"德国_2","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"美国_2","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"美国_3","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
+  - {"type":"vless","name":"美国_4","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
   - {"type":"vless","name":"美国_5","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美國_6","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
   - {"type":"vless","name":"美国_6","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
   - {"type":"vless","name":"美国_7","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"德国_2","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美國_7","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美國_8","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美國_9","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
+  - {"type":"vless","name":"美国_8","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"美国_9","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
+  - {"type":"vless","name":"美国_10","server":"104.20.31.27","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"美國_3","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
+  - {"type":"vless","name":"美国_11","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
+  - {"type":"vless","name":"美國_4","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
   - {"type":"vless","name":"德国_3","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"德国_4","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美国_8","server":"104.20.31.27","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"法國_1","server":"212.129.5.242","port":22008,"uuid":"77a33d77-7af9-4c33-9556-d6711becca04","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_9","server":"212.129.5.242","port":22008,"uuid":"77a33d77-7af9-4c33-9556-d6711becca04","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"希腊","server":"185.39.207.121","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"加拿大_2","server":"81.19.140.131","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"瑞士","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"希臘_2","server":"185.39.207.121","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"摩爾多瓦","server":"185.39.204.70","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"法國_2","server":"178.20.215.2","port":443,"uuid":"192ea2c7-d7d0-6676-2929-b04a072b387d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"speed.cloudflare.com","tls":false,"udp":true}
-  - {"type":"vless","name":"法国_2","server":"178.20.215.2","port":443,"uuid":"192ea2c7-d7d0-6676-2929-b04a072b387d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"speed.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_2","server":"81.19.140.131","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
   - {"type":"vless","name":"芬兰","server":"109.172.54.49","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"芬蘭_2","server":"109.172.54.49","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_10","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_11","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美国_12","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美国_13","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"德国_5","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_14","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"德国_6","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_15","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_16","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美国_17","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_18","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美国_19","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_20","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"美国_21","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美国_22","server":"104.20.31.27","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"vless","name":"美国_12","server":"a1-direct.the-best-airport.top","port":9443,"uuid":"07fe5ad4-6157-4857-91fe-8270ebd648d9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.cdn-apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_13","server":"b1-direct.the-best-airport.top","port":8443,"uuid":"07fe5ad4-6157-4857-91fe-8270ebd648d9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.cdn-apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_14","server":"c1-direct.the-best-airport.top","port":4443,"uuid":"07fe5ad4-6157-4857-91fe-8270ebd648d9","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"icloud.cdn-apple.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_15","server":"77.110.109.72","port":443,"uuid":"045eb821-bdae-43c5-8945-9cb181e65dcb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ad.mail.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"日本_1","server":"160.187.111.222","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","skip-cert-verify":true,"network":"tcp","servername":"images-na.ssl-images-amazon.com","tls":false,"udp":true}
+  - {"type":"vless","name":"瑞士","server":"212.18.104.19","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
+  - {"type":"vless","name":"土耳其_2","server":"185.39.204.70","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nspk.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"希腊","server":"185.39.207.121","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
+  - {"type":"vless","name":"新西兰","server":"212.129.5.242","port":22008,"uuid":"77a33d77-7af9-4c33-9556-d6711becca04","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"伊朗_2","server":"mci.dl101movis.ir","port":80,"uuid":"117ca567-3180-4d62-abcc-8fc0104c93ff","skip-cert-verify":true}
-  - {"type":"vless","name":"俄罗斯","server":"81.19.140.131","port":443,"uuid":"677615f7-87d5-5019-a44d-4fc3ff8d59d7","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"vk.cc","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_23","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr"}}
-  - {"type":"vless","name":"美国_24","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"join-raiv2mmr-telegram.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"join-raiv2mmr-telegram.koyeb.app"}}}
-  - {"type":"vless","name":"美国_25","server":"join-raiv2mmr-telegram.koyeb.app","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
-  - {"type":"vless","name":"VLESS节点1","server":"212.129.5.242","port":22008,"uuid":"77a33d77-7af9-4c33-9556-d6711becca04","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_16","server":"172.66.156.81","port":80,"uuid":"01cea818-a80b-4945-a883-f5164cde4ad3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy","headers":{"host":"websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com."}}}
+  - {"type":"vless","name":"美国_17","server":"172.66.156.81","port":80,"uuid":"01cea818-a80b-4945-a883-f5164cde4ad3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy","headers":{"host":"websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com."}}}
+  - {"type":"vless","name":"美国_18","server":"104.20.31.27","port":443,"uuid":"5c9b6087-f955-4506-9c1d-67a5aae44bc9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app","ws-opts":{"path":"/@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr","headers":{"host":"JOIN-RAIV2MMR-TELEGRAM.koyeb.app"}}}
+  - {"type":"trojan","name":"日本_2","server":"36.151.251.18","port":811,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"新加坡","server":"36.156.102.115","port":44095,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"美国_19","server":"36.156.102.115","port":26876,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"德国_4","server":"63.180.33.188","port":22222,"password":"telegram-id-privatevpns","udp":true,"skip-cert-verify":true,"sni":"trojan.burgerip.co.uk","network":"tcp"}
+  - {"type":"trojan","name":"日本_3","server":"202.181.103.246","port":2283,"password":"c53647f3153f784b3c695ffbe5fb43c0","udp":true,"skip-cert-verify":true,"sni":"www.nintendogames.net","network":"tcp"}
+  - {"type":"trojan","name":"日本_4","server":"202.181.103.246","port":2283,"password":"c53647f3153f784b3c695ffbe5fb43c0","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"日本_5","server":"36.151.195.112","port":4556,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"36.151.195.112","network":"tcp"}
+  - {"type":"trojan","name":"香港","server":"36.151.195.112","port":4556,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"美国_20","server":"bestcdn3.868863.xyz","port":443,"password":"07fe5ad4-6157-4857-91fe-8270ebd648d9","udp":true,"skip-cert-verify":true,"sni":"tt-c4-cdn.the-best-airport.top","network":"ws","ws-opts":{"path":"/videomuaawe","headers":{"host":"tt-c4-cdn.the-best-airport.top"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -473,65 +382,52 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_1
-      - 希臘_1
-      - 加拿大_1
-      - 法国_1
-      - 伊朗_1
       - 美國_1
+      - 俄罗斯_1
+      - 希臘
       - 美國_2
-      - 芬蘭_1
-      - 土耳其
-      - 美國_3
+      - 美国_1
+      - 土耳其_1
+      - 伊朗_1
+      - 德国_1
+      - 德国_2
       - 美国_2
       - 美国_3
-      - 美國_4
       - 美国_4
-      - 美國_5
-      - 德国_1
       - 美国_5
-      - 美國_6
       - 美国_6
       - 美国_7
-      - 德国_2
-      - 美國_7
-      - 美國_8
-      - 美國_9
-      - 德国_3
-      - 德国_4
       - 美国_8
-      - 法國_1
       - 美国_9
-      - 希腊
-      - 加拿大_2
-      - 瑞士
-      - 希臘_2
-      - 摩爾多瓦
-      - 法國_2
-      - 法国_2
-      - 芬兰
-      - 芬蘭_2
       - 美国_10
+      - 美國_3
       - 美国_11
+      - 美國_4
+      - 德国_3
+      - 俄罗斯_2
+      - 芬兰
       - 美国_12
       - 美国_13
-      - 德国_5
       - 美国_14
-      - 德国_6
       - 美国_15
+      - 日本_1
+      - 瑞士
+      - 土耳其_2
+      - 希腊
+      - 新西兰
+      - 伊朗_2
       - 美国_16
       - 美国_17
       - 美国_18
+      - 日本_2
+      - 新加坡
       - 美国_19
+      - 德国_4
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 香港
       - 美国_20
-      - 美国_21
-      - 美国_22
-      - 伊朗_2
-      - 俄罗斯
-      - 美国_23
-      - 美国_24
-      - 美国_25
-      - VLESS节点1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
