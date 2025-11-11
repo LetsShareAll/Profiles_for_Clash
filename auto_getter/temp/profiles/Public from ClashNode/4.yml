@@ -5,343 +5,211 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国(yudou6677.top 玉豆免费节点), server: vn1.web3sp.com, port: 51069, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 香港(yudou6677.top 玉豆免费节点), server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 2, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 3, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 4, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 5, server: 183.2.133.119, port: 10032, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 6, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 7, server: ru1.web3sp.com, port: 51049, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 8, server: 183.2.133.119, port: 10028, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 9, server: azerb.net, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560", ws-headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 10, server: 183.2.133.119, port: 10019, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 11, server: 2001:bc8:1203:209::50, port: 23008, type: vmess, uuid: e994b804-345c-4e8b-a827-7e005694d146, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: www.bing.com}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 12, server: 185.146.173.24, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 13, server: 117.172.176.22, port: 373, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 14, server: 183.2.133.119, port: 10024, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 韩国(yudou6677.top 玉豆免费节点), server: 152.70.92.69, port: 80, type: vmess, uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 15, server: 183.60.254.178, port: 50719, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 16, server: 183.2.133.119, port: 10046, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 17, server: 183.2.133.119, port: 10038, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 18, server: 183.2.133.119, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 19, server: 134.255.211.95, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V9tDTUVnwrEI937PP96McHXsMpfhmqDE, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 20, server: 183.2.133.119, port: 10048, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 法国(yudou6677.top 玉豆免费节点), server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 21, server: 183.2.133.119, port: 10033, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 22, server: 183.2.133.119, port: 10006, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 23, server: 183.2.133.119, port: 10027, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 24, server: 183.2.133.119, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 法国(yudou6677.top 玉豆免费节点) 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 25, server: 183.2.133.119, port: 10047, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 26, server: 183.2.133.119, port: 10011, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点), server: 46.246.98.39, port: 55818, type: ss, cipher: chacha20-ietf-poly1305, password: 85qJ4wjHhPbVNxWKT1mJnE, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 2, server: nl-v2ray.freevmess.com, port: 2083, type: vmess, uuid: c3d066bc-4170-4006-a95c-0012367e8f13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 3, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 美国(yudou123.top 玉豆免费节点), server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点), server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国(yudou6677.top 玉豆免费节点), server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
+  - {name: 法国(yudou6677.top 玉豆免费节点) 2, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
   - {name: 法国(yudou6677.top 玉豆免费节点) 3, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 27, server: jp8.web3sp.com, port: 50179, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 28, server: 183.2.133.119, port: 10009, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 29, server: 183.2.133.119, port: 10043, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 30, server: 183.2.133.119, port: 10030, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 31, server: 183.2.133.119, port: 10040, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 32, server: 36.133.73.36, port: 11819, type: vmess, uuid: de32752c-0661-467e-82d3-35bc740a787f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 33, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 34, server: 183.2.133.119, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 35, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 36, server: 183.2.133.119, port: 10008, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 37, server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 38, server: sl.fgmcx.top, port: 41047, type: ss, cipher: chacha20-ietf-poly1305, password: 014e90df-a3ee-4654-a9f6-d118e02dd02a, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 39, server: 183.2.133.119, port: 10022, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 40, server: 183.2.133.119, port: 10010, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 41, server: 183.2.133.119, port: 10044, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 42, server: 183.2.133.119, port: 10007, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 43, server: 183.236.51.177, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 44, server: 183.2.133.119, port: 10005, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 45, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 46, server: 183.2.133.119, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 47, server: 183.2.133.119, port: 10014, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 48, server: 183.2.133.119, port: 10018, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 49, server: 67.209.185.93, port: 15325, type: ss, cipher: aes-256-gcm, password: 9GfXqoYsCCGkogps, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 50, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 51, server: 183.2.133.119, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 52, server: hk3.web3sp.com, port: 50039, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 53, server: 185.146.173.82, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 54, server: 183.2.133.119, port: 10016, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 55, server: 183.2.133.119, port: 10017, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 56, server: oss-cn-shanghai.letssepub.com, port: 20021, type: trojan, password: adbac894-90b9-4913-b77e-a715a8d4ebc8, sni: oss-cn-shanghai.letssepub.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 57, server: 183.2.133.119, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
+  - {name: 法国(yudou6677.top 玉豆免费节点) 4, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
+  - {name: 香港(yudou6677.top 玉豆免费节点), server: 43.247.134.213, port: 59516, type: vmess, uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 3, server: 2001:bc8:1203:209::50, port: 23008, type: vmess, uuid: e994b804-345c-4e8b-a827-7e005694d146, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: www.bing.com}, udp: true}
   - {name: 香港(yudou6677.top 玉豆免费节点) 2, server: 43.247.134.213, port: 59516, type: vmess, uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 58, server: 183.2.133.119, port: 10023, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 59, server: 183.60.254.178, port: 51059, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 60, server: sg1.web3sp.com, port: 50229, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 61, server: 183.2.133.119, port: 10015, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 62, server: 141.101.121.26, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 63, server: 183.2.133.119, port: 10021, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 64, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "?ed=2048", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 65, server: 183.2.133.119, port: 10045, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 66, server: 212.192.13.86, port: 23188, type: vmess, uuid: e5fab243-0d27-4ccf-a7cd-680c4072be3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 212.192.13.86}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 67, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 68, server: 183.60.254.178, port: 51049, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 69, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 70, server: 183.2.133.119, port: 10025, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 香港(yudou6677.top 玉豆免费节点) 3, server: 43.247.134.213, port: 59516, type: vmess, uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 71, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 72, server: 183.2.133.119, port: 10026, type: ss, cipher: chacha20-ietf-poly1305, password: 89d52514-f5a4-45c6-96ea-49e113e60129, udp: true}
-  - {name: 美国(yudou6677.top 玉豆免费节点) 73, server: jp7.web3sp.com, port: 50169, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 4, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 5, server: 117.172.176.22, port: 2173, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 6, server: 185.146.173.82, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou123.top 玉豆免费节点) 2, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 4, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 7, server: 185.146.173.117, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 5, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 6, server: oss-cn-shanghai.letssepub.com, port: 20021, type: trojan, password: adbac894-90b9-4913-b77e-a715a8d4ebc8, sni: oss-cn-shanghai.letssepub.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国(yudou6677.top 玉豆免费节点), server: 152.70.92.69, port: 80, type: vmess, uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(yudou6677.top 玉豆免费节点) 3, server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 8, server: 210.16.183.122, port: 41047, type: ss, cipher: chacha20-ietf-poly1305, password: 014e90df-a3ee-4654-a9f6-d118e02dd02a, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 7, server: 183.236.51.177, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 9, server: nl-v2ray.freevmess.com, port: 2083, type: vmess, uuid: c3d066bc-4170-4006-a95c-0012367e8f13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 10, server: 117.172.176.22, port: 4095, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 8, server: azerb.net, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560", ws-headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 11, server: 141.101.121.26, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 9, server: sl.fgmcx.top, port: 41047, type: ss, cipher: chacha20-ietf-poly1305, password: 014e90df-a3ee-4654-a9f6-d118e02dd02a, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 12, server: 141.101.121.120, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 13, server: 183.236.51.177, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 10, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 14, server: 62.133.63.230, port: 1580, type: ss, cipher: chacha20-ietf-poly1305, password: KgcKQpFCkXnOJXceV68o12, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 11, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 15, server: test.yucdncdn.me, port: 443, type: vmess, uuid: b837aca5-fc36-4180-80a8-18d405a53e5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.yucdncdn.me}, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 12, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 16, server: 104.18.240.238, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 17, server: 210.16.183.120, port: 41047, type: ss, cipher: chacha20-ietf-poly1305, password: 014e90df-a3ee-4654-a9f6-d118e02dd02a, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 13, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "?ed=2048", ws-headers: {Host: 2001:bc8:32d7:302::10}, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 14, server: 36.133.73.36, port: 11819, type: vmess, uuid: de32752c-0661-467e-82d3-35bc740a787f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 15, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 18, server: 117.172.176.22, port: 1334, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 19, server: 117.172.176.22, port: 4173, type: trojan, password: e4e262d453466988575c397a30562337, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 20, server: 185.146.173.16, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", ws-headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}, udp: true}
+  - {name: 美国(yudou678.top 玉豆免费节点) 21, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
+  - {name: 美国(yudou6677.top 玉豆免费节点) 16, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: RFK38Cg7APneSB5cWDcpbm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -360,86 +228,53 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -453,257 +288,158 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -719,86 +455,53 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国(yudou678.top 玉豆免费节点)
+      - 美国(yudou678.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 3
+      - 美国(yudou123.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点)
-      - 香港(yudou6677.top 玉豆免费节点)
+      - 法国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 2
+      - 法国(yudou6677.top 玉豆免费节点) 3
+      - 法国(yudou6677.top 玉豆免费节点) 4
+      - 香港(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 3
+      - 香港(yudou6677.top 玉豆免费节点) 2
+      - 美国(yudou678.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 5
+      - 美国(yudou678.top 玉豆免费节点) 6
+      - 美国(yudou123.top 玉豆免费节点) 2
       - 美国(yudou6677.top 玉豆免费节点) 4
+      - 美国(yudou678.top 玉豆免费节点) 7
       - 美国(yudou6677.top 玉豆免费节点) 5
       - 美国(yudou6677.top 玉豆免费节点) 6
+      - 韩国(yudou6677.top 玉豆免费节点)
+      - 香港(yudou6677.top 玉豆免费节点) 3
+      - 美国(yudou678.top 玉豆免费节点) 8
       - 美国(yudou6677.top 玉豆免费节点) 7
+      - 美国(yudou678.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 10
       - 美国(yudou6677.top 玉豆免费节点) 8
+      - 美国(yudou678.top 玉豆免费节点) 11
       - 美国(yudou6677.top 玉豆免费节点) 9
+      - 美国(yudou678.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 10
+      - 美国(yudou678.top 玉豆免费节点) 14
       - 美国(yudou6677.top 玉豆免费节点) 11
+      - 美国(yudou678.top 玉豆免费节点) 15
       - 美国(yudou6677.top 玉豆免费节点) 12
+      - 美国(yudou678.top 玉豆免费节点) 16
+      - 美国(yudou678.top 玉豆免费节点) 17
       - 美国(yudou6677.top 玉豆免费节点) 13
       - 美国(yudou6677.top 玉豆免费节点) 14
-      - 韩国(yudou6677.top 玉豆免费节点)
       - 美国(yudou6677.top 玉豆免费节点) 15
+      - 美国(yudou678.top 玉豆免费节点) 18
+      - 美国(yudou678.top 玉豆免费节点) 19
+      - 美国(yudou678.top 玉豆免费节点) 20
+      - 美国(yudou678.top 玉豆免费节点) 21
       - 美国(yudou6677.top 玉豆免费节点) 16
-      - 美国(yudou6677.top 玉豆免费节点) 17
-      - 美国(yudou6677.top 玉豆免费节点) 18
-      - 美国(yudou6677.top 玉豆免费节点) 19
-      - 美国(yudou6677.top 玉豆免费节点) 20
-      - 法国(yudou6677.top 玉豆免费节点)
-      - 美国(yudou6677.top 玉豆免费节点) 21
-      - 美国(yudou6677.top 玉豆免费节点) 22
-      - 美国(yudou6677.top 玉豆免费节点) 23
-      - 美国(yudou6677.top 玉豆免费节点) 24
-      - 法国(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 25
-      - 美国(yudou6677.top 玉豆免费节点) 26
-      - 法国(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 27
-      - 美国(yudou6677.top 玉豆免费节点) 28
-      - 美国(yudou6677.top 玉豆免费节点) 29
-      - 美国(yudou6677.top 玉豆免费节点) 30
-      - 美国(yudou6677.top 玉豆免费节点) 31
-      - 美国(yudou6677.top 玉豆免费节点) 32
-      - 美国(yudou6677.top 玉豆免费节点) 33
-      - 美国(yudou6677.top 玉豆免费节点) 34
-      - 美国(yudou6677.top 玉豆免费节点) 35
-      - 美国(yudou6677.top 玉豆免费节点) 36
-      - 美国(yudou6677.top 玉豆免费节点) 37
-      - 美国(yudou6677.top 玉豆免费节点) 38
-      - 美国(yudou6677.top 玉豆免费节点) 39
-      - 美国(yudou6677.top 玉豆免费节点) 40
-      - 美国(yudou6677.top 玉豆免费节点) 41
-      - 美国(yudou6677.top 玉豆免费节点) 42
-      - 美国(yudou6677.top 玉豆免费节点) 43
-      - 美国(yudou6677.top 玉豆免费节点) 44
-      - 美国(yudou6677.top 玉豆免费节点) 45
-      - 美国(yudou6677.top 玉豆免费节点) 46
-      - 美国(yudou6677.top 玉豆免费节点) 47
-      - 美国(yudou6677.top 玉豆免费节点) 48
-      - 美国(yudou6677.top 玉豆免费节点) 49
-      - 美国(yudou6677.top 玉豆免费节点) 50
-      - 美国(yudou6677.top 玉豆免费节点) 51
-      - 美国(yudou6677.top 玉豆免费节点) 52
-      - 美国(yudou6677.top 玉豆免费节点) 53
-      - 美国(yudou6677.top 玉豆免费节点) 54
-      - 美国(yudou6677.top 玉豆免费节点) 55
-      - 美国(yudou6677.top 玉豆免费节点) 56
-      - 美国(yudou6677.top 玉豆免费节点) 57
-      - 香港(yudou6677.top 玉豆免费节点) 2
-      - 美国(yudou6677.top 玉豆免费节点) 58
-      - 美国(yudou6677.top 玉豆免费节点) 59
-      - 美国(yudou6677.top 玉豆免费节点) 60
-      - 美国(yudou6677.top 玉豆免费节点) 61
-      - 美国(yudou6677.top 玉豆免费节点) 62
-      - 美国(yudou6677.top 玉豆免费节点) 63
-      - 美国(yudou6677.top 玉豆免费节点) 64
-      - 美国(yudou6677.top 玉豆免费节点) 65
-      - 美国(yudou6677.top 玉豆免费节点) 66
-      - 美国(yudou6677.top 玉豆免费节点) 67
-      - 美国(yudou6677.top 玉豆免费节点) 68
-      - 美国(yudou6677.top 玉豆免费节点) 69
-      - 美国(yudou6677.top 玉豆免费节点) 70
-      - 香港(yudou6677.top 玉豆免费节点) 3
-      - 美国(yudou6677.top 玉豆免费节点) 71
-      - 美国(yudou6677.top 玉豆免费节点) 72
-      - 美国(yudou6677.top 玉豆免费节点) 73
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
