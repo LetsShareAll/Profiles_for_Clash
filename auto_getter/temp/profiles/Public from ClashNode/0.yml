@@ -58,45 +58,32 @@ tun:
 
 
 proxies:
-  - type: vmess
-    name: 🇭🇰HK²_3|2.0MB/s|YT|NF|X
-    server: n1747969945.xlxzzx.com
-    port: 443
-    uuid: 192217b5-fd9f-4e08-9c74-1726f83af848
-    alterId: 0
-    network: ws
-    cipher: auto
-    ws-opts:
-      path: /
-    tls: true
-  - type: vmess
-    name: 🇭🇰HK²_5|5.3MB/s|2%|GPT⁺|YT|NF|D+|X
-    server: hkt.gotochinatown.net
-    port: 80
-    uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-    alterId: 2
-    network: ws
-    cipher: auto
-    servername: hkt.gotochinatown.net
-    ws-opts:
-      path: /
-      headers:
-        Host: hkt.gotochinatown.net
-  - type: vless
-    name: 🇰🇷_KR_韩国
-    server: 211.252.50.74
-    port: 30004
-    uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-    network: ws
-    servername: ak.suoni.nyc.mn
-    tls: true
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: ak.suoni.nyc.mn
-    client-fingerprint: random
   - type: vless
     name: 🇨🇳_CN_中国
+    server: 43.100.74.250
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    network: tcp
+    servername: www.primevideo.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇨🇳_CN_中国_1
+    server: 43.100.81.250
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    network: tcp
+    servername: www.primevideo.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇨🇳_CN_中国_2
     server: 8.217.180.234
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
@@ -107,91 +94,187 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
+  - type: vless
+    name: 🇦🇺_AU_澳大利亚
+    server: 43.161.227.251
+    port: 60007
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇨🇳_CN_中国_3
+    server: 43.100.86.235
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    network: tcp
+    servername: images-na.ssl-images-amazon.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇦🇺_AU_澳大利亚_1
+    server: 43.161.227.251
+    port: 60006
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vmess
+    name: ️95@oneclickvpnkeys
+    server: n1761296886.lie5d.cyou
+    port: 443
+    uuid: 697ece59-37c9-4a61-b986-705cad56057b
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: n1761296886.lie5d.cyou
+    ws-opts:
+      path: /
+      headers:
+        Host: n1761296886.lie5d.cyou
+    tls: true
+  - type: vless
+    name: 🇰🇷_KR_韩国
+    server: 115.90.84.220
+    port: 50001
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇰🇷_KR_韩国_1
+    server: 222.104.213.148
+    port: 33143
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇨🇳_CN_中国_4
+    server: 220.128.110.108
+    port: 43
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
   - type: trojan
-    name: 🇨🇳_CN_中国_1
+    name: 🇨🇳_CN_中国_5
+    server: jp3.t.sgateway.link
+    port: 5223
+    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
+    network: tcp
+    sni: pod-jp-z1.psusercontent.com
+    tls: true
+  - type: vless
+    name: 🇰🇷_KR_韩国_2
+    server: 119.64.242.60
+    port: 60002
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇨🇳_CN_中国_6
+    server: 125.227.162.252
+    port: 12486
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: vless
+    name: 🇨🇳_CN_中国_7
+    server: 43.100.67.86
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    network: tcp
+    servername: www.primevideo.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇨🇳_CN_中国_8
+    server: 8.213.146.128
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    network: tcp
+    servername: www.primevideo.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    client-fingerprint: chrome
+  - type: trojan
+    name: 🇨🇳_CN_中国_9
     server: psg2-ag.t.sgateway.link
     port: 5223
     password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
     network: tcp
     sni: pod-kr-g1.psusercontent.com
     tls: true
-  - type: trojan
-    name: 🇺🇸_US_美国
-    server: 104.25.254.4
-    port: 2087
-    password: d0298536-d670-4045-bbb1-ddd5ea68683e
-    network: ws
-    sni: azadnet-bdr.pages.dev
-    tls: true
-    ws-opts:
-      path: /azadnet-bdr.pages.dev/?ed=2560&PROT_TYPE=trojan
   - type: vless
-    name: 🇺🇸_US_美国_1
-    server: 68.64.176.135
-    port: 443
-    uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-    network: ws
-    servername: ak.suoni.nyc.mn
-    tls: true
-    ws-opts:
-      path: /proxyip=sjc.o00o.ooo
-      headers:
-        Host: ak.suoni.nyc.mn
-    client-fingerprint: random
-  - type: vless
-    name: 🇺🇸_US_美国_2
-    server: 69.84.182.13
-    port: 443
-    uuid: 312d3555-d7a3-4674-869a-0e5b7ee03a35
-    network: ws
-    servername: fr-1-fr-1.aiopen.sbs
-    tls: true
-    ws-opts:
-      path: /kbjc/fr1
-      headers:
-        Host: fr-1-fr-1.aiopen.sbs
-    client-fingerprint: chrome
-  - type: vless
-    name: 🇯🇵_JP_日本
-    server: 18.183.89.240
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: trojan
     name: 🇷🇺_RU_俄罗斯
-    server: 89.110.120.197
-    port: 443
-    password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/89.110.120.197=443
-      headers:
-        Host: joss.gpj1.web.id
-  - type: vless
-    name: 🇺🇸_US_美国_3
-    server: ge1.clear-vpn.org
-    port: 443
-    uuid: 83367474-3a42-4aa8-a74f-82e930370975
-    network: tcp
-    servername: ge1.clear-vpn.org
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: tCsa9mOLB6gCTdF4cx-s4BhckPBw846-cxggHOhmkyw
-      short-id: fb228829c3da833b
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇯🇵_JP_日本_1
-    server: 52.68.194.189
+    server: 193.124.18.13
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -202,8 +285,8 @@ proxies:
       headers:
         Host: kuangbao.xiejiang.dpdns.org
   - type: vless
-    name: 🇨🇭_CH_瑞士
-    server: 94.142.255.97
+    name: 🇮🇷_IR_伊朗
+    server: 5.34.222.200
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -214,148 +297,156 @@ proxies:
       headers:
         Host: kuangbao.xiejiang.dpdns.org
   - type: vless
-    name: 🇸🇦_SA_沙特阿拉伯
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    network: tcp
-    servername: st.ozone.ru
-    tls: true
-    reality-opts:
-      public-key: hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo
-      short-id: 07e904766d29b958
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: trojan
-    name: 🇨🇳_CN_中国_2
-    server: 58.152.25.241
-    port: 443
-    password: BxceQaOe
-    network: tcp
-    sni: t.me/ripaojiedian
-    skip-cert-verify: true
-  - type: vless
-    name: 🇩🇪_DE_德国
-    server: broodmother.fonixapp.org
-    port: 55376
-    uuid: 7840aa0d-0a95-4be6-a813-cfacb5290391
-    network: tcp
-    servername: yelp.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: eRuDPGgOwmAbFaNZtqzEfgflU4Jaj2MJNYwAQPkp32s
-      short-id: 23f89c
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: ss
-    name: 🇷🇺_RU_俄罗斯_1
-    server: ams.telegavpn.org
-    port: 19057
-    cipher: chacha20-ietf-poly1305
-    password: GGVAfjuKPrwZslPDu8zoZK
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯_2
-    server: zcreat.ethervpn.fun
-    port: 8443
-    uuid: a47595a8-1add-401a-8189-e6799f8d8628
+    name: 🇨🇳_CN_中国_10
+    server: 125.227.162.252
+    port: 12485
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
     network: ws
-    servername: zcreat.ethervpn.fun
+    servername: s3.sni565.netlib.re
     tls: true
     encryption: none
     ws-opts:
-      path: /websocketpl?ed=2047
+      path: /proxyip=tw.sni2025.netlib.re
       headers:
-        Host: zcreat.ethervpn.fun
+        Host: s3.sni565.netlib.re
     client-fingerprint: chrome
     alpn:
-      - h2
-      - http/1.1
-  - type: trojan
-    name: 🇨🇭_CH_瑞士_1
-    server: 138.124.30.8
-    port: 443
-    password: 0311306e-56d4-4aa1-bde5-8cede7fcd3e4
-    network: ws
-    sni: joss.gpj1.web.id
-    tls: true
-    ws-opts:
-      path: /Free-VPN-CF-Geo-Project/138.124.30.8=443
-      headers:
-        Host: joss.gpj1.web.id
+      - h3
   - type: vless
-    name: 🇺🇸_US_美国_4
-    server: lifestealer.fonixapp.org
-    port: 45831
-    uuid: bcc42ff2-fa30-434c-aab8-8ace19cff555
-    network: tcp
-    servername: stackoverflow.com
+    name: 🇰🇷_KR_韩国_3
+    server: 125.141.4.132
+    port: 50001
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
     tls: true
     encryption: none
-    reality-opts:
-      public-key: 6-45Hxz3UsSI3vDzHSGGuDqqEzqwFxEQyl_0sZoMejs
-      short-id: 86e86c
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: trojan
-    name: 🇨🇳_CN_中国_3
-    server: hk3.t.sgateway.link
-    port: 5223
-    password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-    network: tcp
-    sni: pod-hk-z1.psusercontent.com
+    alpn:
+      - h3
+  - type: vless
+    name: 🇺🇸_US_美国
+    server: www.speedtest.net
+    port: 80
+    uuid: de2d1494-1676-41fe-a250-fe033ec8d451
+    network: ws
+    servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    encryption: none
+    ws-opts:
+      path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+      headers:
+        Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  - type: vless
+    name: 🇵🇱_PL_波兰
+    server: 95.40.61.115
+    port: 443
+    uuid: 69228a95-e9cb-b1ff-40d2-7315d9d4b9b7
+    network: ws
+    servername: s3.sni565.netlib.re
     tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=tw.sni2025.netlib.re
+      headers:
+        Host: s3.sni565.netlib.re
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - type: trojan
+    name: 🇺🇸_US_美国_1
+    server: joss.gpj1.web.id
+    port: 443
+    password: 6e6191a3-9a93-4617-859a-8d0ea0fce937
+    network: ws
+    sni: joss.gpj1.web.id
+    fingerprint: chrome
+    tls: true
+    ws-opts:
+      path: /Free-VPN-CF-Geo-Project/81.91.214.85=443
+      headers:
+        Host: joss.gpj1.web.id
+  - type: trojan
+    name: 🇺🇸_US_美国_2
+    server: 47.89.150.45
+    port: 21575
+    password: abb96ae5-8337-4719-b300-fc3b2efbd14d
+    network: ws
+    sni: joss.gpj1.web.id
+    fingerprint: randomized
+    tls: true
+    ws-opts:
+      path: /Free-VPN-CF-Geo-Project/47.89.150.45=21575
+      headers:
+        Host: joss.gpj1.web.id
+  - type: ss
+    name: 🇩🇪_DE_德国
+    server: 45.87.175.166
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: 1RWwXhwfAB5gAEozU4G2Pg
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰HK²_3|2.0MB/s|YT|NF|X
-      - 🇭🇰HK²_5|5.3MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 🇰🇷_KR_韩国
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国_2
+      - 🇦🇺_AU_澳大利亚
+      - 🇨🇳_CN_中国_3
+      - 🇦🇺_AU_澳大利亚_1
+      - ️95@oneclickvpnkeys
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国_4
+      - 🇨🇳_CN_中国_5
+      - 🇰🇷_KR_韩国_2
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇷🇺_RU_俄罗斯
+      - 🇮🇷_IR_伊朗
+      - 🇨🇳_CN_中国_10
+      - 🇰🇷_KR_韩国_3
       - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇯🇵_JP_日本_1
-      - 🇨🇭_CH_瑞士
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇨🇳_CN_中国_2
       - 🇩🇪_DE_德国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇨🇭_CH_瑞士_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_3
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇭🇰HK²_3|2.0MB/s|YT|NF|X
-      - 🇭🇰HK²_5|5.3MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 🇰🇷_KR_韩国
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国_2
+      - 🇦🇺_AU_澳大利亚
+      - 🇨🇳_CN_中国_3
+      - 🇦🇺_AU_澳大利亚_1
+      - ️95@oneclickvpnkeys
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国_4
+      - 🇨🇳_CN_中国_5
+      - 🇰🇷_KR_韩国_2
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇷🇺_RU_俄罗斯
+      - 🇮🇷_IR_伊朗
+      - 🇨🇳_CN_中国_10
+      - 🇰🇷_KR_韩国_3
       - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇯🇵_JP_日本_1
-      - 🇨🇭_CH_瑞士
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇨🇳_CN_中国_2
       - 🇩🇪_DE_德国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇨🇭_CH_瑞士_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_3
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -375,27 +466,31 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰HK²_3|2.0MB/s|YT|NF|X
-      - 🇭🇰HK²_5|5.3MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 🇰🇷_KR_韩国
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
+      - 🇨🇳_CN_中国_2
+      - 🇦🇺_AU_澳大利亚
+      - 🇨🇳_CN_中国_3
+      - 🇦🇺_AU_澳大利亚_1
+      - ️95@oneclickvpnkeys
+      - 🇰🇷_KR_韩国
+      - 🇰🇷_KR_韩国_1
+      - 🇨🇳_CN_中国_4
+      - 🇨🇳_CN_中国_5
+      - 🇰🇷_KR_韩国_2
+      - 🇨🇳_CN_中国_6
+      - 🇨🇳_CN_中国_7
+      - 🇨🇳_CN_中国_8
+      - 🇨🇳_CN_中国_9
+      - 🇷🇺_RU_俄罗斯
+      - 🇮🇷_IR_伊朗
+      - 🇨🇳_CN_中国_10
+      - 🇰🇷_KR_韩国_3
       - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇯🇵_JP_日本
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇯🇵_JP_日本_1
-      - 🇨🇭_CH_瑞士
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇨🇳_CN_中国_2
       - 🇩🇪_DE_德国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇨🇭_CH_瑞士_1
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_3
 rule-providers:
   LocalAreaNetwork:
     type: http
