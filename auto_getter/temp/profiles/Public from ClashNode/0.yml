@@ -58,54 +58,48 @@ tun:
 
 
 proxies:
-  - type: vless
-    name: 🇯🇵_JP_日本
-    server: 18.183.89.240
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇺🇸_US_美国
-    server: 108.162.198.11
-    port: 2096
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
   - type: vmess
-    name: 🇸🇬SG²_1|4.4MB/s|GPT|GM|YT|X|KeepSucceed
-    server: 144.48.180.187
-    port: 30812
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 0
-    network: tcp
-    cipher: auto
-  - type: vmess
-    name: 🇭🇰HK-1.65.202.165-5028
-    server: 580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com
+    name: 🇭🇰 HK_215
+    server: 6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com
     port: 80
-    uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+    uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
     alterId: 2
     network: ws
     cipher: auto
-    servername: 580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
       path: /
       headers:
-        Host: 580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_130
+    server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
+    port: 80
+    uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_101
+    server: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+    port: 80
+    uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: aeb50015-t02f40-t9byd7-1jfvb.hk3.p5pv.com
   - type: vless
-    name: 🇨🇳_CN_中国
-    server: 8.217.180.234
+    name: 🇧🇪_BE_比利时
+    server: 57.180.14.97
     port: 443
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -115,79 +109,131 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇩🇪_DE_德国
-    server: 49.12.210.182
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  - type: vmess
+    name: 🇭🇰 HK_187
+    server: c22fc613-sv2sg0-t4qa9y-g43g.hk3.p5pv.com
+    port: 80
+    uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+    alterId: 2
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇨🇦_CA_加拿大
-    server: 142.132.140.130
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_138
+    server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+    port: 80
+    uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+    alterId: 2
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇺🇸_US_美国_1
-    server: 51.89.224.186
-    port: 8443
-    uuid: 6923b959-c65f-764c-b072-94711382d716
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_109
+    server: 14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com
+    port: 80
+    uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+    alterId: 2
     network: ws
-    servername: s2.sni565.netlib.re
-    tls: true
-    encryption: none
+    cipher: auto
     ws-opts:
-      path: /proxyip=tw.sni2025.netlib.re
-      headers:
-        Host: s2.sni565.netlib.re
-    client-fingerprint: random
-    alpn:
-      - h3
-  - type: vless
-    name: 🇺🇸_US_美国_2
-    server: 51.195.102.180
-    port: 8443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+      path: /
+  - type: vmess
+    name: 🇭🇰 HK_125
+    server: 28044739-sv2sg0-t1jamc-1fvdh.hk3.p5pv.com
+    port: 80
+    uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
+    alterId: 2
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯
-    server: 193.124.18.13
-    port: 443
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_192
+    server: bb9bfc22-svc1s0-szegoe-12hj8.hk3.p5pv.com
+    port: 80
+    uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+    alterId: 2
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: ss
-    name: 🇺🇸_US_美国_3
-    server: 3.76.39.215
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_218
+    server: 7f074f62-sv6hs0-tdh9w7-ahsb.hk3.p5pv.com
+    port: 80
+    uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: _15
+    server: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com
+    port: 80
+    uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+  - type: vmess
+    name: 🇭🇰 HK_136
+    server: 0afadb4a-sv4n40-tc61cs-1tja8.hk3.p5pv.com
+    port: 80
+    uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰HK-1.36.218.178-5158
+    server: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
+    port: 80
+    uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_67
+    server: c85c9054-t13gg0-t4ixjm-1hhyy.hk3.p5pv.com
+    port: 80
+    uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
   - type: vless
-    name: 🇺🇸_US_美国_4
-    server: freeyx.cloudflare88.eu.org
+    name: 🇺🇸_US_美国
+    server: 108.162.198.24
     port: 2096
     uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
     network: ws
@@ -197,228 +243,195 @@ proxies:
       path: /?ed=2560
       headers:
         Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇨🇳_CN_中国_1
-    server: 202.85.53.77
-    port: 7000
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇨🇳_CN_中国_2
-    server: 202.85.53.160
-    port: 7000
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇨🇳_CN_中国_3
-    server: 202.85.53.54
-    port: 7000
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-    network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: vless
-    name: 🇺🇸_US_美国_5
-    server: cosmin.ns.cloudflare.com
-    port: 443
-    uuid: f956952d-dde1-4bc6-861e-22a9dc4554c4
-    network: ws
-    servername: 638996506447943078.soul-amsih.info
-    tls: true
-    encryption: none
-    ws-opts:
-      path: /xjfclmws
-      headers:
-        Host: 638996506447943078.soul-amsih.info
   - type: vmess
-    name: 德国 - 法兰克福 - Oracle Corporation - 6
-    server: frankfurt01.zgjok.com
-    port: 443
-    uuid: b71579b1-6593-426d-90ac-f002fa96ade1
-    alterId: 0
+    name: 🇭🇰 HK_197
+    server: f92a4a6b-sv2sg0-swkmdk-1imi4.hk3.p5pv.com
+    port: 80
+    uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+    alterId: 2
     network: ws
     cipher: auto
-    servername: frankfurt01.zgjok.com
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
       path: /
       headers:
-        Host: frankfurt01.zgjok.com
-    tls: true
-  - type: ss
-    name: 🇺🇸_US_美国_6
-    server: 3.65.219.59
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-  - type: hysteria2
-    name: 🇫🇷_FR_法国
-    server: 195.154.206.231
-    port: 33880
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    sni: apple.com
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯_1
-    server: 80.90.187.190
-    port: 2053
-    uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_120
+    server: 2bc8c2b4-sv0xs0-tcr97d-2b2n.hk3.p5pv.com
+    port: 80
+    uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+    alterId: 2
     network: ws
-    servername: kuangbao.xiejiang.dpdns.org
-    tls: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: kuangbao.xiejiang.dpdns.org
-  - type: trojan
-    name: 🇺🇸_US_美国_7
-    server: ip.sb
-    port: 8443
-    password: trojan
-    network: ws
-    sni: fofang.pages.dev
-    tls: true
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
     ws-opts:
       path: /
-  - type: vless
-    name: 🇺🇸_US_美国_8
-    server: 38.131.1.85
-    port: 443
-    uuid: 06909812-7bd8-4e39-aa4f-911b1ce7c45c
-    network: tcp
-    servername: miui.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    alpn:
-      - h2
-  - type: vless
-    name: 🇺🇸_US_美国_9
-    server: napanel.mreza1088.com
-    port: 31374
-    uuid: 8dca3cf6-0e6d-4ca3-a5e5-cdc2efa7e5a6
-    network: tcp
-    servername: www.apple.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: 49JyOdKP7qgl4PRdrg7AASv1p8uvq5FDBywMYOV43QY
-      short-id: b6
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇷🇺_RU_俄罗斯_2
-    server: at.monkeyisland.xyz
-    port: 443
-    uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
-    network: tcp
-    servername: at.monkeyisland.xyz
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
-      short-id: 83e9f5b24040c5f7
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: vless
-    name: 🇸🇦_SA_沙特阿拉伯
-    server: 77.110.119.225
-    port: 443
-    uuid: 4819860c-0e62-4804-9c59-967e5c2bed7a
-    network: tcp
-    servername: st.ozone.ru
-    tls: true
-    reality-opts:
-      public-key: hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo
-      short-id: 07e904766d29b958
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-  - type: ss
-    name: 🇺🇸_US_美国_10
-    server: 185.156.110.92
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_65
+    server: 4cdbea97-t53wg0-to8xn3-l4nv.hk3.p5pv.com
+    port: 80
+    uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_110
+    server: ae709d15-sv0xs0-svim0o-1slop.hk3.p5pv.com
+    port: 80
+    uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰HK-1.36.223.11-5391
+    server: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+    port: 80
+    uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_102
+    server: 486a4149-t0bog0-t14dgl-duku.hk3.p5pv.com
+    port: 80
+    uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰HK-1.36.223.11-4974
+    server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+    port: 80
+    uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_123
+    server: 2aba7152-sv2sg0-tcr97d-2b2n.hk3.p5pv.com
+    port: 80
+    uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_118
+    server: 8685e774-sv2sg0-svq7uu-1gevg.hk3.p5pv.com
+    port: 80
+    uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_114
+    server: 73cc68dd-sv0xs0-t76x2i-wj6v.hk3.p5pv.com
+    port: 80
+    uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵_JP_日本
+      - 🇭🇰 HK_215
+      - 🇭🇰 HK_130
+      - 🇭🇰 HK_101
+      - 🇧🇪_BE_比利时
+      - 🇭🇰 HK_187
+      - 🇭🇰 HK_138
+      - 🇭🇰 HK_109
+      - 🇭🇰 HK_125
+      - 🇭🇰 HK_192
+      - 🇭🇰 HK_218
+      - _15
+      - 🇭🇰 HK_136
+      - 🇭🇰HK-1.36.218.178-5158
+      - 🇭🇰 HK_67
       - 🇺🇸_US_美国
-      - 🇸🇬SG²_1|4.4MB/s|GPT|GM|YT|X|KeepSucceed
-      - 🇭🇰HK-1.65.202.165-5028
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇺🇸_US_美国_5
-      - 德国 - 法兰克福 - Oracle Corporation - 6
-      - 🇺🇸_US_美国_6
-      - 🇫🇷_FR_法国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸_US_美国_10
+      - 🇭🇰 HK_197
+      - 🇭🇰 HK_120
+      - 🇭🇰 HK_65
+      - 🇭🇰 HK_110
+      - 🇭🇰HK-1.36.223.11-5391
+      - 🇭🇰 HK_102
+      - 🇭🇰HK-1.36.223.11-4974
+      - 🇭🇰 HK_123
+      - 🇭🇰 HK_118
+      - 🇭🇰 HK_114
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇯🇵_JP_日本
+      - 🇭🇰 HK_215
+      - 🇭🇰 HK_130
+      - 🇭🇰 HK_101
+      - 🇧🇪_BE_比利时
+      - 🇭🇰 HK_187
+      - 🇭🇰 HK_138
+      - 🇭🇰 HK_109
+      - 🇭🇰 HK_125
+      - 🇭🇰 HK_192
+      - 🇭🇰 HK_218
+      - _15
+      - 🇭🇰 HK_136
+      - 🇭🇰HK-1.36.218.178-5158
+      - 🇭🇰 HK_67
       - 🇺🇸_US_美国
-      - 🇸🇬SG²_1|4.4MB/s|GPT|GM|YT|X|KeepSucceed
-      - 🇭🇰HK-1.65.202.165-5028
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇺🇸_US_美国_5
-      - 德国 - 法兰克福 - Oracle Corporation - 6
-      - 🇺🇸_US_美国_6
-      - 🇫🇷_FR_法国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸_US_美国_10
+      - 🇭🇰 HK_197
+      - 🇭🇰 HK_120
+      - 🇭🇰 HK_65
+      - 🇭🇰 HK_110
+      - 🇭🇰HK-1.36.223.11-5391
+      - 🇭🇰 HK_102
+      - 🇭🇰HK-1.36.223.11-4974
+      - 🇭🇰 HK_123
+      - 🇭🇰 HK_118
+      - 🇭🇰 HK_114
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -438,32 +451,31 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵_JP_日本
+      - 🇭🇰 HK_215
+      - 🇭🇰 HK_130
+      - 🇭🇰 HK_101
+      - 🇧🇪_BE_比利时
+      - 🇭🇰 HK_187
+      - 🇭🇰 HK_138
+      - 🇭🇰 HK_109
+      - 🇭🇰 HK_125
+      - 🇭🇰 HK_192
+      - 🇭🇰 HK_218
+      - _15
+      - 🇭🇰 HK_136
+      - 🇭🇰HK-1.36.218.178-5158
+      - 🇭🇰 HK_67
       - 🇺🇸_US_美国
-      - 🇸🇬SG²_1|4.4MB/s|GPT|GM|YT|X|KeepSucceed
-      - 🇭🇰HK-1.65.202.165-5028
-      - 🇨🇳_CN_中国
-      - 🇩🇪_DE_德国
-      - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇺🇸_US_美国_5
-      - 德国 - 法兰克福 - Oracle Corporation - 6
-      - 🇺🇸_US_美国_6
-      - 🇫🇷_FR_法国
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇺🇸_US_美国_7
-      - 🇺🇸_US_美国_8
-      - 🇺🇸_US_美国_9
-      - 🇷🇺_RU_俄罗斯_2
-      - 🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸_US_美国_10
+      - 🇭🇰 HK_197
+      - 🇭🇰 HK_120
+      - 🇭🇰 HK_65
+      - 🇭🇰 HK_110
+      - 🇭🇰HK-1.36.223.11-5391
+      - 🇭🇰 HK_102
+      - 🇭🇰HK-1.36.223.11-4974
+      - 🇭🇰 HK_123
+      - 🇭🇰 HK_118
+      - 🇭🇰 HK_114
 rule-providers:
   LocalAreaNetwork:
     type: http
