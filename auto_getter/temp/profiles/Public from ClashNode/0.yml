@@ -59,18 +59,6 @@ tun:
 
 proxies:
   - type: hysteria
-    name: 🇺🇸_US_美国
-    server: 51.159.226.1
-    port: 49003
-    auth-str: dongtaiwang.com
-    protocol: udp
-    sni: apple.com
-    up: "11"
-    down: "55"
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - type: hysteria
     name: 🇫🇷_FR_法国
     server: 195.154.200.40
     port: 15010
@@ -82,53 +70,36 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
-  - type: hysteria2
-    name: 🇨🇳_CN_中国
-    server: d8f0b6d0-t6t0g0-tb016b-1m7l4.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: bd515574-3b10-11ee-ac14-f23c9164ca5d
-    sni: d8f0b6d0-t6t0g0-tb016b-1m7l4.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_1
-    server: 5dd9aace-t53wg0-t5rf4m-81nv.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 47e91fb6-25b8-df52-bc18-3cdc8548192f
-    sni: 5dd9aace-t53wg0-t5rf4m-81nv.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_2
-    server: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-    sni: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_3
-    server: c6a713cb-t6r5s0-tan99f-1rdqg.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-    sni: c6a713cb-t6r5s0-tan99f-1rdqg.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_4
-    server: 1088d113-t6pb40-tbac1z-1j3zm.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
-    sni: 1088d113-t6pb40-tbac1z-1j3zm.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_5
-    server: ff2737ad-t6pb40-taj9mo-1tco3.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: e29de954-ea01-11ef-a271-f23c91cfbbc9
-    sni: ff2737ad-t6pb40-taj9mo-1tco3.hk2.hyhuawei.com
+  - type: hysteria
+    name: 🇺🇸_US_美国
+    server: 51.159.226.1
+    port: 49003
+    auth-str: dongtaiwang.com
+    protocol: udp
+    sni: apple.com
+    up: "11"
+    down: "55"
+    skip-cert-verify: true
+    alpn:
+      - h3
   - type: vmess
-    name: 🇭🇰 HK_120
-    server: 25109257-sv4n40-t5qfe2-1khwf.hk3.p5pv.com
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 54
+    server: 06f9c2b4-t729s0-tbnk1n-ueq.hk3.p5pv.com
     port: 80
-    uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+    uuid: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 06f9c2b4-t729s0-tbnk1n-ueq.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 06f9c2b4-t729s0-tbnk1n-ueq.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_113
+    server: e0349a52-sv8cg0-t7uinf-i8ie.hk3.p5pv.com
+    port: 80
+    uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
     alterId: 2
     network: ws
     cipher: auto
@@ -137,90 +108,40 @@ proxies:
       path: /
       headers:
         Host: broadcastlv.chat.bilibili.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_6
-    server: 1ea71bf6-t6r5s0-t6nlrg-ach1.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
-    sni: 1ea71bf6-t6r5s0-t6nlrg-ach1.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_7
-    server: 0e681e5b-t6pb40-t8ivpf-z65w.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-    sni: 0e681e5b-t6pb40-t8ivpf-z65w.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_8
-    server: 90c255cf-t6uv40-tbcla6-194tt.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 602e99aa-718d-11eb-b77b-f23c913c8d2b
-    sni: 90c255cf-t6uv40-tbcla6-194tt.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_9
-    server: 3eeb70de-t6t0g0-tk5ls1-z7a1.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-    sni: 3eeb70de-t6t0g0-tk5ls1-z7a1.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_10
-    server: 452a7c42-t6pb40-t94bdb-mrtr.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-    sni: 452a7c42-t6pb40-t94bdb-mrtr.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_11
-    server: c2ea438e-t6r5s0-t95ncr-1slop.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 520b9126-9870-11ef-81b0-f23c9164ca5d
-    sni: c2ea438e-t6r5s0-t95ncr-1slop.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_12
-    server: 11c6c1ec-t6r5s0-tdfzix-fm2v.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
-    sni: 11c6c1ec-t6r5s0-tdfzix-fm2v.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_13
-    server: 29d44efc-t6pb40-tfeciy-1iddy.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-    sni: 29d44efc-t6pb40-tfeciy-1iddy.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_14
-    server: 85232d74-t6r5s0-t7dy6t-jx5r.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-    sni: 85232d74-t6r5s0-t7dy6t-jx5r.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_15
-    server: 21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 48e51dfa-db8f-11ed-a23f-f23c91369f2d
-    sni: 21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_16
-    server: 6761e2ad-t6pb40-tnfe2z-1s4hc.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
-    sni: 6761e2ad-t6pb40-tnfe2z-1s4hc.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_17
-    server: d15b0a2f-t6pb40-tc61cs-1tja8.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
-    sni: d15b0a2f-t6pb40-tc61cs-1tja8.hk2.hyhuawei.com
+  - type: trojan
+    name: 🏳️_unKnow_未知
+    server: feisha-other.kunlun06dns.com
+    port: 15025
+    password: 9e5d7ec6-d24d-41dc-848d-54a2e3429d2f
+    network: tcp
+    sni: openssl.nodesni.com
+    skip-cert-verify: true
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 53
+    server: 400ce9b6-t6ngg0-tamumc-1lkbs.hk3.p5pv.com
+    port: 80
+    uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 400ce9b6-t6ngg0-tamumc-1lkbs.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 400ce9b6-t6ngg0-tamumc-1lkbs.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_128
+    server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com
+    port: 80
+    uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
   - type: hysteria
     name: 🇫🇷_FR_法国_1
     server: 62.210.10.186
@@ -245,115 +166,314 @@ proxies:
     skip-cert-verify: true
     alpn:
       - h3
+  - type: vmess
+    name: 🇭🇰 HK_131
+    server: 2e3ac5d1-sv2sg0-t7udc0-1pqhp.hk3.p5pv.com
+    port: 80
+    uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 70
+    server: 50708bcc-t6ngg0-t7pjgr-11p9g.hk3.p5pv.com
+    port: 80
+    uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: 50708bcc-t6ngg0-t7pjgr-11p9g.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 50708bcc-t6ngg0-t7pjgr-11p9g.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_122
+    server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
+    port: 80
+    uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vless
+    name: 🇰🇷_KR_韩国
+    server: 49.128.204.85
+    port: 36656
+    uuid: 9f2810ca-b45a-4012-baaf-046d52d1e025
+    network: none
+    client-fingerprint: chrome
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 62
+    server: e1417ad9-t6r5s0-t7pjgr-11p9g.hk3.p5pv.com
+    port: 80
+    uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: e1417ad9-t6r5s0-t7pjgr-11p9g.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: e1417ad9-t6r5s0-t7pjgr-11p9g.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_82
+    server: 1b6c49f6-sv2sg0-tcmken-19les.hk3.p5pv.com
+    port: 80
+    uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vless
+    name: 🇺🇸_US_美国_1
+    server: fs.ir-sub.fun
+    port: 80
+    uuid: 2e9177ce-d1cc-45cd-b27f-f16f8fbc117a
+    network: ws
+    servername: zedd.global.ssl.fastly.net
+    encryption: none
+    ws-opts:
+      path: /ZEDMODEON-ZEDMODEON-bia-ZEDMODEON
+      headers:
+        Host: zedd.global.ssl.fastly.net
   - type: hysteria2
-    name: 🇨🇳_CN_中国_18
-    server: fbba7608-t6r5s0-t7hjku-1rgxu.hk2.hyhuawei.com
+    name: 🇨🇳_CN_中国
+    server: 6bb485d8-t6pb40-t82luq-mv7m.hk2.hyhuawei.com
     port: 443
     ports: 30000-60000
-    password: ea93064c-176c-11f0-885d-f23c91cfbbc9
-    sni: fbba7608-t6r5s0-t7hjku-1rgxu.hk2.hyhuawei.com
+    password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+    sni: 6bb485d8-t6pb40-t82luq-mv7m.hk2.hyhuawei.com
+  - type: vmess
+    name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 68
+    server: c764b8be-t6r5s0-tcop2n-tl32.hk3.p5pv.com
+    port: 80
+    uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: c764b8be-t6r5s0-tcop2n-tl32.hk3.p5pv.com
+    ws-opts:
+      path: /
+      headers:
+        Host: c764b8be-t6r5s0-tcop2n-tl32.hk3.p5pv.com
+  - type: vmess
+    name: 🇭🇰 HK_89
+    server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
+    port: 80
+    uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 🇭🇰 HK_114
+    server: 4f8acdc9-sv0xs0-sw5wi7-ufc0.hk3.p5pv.com
+    port: 80
+    uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vless
+    name: 🇬🇧_GB_英国
+    server: 51.250.109.47
+    port: 1488
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    network: tcp
+    servername: ads.x5.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇺🇸_US_美国_2
+    server: 69.84.182.13
+    port: 443
+    uuid: 1347acec-0c12-46c0-9436-19603093d9ab
+    network: ws
+    servername: fr-1-fr-1.aiopen.sbs
+    tls: true
+    ws-opts:
+      path: /kbjc/fr1
+      headers:
+        Host: fr-1-fr-1.aiopen.sbs
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇬🇧_GB_英国_1
+    server: 51.250.99.190
+    port: 1488
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    network: tcp
+    servername: ads.x5.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vmess
+    name: 🇭🇰 HK_111
+    server: 548481b2-sv2sg0-t2hqlr-1s3mx.hk3.p5pv.com
+    port: 80
+    uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vless
+    name: 🇷🇺_RU_俄罗斯
+    server: nl-78w-c.southnetworks.cloud
+    port: 80
+    uuid: 094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa
+    network: ws
+    servername: nl-78w-c.southnetworks.cloud
+    ws-opts:
+      path: /getWorkerUpdates
+      headers:
+        Host: nl-78w-c.southnetworks.cloud
   - type: hysteria2
-    name: 🇨🇳_CN_中国_19
-    server: eddd56cf-t6r5s0-tbac1z-1j3zm.hk2.hyhuawei.com
+    name: 🇨🇳_CN_中国_1
+    server: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com
     port: 443
     ports: 30000-60000
-    password: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d
-    sni: eddd56cf-t6r5s0-tbac1z-1j3zm.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_20
-    server: 84041b9f-t6pb40-t6z0et-1t60o.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: ce481c6e-f4c8-11ef-bbb0-f23c91cfbbc9
-    sni: 84041b9f-t6pb40-t6z0et-1t60o.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_21
-    server: a72b4e9b-t6t0g0-t7c05o-n09f.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
-    sni: a72b4e9b-t6t0g0-t7c05o-n09f.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_22
-    server: 3d4f0f8e-t729s0-tnjsrz-h8vf.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 4fb15f9c-f078-11ed-814b-f23c91369f2d
-    sni: 3d4f0f8e-t729s0-tnjsrz-h8vf.hk2.hyhuawei.com
-  - type: hysteria2
-    name: 🇨🇳_CN_中国_23
-    server: eb945704-t6pb40-t7dy6t-jx5r.hk2.hyhuawei.com
-    port: 443
-    ports: 30000-60000
-    password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-    sni: eb945704-t6pb40-t7dy6t-jx5r.hk2.hyhuawei.com
+    password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+    sni: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com
+  - type: vmess
+    name: 🇭🇰 HK_84
+    server: 6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com
+    port: 80
+    uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - type: vless
+    name: 🇬🇧_GB_英国_2
+    server: 51.250.24.245
+    port: 4249
+    uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+    network: tcp
+    servername: api-maps.yandex.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vmess
+    name: 🇭🇰 HK_142
+    server: 10cd2f16-sv2sg0-t7hu58-1q1la.hk3.p5pv.com
+    port: 80
+    uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+    alterId: 2
+    network: ws
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国
       - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇨🇳_CN_中国_4
-      - 🇨🇳_CN_中国_5
-      - 🇭🇰 HK_120
-      - 🇨🇳_CN_中国_6
-      - 🇨🇳_CN_中国_7
-      - 🇨🇳_CN_中国_8
-      - 🇨🇳_CN_中国_9
-      - 🇨🇳_CN_中国_10
-      - 🇨🇳_CN_中国_11
-      - 🇨🇳_CN_中国_12
-      - 🇨🇳_CN_中国_13
-      - 🇨🇳_CN_中国_14
-      - 🇨🇳_CN_中国_15
-      - 🇨🇳_CN_中国_16
-      - 🇨🇳_CN_中国_17
+      - 🇺🇸_US_美国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 54
+      - 🇭🇰 HK_113
+      - 🏳️_unKnow_未知
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 53
+      - 🇭🇰 HK_128
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国_18
-      - 🇨🇳_CN_中国_19
-      - 🇨🇳_CN_中国_20
-      - 🇨🇳_CN_中国_21
-      - 🇨🇳_CN_中国_22
-      - 🇨🇳_CN_中国_23
+      - 🇭🇰 HK_131
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 70
+      - 🇭🇰 HK_122
+      - 🇰🇷_KR_韩国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 62
+      - 🇭🇰 HK_82
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 68
+      - 🇭🇰 HK_89
+      - 🇭🇰 HK_114
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国_1
+      - 🇭🇰 HK_111
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国_1
+      - 🇭🇰 HK_84
+      - 🇬🇧_GB_英国_2
+      - 🇭🇰 HK_142
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
       - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇨🇳_CN_中国_4
-      - 🇨🇳_CN_中国_5
-      - 🇭🇰 HK_120
-      - 🇨🇳_CN_中国_6
-      - 🇨🇳_CN_中国_7
-      - 🇨🇳_CN_中国_8
-      - 🇨🇳_CN_中国_9
-      - 🇨🇳_CN_中国_10
-      - 🇨🇳_CN_中国_11
-      - 🇨🇳_CN_中国_12
-      - 🇨🇳_CN_中国_13
-      - 🇨🇳_CN_中国_14
-      - 🇨🇳_CN_中国_15
-      - 🇨🇳_CN_中国_16
-      - 🇨🇳_CN_中国_17
+      - 🇺🇸_US_美国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 54
+      - 🇭🇰 HK_113
+      - 🏳️_unKnow_未知
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 53
+      - 🇭🇰 HK_128
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国_18
-      - 🇨🇳_CN_中国_19
-      - 🇨🇳_CN_中国_20
-      - 🇨🇳_CN_中国_21
-      - 🇨🇳_CN_中国_22
-      - 🇨🇳_CN_中国_23
+      - 🇭🇰 HK_131
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 70
+      - 🇭🇰 HK_122
+      - 🇰🇷_KR_韩国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 62
+      - 🇭🇰 HK_82
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 68
+      - 🇭🇰 HK_89
+      - 🇭🇰 HK_114
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国_1
+      - 🇭🇰 HK_111
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国_1
+      - 🇭🇰 HK_84
+      - 🇬🇧_GB_英国_2
+      - 🇭🇰 HK_142
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -373,35 +493,35 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国
       - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国_1
-      - 🇨🇳_CN_中国_2
-      - 🇨🇳_CN_中国_3
-      - 🇨🇳_CN_中国_4
-      - 🇨🇳_CN_中国_5
-      - 🇭🇰 HK_120
-      - 🇨🇳_CN_中国_6
-      - 🇨🇳_CN_中国_7
-      - 🇨🇳_CN_中国_8
-      - 🇨🇳_CN_中国_9
-      - 🇨🇳_CN_中国_10
-      - 🇨🇳_CN_中国_11
-      - 🇨🇳_CN_中国_12
-      - 🇨🇳_CN_中国_13
-      - 🇨🇳_CN_中国_14
-      - 🇨🇳_CN_中国_15
-      - 🇨🇳_CN_中国_16
-      - 🇨🇳_CN_中国_17
+      - 🇺🇸_US_美国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 54
+      - 🇭🇰 HK_113
+      - 🏳️_unKnow_未知
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 53
+      - 🇭🇰 HK_128
       - 🇫🇷_FR_法国_1
       - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国_18
-      - 🇨🇳_CN_中国_19
-      - 🇨🇳_CN_中国_20
-      - 🇨🇳_CN_中国_21
-      - 🇨🇳_CN_中国_22
-      - 🇨🇳_CN_中国_23
+      - 🇭🇰 HK_131
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 70
+      - 🇭🇰 HK_122
+      - 🇰🇷_KR_韩国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 62
+      - 🇭🇰 HK_82
+      - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国
+      - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 68
+      - 🇭🇰 HK_89
+      - 🇭🇰 HK_114
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_2
+      - 🇬🇧_GB_英国_1
+      - 🇭🇰 HK_111
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国_1
+      - 🇭🇰 HK_84
+      - 🇬🇧_GB_英国_2
+      - 🇭🇰 HK_142
 rule-providers:
   LocalAreaNetwork:
     type: http
