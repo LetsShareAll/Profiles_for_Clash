@@ -5,143 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_102, server: 486a4149-t0bog0-t14dgl-duku.hk3.p5pv.com, port: 80, type: vmess, uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇰🇷 _KR_韩国, server: 218.237.185.230, port: 4652, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: 🇰🇷 _KR_韩国_1, server: p141.panda001.net, port: 4652, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: HK_168, server: 2e617951-sv2sg0-taj9mo-1tco3.hk3.p5pv.com, port: 80, type: vmess, uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_134, server: 418446e2-sv2sg0-t2nkut-jx5r.hk3.p5pv.com, port: 80, type: vmess, uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇭🇰 HK²_28|2.9MB/s|0%|NF|X, server: eb328762-t6ngg0-t85e8f-141tv.hk3.p5pv.com, port: 80, type: vmess, uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_177, server: fdda39f3-sv4n40-tasors-1tdqt.hk3.p5pv.com, port: 80, type: vmess, uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_102 2, server: 5f0f42e9-sv4n40-t7udc0-1pqhp.hk3.p5pv.com, port: 80, type: vmess, uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_173, server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com, port: 80, type: vmess, uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_135, server: 04165a49-sv2sg0-t5cryd-4w8.hk3.p5pv.com, port: 80, type: vmess, uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇭🇰 HK-1.36.223.11-4974, server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com, port: 80, type: vmess, uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com, network: ws, ws-opts: {path: /, headers: {Host: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com}}}
-  - {name: HK_172, server: 04e4679b-sv2sg0-swfla6-1rdqg.hk3.p5pv.com, port: 80, type: vmess, uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇫🇷 _FR_法国, server: 62.210.10.186, port: 50011, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-  - {name: HK_187, server: 266007c7-sv4n40-syu0n5-1hd7v.hk3.p5pv.com, port: 80, type: vmess, uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_139, server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com, port: 80, type: vmess, uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_100, server: da79f07b-sv0xs0-t7hu58-1q1la.hk3.p5pv.com, port: 80, type: vmess, uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: _15, server: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com, port: 80, type: vmess, uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com, network: ws, ws-opts: {path: /, headers: {Host: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com}}}
-  - {name: HK_77, server: 3a0b963a-t02f40-tiuovf-v3c2.hk3.p5pv.com, port: 80, type: vmess, uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇭🇰 HK²_55|1.5MB/s|YT|NF|X, server: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com, port: 80, type: vmess, uuid: 7699767c-44ae-11ef-80c7-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com, network: ws, ws-opts: {path: /, headers: {Host: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com}}}
-  - {name: HK_116, server: 3f54bee7-sv4n40-tbpu76-1thmd.hk3.p5pv.com, port: 80, type: vmess, uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇭🇰 HK-1.36.223.11-5391, server: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com, port: 80, type: vmess, uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com, network: ws, ws-opts: {path: /, headers: {Host: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com}}}
-  - {name: HK_160, server: 272ffc58-sv2sg0-t4v3jz-1k8ga.hk3.p5pv.com, port: 80, type: vmess, uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_124, server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com, port: 80, type: vmess, uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_171, server: 6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com, port: 80, type: vmess, uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: 🇭🇰 HK²_24|1.8MB/s|2%|YT|X, server: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com, port: 80, type: vmess, uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com, network: ws, ws-opts: {path: /, headers: {Host: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com}}}
-  - {name: HK_103, server: 2bc8c2b4-sv0xs0-tcr97d-2b2n.hk3.p5pv.com, port: 80, type: vmess, uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_104, server: 10cd2f16-sv2sg0-t7hu58-1q1la.hk3.p5pv.com, port: 80, type: vmess, uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_179, server: 1dd7778a-sv4n40-szxh9w-46gc.hk3.p5pv.com, port: 80, type: vmess, uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_64, server: 4cdbea97-t53wg0-to8xn3-l4nv.hk3.p5pv.com, port: 80, type: vmess, uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
-  - {name: HK_66, server: dfed4efb-t4n8g0-t636g9-luwe.hk3.p5pv.com, port: 80, type: vmess, uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
+  - {name: 🇫🇷 _FR_法国, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: 🇫🇷 _FR_法国_1, server: 62.210.10.186, port: 35511, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: 🇫🇷 _FR_法国_2, server: 62.210.10.186, port: 50011, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: 🇩🇪 _DE_德国, server: 45.87.175.174, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+  - {name: 🇫🇷 法国 09, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v35.hdacd.com}
+  - {name: 🇳🇱 _NL_荷兰, server: 178.23.190.238, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh}
+  - {name: 🇺🇸 _US_美国_1, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: _CN_中国, server: 219.79.214.159, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true}
+  - {name: 🇷🇺 _RU_俄罗斯_1, server: 194.246.114.101, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk}
+  - {name: "🇬🇧 英国 - Slough - DigitalOcean, LLC - 1", server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v36.hdacd.com}
+  - {name: 🇮🇷 _IR_伊朗, server: 217.60.249.112, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0eC4ZBvStOgQEzTpCYjWN5}
+  - {name: 🇲🇩 _MD_摩尔多瓦, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国_4, server: 185.47.255.22, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇨🇳 _CN_中国_2, server: 103.149.183.80, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,36 +96,20 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -200,107 +120,59 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -316,36 +188,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_102
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国_1
-      - HK_168
-      - HK_134
-      - 🇭🇰 HK²_28|2.9MB/s|0%|NF|X
-      - HK_177
-      - HK_102 2
-      - HK_173
-      - HK_135
-      - 🇭🇰 HK-1.36.223.11-4974
-      - HK_172
       - 🇫🇷 _FR_法国
-      - HK_187
-      - HK_139
-      - HK_100
-      - _15
-      - HK_77
-      - 🇭🇰 HK²_55|1.5MB/s|YT|NF|X
-      - HK_116
-      - 🇭🇰 HK-1.36.223.11-5391
-      - HK_160
-      - HK_124
-      - HK_171
-      - 🇭🇰 HK²_24|1.8MB/s|2%|YT|X
-      - HK_103
-      - HK_104
-      - HK_179
-      - HK_64
-      - HK_66
+      - 🇫🇷 _FR_法国_1
+      - 🇫🇷 _FR_法国_2
+      - 🇩🇪 _DE_德国
+      - 🇫🇷 法国 09
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国_1
+      - _CN_中国
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇬🇧 英国 - Slough - DigitalOcean, LLC - 1
+      - 🇮🇷 _IR_伊朗
+      - 🇲🇩 _MD_摩尔多瓦
+      - 🇺🇸 _US_美国_4
+      - 🇨🇳 _CN_中国_2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

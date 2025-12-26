@@ -221,52 +221,6 @@ proxies:
       short-id: 84f70f1177981563
     client-fingerprint: chrome
     flow: xtls-rprx-vision
-  - type: vless
-    name: 🇺🇸_US_美国_2
-    server: 208.69.78.5
-    port: 443
-    uuid: 0a21d713-6e6f-4274-8b84-464019325513
-    network: grpc
-    servername: www.microsoft.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: vMBfs89AZ02R1ggA45SqOFLfe6rJQ0_mLBpsV97k3zA
-      short-id: 9c8d68d581a08ea5
-    grpc-opts:
-      grpc-service-name: ecb7f0f50489f81cd1983a56
-    client-fingerprint: chrome
-  - type: vless
-    name: 🇧🇬_BG_保加利亚
-    server: 178.239.124.30
-    port: 56482
-    uuid: 2c487d9d-25a1-4b79-aed1-086b8c3082ca
-    network: tcp
-    servername: cloudcircus.jp
-    tls: true
-    reality-opts:
-      public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
-    client-fingerprint: firefox
-    flow: xtls-rprx-vision
-  - type: ss
-    name: 🇷🇺_RU_俄罗斯_1
-    server: 194.246.114.101
-    port: 443
-    cipher: chacha20-ietf-poly1305
-    password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
-  - type: vless
-    name: 🇬🇧_GB_英国_1
-    server: 157.173.127.224
-    port: 443
-    uuid: bec44ac3-a662-4179-a9dd-2aa881706dde
-    network: tcp
-    servername: analytics.google.com
-    tls: true
-    encryption: none
-    reality-opts:
-      public-key: Ajk0QudeMVQocN88OG14PpsxparFuRJlvqzXDlW-gyQ
-      short-id: aba7bc9a
-    client-fingerprint: chrome
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -288,10 +242,6 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
       - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_2
-      - 🇧🇬_BG_保加利亚
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇬🇧_GB_英国_1
   - name: ♻️ 自动选择
     type: url-test
     proxies:
@@ -310,10 +260,6 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
       - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_2
-      - 🇧🇬_BG_保加利亚
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇬🇧_GB_英国_1
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: 🎯 全球直连
@@ -348,10 +294,6 @@ proxy-groups:
       - 🇨🇳_CN_中国
       - 🇨🇳_CN_中国_1
       - 🇨🇦_CA_加拿大
-      - 🇺🇸_US_美国_2
-      - 🇧🇬_BG_保加利亚
-      - 🇷🇺_RU_俄罗斯_1
-      - 🇬🇧_GB_英国_1
 rule-providers:
   LocalAreaNetwork:
     type: http
